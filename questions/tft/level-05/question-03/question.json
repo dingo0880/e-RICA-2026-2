@@ -8,7 +8,7 @@
   "options": [
     "세트 8",
     "세트 9",
-    "세트 10 (리믹스 럼블)",
+    "세트 10",
     "세트 11"
   ],
   "optionImages": [
@@ -18,7 +18,7 @@
     ""
   ],
   "answer": 3,
-  "explanation": "정답은 세트 10 (리믹스 럼블)입니다.",
+  "explanation": "정답은 세트 10입니다.",
   "explanationImage": "",
   "requiresImage": false,
   "sourceQuestion": "매 시즌 중반 진행되던 '.5 세트' 방식이 폐지되고 단일 정규 세트 체제로 전환된 첫 세트는?"

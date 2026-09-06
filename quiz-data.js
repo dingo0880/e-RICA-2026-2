@@ -2986,12 +2986,12 @@ window.QUIZ_DATA = [
           "question": "불리한 게임을 포기하고 다른 플레이어의 투표 없이 혼자 항복(서렌)할 수 있는 가장 빠른 라운드는?",
           "options": [
             "2-1",
-            "2-5",
-            "3-2",
+            "2-7",
+            "3-1",
             "3-5"
           ],
           "answer": 2,
-          "explanation": "정답은 3-2입니다.",
+          "explanation": "정답은 3-1입니다.",
           "image": "",
           "imageAlt": "문제 이미지",
           "optionImages": [
@@ -3303,11 +3303,11 @@ window.QUIZ_DATA = [
           "options": [
             "세트 8",
             "세트 9",
-            "세트 10 (리믹스 럼블)",
+            "세트 10",
             "세트 11"
           ],
           "answer": 2,
-          "explanation": "정답은 세트 10 (리믹스 럼블)입니다.",
+          "explanation": "정답은 세트 10입니다.",
           "image": "",
           "imageAlt": "문제 이미지",
           "optionImages": [
