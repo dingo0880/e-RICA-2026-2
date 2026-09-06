@@ -40,16 +40,16 @@ fs.mkdirSync(out, { recursive: true });
     assert.equal(await page.locator('#exit-dialog').isVisible(), true);
     await page.click('[data-action="cancel-exit"]');
     assert.equal(await page.locator('.question-title').count(), 1);
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
       const question = await page.locator('.question-title').textContent();
-      const answer = await page.evaluate(({ question, i }) => window.QUIZ_DATA.find(g => g.id === 'valorant').levels[i].find(q => q.question === question).answer, { question, i });
-      await page.click(`[data-option="${i < 3 ? answer : (answer + 1) % 4}"]`);
+      const answer = await page.evaluate(({ question }) => window.QUIZ_DATA.find(g => g.id === 'valorant').levels.flat().find(q => q.question === question).answer, { question });
+      await page.click(`[data-option="${i < 6 ? answer : (answer + 1) % 4}"]`);
       if (i === 0) await page.screenshot({ path: path.join(out, '04-quiz-desktop.png'), fullPage: true });
       await page.click('#submit-answer');
     }
-    assert.match(await page.locator('.score-correct strong').textContent(), /^3/);
-    assert.equal(await page.locator('.reviews details').count(), 5);
-    assert.equal(await page.locator('.reviews details[open]').count(), 2);
+    assert.match(await page.locator('.score-correct strong').textContent(), /^6/);
+    assert.equal(await page.locator('.reviews details').count(), 10);
+    assert.equal(await page.locator('.reviews details[open]').count(), 4);
     assert.match(await page.locator('.save-status').textContent(), /홍\*동/);
     await page.screenshot({ path: path.join(out, '05-result-desktop.png'), fullPage: true });
     await page.click('.result-actions [data-action="home"]');
@@ -80,13 +80,13 @@ fs.mkdirSync(out, { recursive: true });
       await page.fill('#player-department', '검증학과');
       await page.click('#registration-form button');
       await page.click(`[data-game="${gameId}"]`);
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 10; i++) {
         const question = await page.locator('.question-title').textContent();
-        const answer = await page.evaluate(({ question, i, gameId }) => window.QUIZ_DATA.find(g => g.id === gameId).levels[i].find(q => q.question === question).answer, { question, i, gameId });
+        const answer = await page.evaluate(({ question, gameId }) => window.QUIZ_DATA.find(g => g.id === gameId).levels.flat().find(q => q.question === question).answer, { question, gameId });
         await page.click(`[data-option="${answer}"]`);
         await page.click('#submit-answer');
       }
-      assert.match(await page.locator('.score-correct strong').textContent(), /^5/);
+      assert.match(await page.locator('.score-correct strong').textContent(), /^10/);
     }
     await page.click('.result-actions [data-action="home"]');
     await page.click('.nav-button[data-action="records"]');
@@ -120,21 +120,15 @@ fs.mkdirSync(out, { recursive: true });
     assert.match(await page.locator('#records-body').textContent(), /25 \/ 25/);
     await page.click('[data-action="records-mode"][data-mode="quick"]');
     assert.equal(await page.locator('#records-body tr').count(), 7);
-    // LoL stays playable; its intentionally empty level-3 card can be answered and advanced.
+    // LoL stays playable and advances through the 10-question quick mode.
     await page.click('.nav-button[data-action="home"]');
     await page.click('[data-action="start"][data-mode="quick"]');
     await page.fill('#player-name', '롤테스트');
     await page.fill('#player-department', '검증학과');
     await page.click('#registration-form button');
     await page.click('[data-game="lol"]');
-    for (let i = 0; i < 2; i++) { await page.click('[data-option="0"]'); await page.click('#submit-answer'); }
-    assert.equal(await page.locator('.image-answer').count(), 4);
-    const blankImageCards = await page.locator('.image-answer').evaluateAll(els => els.map(el => { const r = el.getBoundingClientRect(); return { y: r.y, w: r.width, h: r.height }; }));
-    assert.equal(new Set(blankImageCards.map(card => card.y)).size, 2);
-    const blankVisuals = await page.locator('.empty-answer-visual').evaluateAll(els => els.map(el => { const r = el.getBoundingClientRect(); return { w: r.width, h: r.height }; }));
-    assert.ok(blankVisuals.every(item => Math.abs(item.w - item.h) <= 1));
-    await page.click('[data-option="0"]'); await page.click('#submit-answer');
-    assert.match(await page.locator('.question-meta').textContent(), /04 \/ 05/);
+    for (let i = 0; i < 3; i++) { await page.click('[data-option="0"]'); await page.click('#submit-answer'); }
+    assert.match(await page.locator('.question-meta').textContent(), /04 \/ 10/);
     await page.click('.back-button');
     await page.click('[data-action="confirm-exit"]');
     await page.click('[data-action="start"][data-mode="quick"]');
@@ -166,7 +160,7 @@ fs.mkdirSync(out, { recursive: true });
     await broken.fill('#player-department', '테스트학과');
     await broken.click('#registration-form button');
     await broken.click('[data-game="tft"]');
-    for (let i = 0; i < 5; i++) { await broken.click('[data-option="0"]'); await broken.click('#submit-answer'); }
+    for (let i = 0; i < 10; i++) { await broken.click('[data-option="0"]'); await broken.click('#submit-answer'); }
     assert.equal(await broken.locator('.save-error').count(), 1);
     await broken.click('.result-actions [data-action="home"]');
     assert.equal(await broken.locator('.result-banner').count(), 1);
@@ -177,6 +171,6 @@ fs.mkdirSync(out, { recursive: true });
     assert.equal(await broken.locator('.hero').count(), 1);
     await brokenContext.close();
     assert.deepEqual(errors, []);
-    console.log('PASS: seven games, 35 graded questions, masked persistent records, CSV, exit protection, storage failure, desktop/mobile layout.');
+    console.log('PASS: seven games, 70 graded questions, masked persistent records, CSV, exit protection, storage failure, desktop/mobile layout.');
   } finally { await browser?.close(); server?.kill(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

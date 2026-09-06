@@ -7,11 +7,12 @@
     return chars[0] + '*'.repeat(chars.length - 2) + chars.at(-1);
   }
   function pickQuestions(game, random = Math.random) {
-    return game.levels.map((level, i) => {
+    return game.levels.flatMap((level, i) => {
       const pool = level.filter(q => !q.pending);
       const candidates = pool.length ? pool : level;
-      if (!candidates.length) throw new Error(`난이도 ${i + 1} 문항 없음`);
-      return candidates[Math.floor(random() * candidates.length)];
+      if (candidates.length < 2) throw new Error(`난이도 ${i + 1} 출제 가능 문항 부족`);
+      const remaining = [...candidates];
+      return [0, 1].map(() => remaining.splice(Math.floor(random() * remaining.length), 1)[0]);
     });
   }
   function allQuestions(game) {
@@ -22,8 +23,9 @@
   }
   function validRecord(r) {
     const mode = r?.mode || 'quick';
-    const total = r?.total || (mode === 'record' ? 25 : 5);
-    return r && typeof r.id === 'string' && typeof r.name === 'string' && r.name.length <= 30 && typeof r.department === 'string' && r.department.length <= 60 && typeof r.gameId === 'string' && ['quick', 'record'].includes(mode) && Number.isInteger(total) && total === (mode === 'record' ? 25 : 5) && Number.isInteger(r.correct) && r.correct >= 0 && r.correct <= total && Number.isFinite(r.elapsed) && r.elapsed >= 0 && Number.isFinite(Date.parse(r.date));
+    const total = r?.total ?? (mode === 'record' ? 25 : 5);
+    const validTotal = mode === 'record' ? total === 25 : total === 5 || total === 10;
+    return r && typeof r.id === 'string' && typeof r.name === 'string' && r.name.length <= 30 && typeof r.department === 'string' && r.department.length <= 60 && typeof r.gameId === 'string' && ['quick', 'record'].includes(mode) && Number.isInteger(total) && validTotal && Number.isInteger(r.correct) && r.correct >= 0 && r.correct <= total && Number.isFinite(r.elapsed) && r.elapsed >= 0 && Number.isFinite(Date.parse(r.date));
   }
   function readRecords(storage) {
     const raw = storage.getItem(KEY);

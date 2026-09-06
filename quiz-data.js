@@ -116,7 +116,7 @@ window.QUIZ_DATA = [
         {
           "id": "lol-1-5",
           "level": 1,
-          "layout": "image",
+          "layout": "text",
           "question": "다음 중 K/DA 스킨이 존재하지 않는 챔피언은?",
           "options": [
             "아리",
@@ -135,11 +135,8 @@ window.QUIZ_DATA = [
             ""
           ],
           "explanationImage": "",
-          "pending": true,
-          "pendingReasons": [
-            "이미지형은 보기 이미지 4개 필요",
-            "질문 이미지 또는 이미지 보기 4개 필요"
-          ],
+          "pending": false,
+          "pendingReasons": [],
           "folder": "questions/lol/level-01/question-05"
         }
       ],
@@ -647,7 +644,7 @@ window.QUIZ_DATA = [
         {
           "id": "lol-5-5",
           "level": 5,
-          "layout": "image",
+          "layout": "text",
           "question": "다음 중 야스오의 '바람 장막'에 막히는 것은?",
           "options": [
             "세나 - 꿰뚫는 어둠(Q)",
@@ -666,11 +663,8 @@ window.QUIZ_DATA = [
             ""
           ],
           "explanationImage": "",
-          "pending": true,
-          "pendingReasons": [
-            "이미지형은 보기 이미지 4개 필요",
-            "질문 이미지 또는 이미지 보기 4개 필요"
-          ],
+          "pending": false,
+          "pendingReasons": [],
           "folder": "questions/lol/level-05/question-05"
         }
       ]
@@ -1827,17 +1821,14 @@ window.QUIZ_DATA = [
           "image": "",
           "imageAlt": "문제 이미지",
           "optionImages": [
-            "",
-            "",
-            "",
-            ""
+            "questions/overwatch/level-04/question-03/option-1.png",
+            "questions/overwatch/level-04/question-03/option-2.png",
+            "questions/overwatch/level-04/question-03/option-3.png",
+            "questions/overwatch/level-04/question-03/option-4.png"
           ],
           "explanationImage": "",
-          "pending": true,
-          "pendingReasons": [
-            "이미지형은 보기 이미지 4개 필요",
-            "질문 이미지 또는 이미지 보기 4개 필요"
-          ],
+          "pending": false,
+          "pendingReasons": [],
           "folder": "questions/overwatch/level-04/question-03"
         },
         {

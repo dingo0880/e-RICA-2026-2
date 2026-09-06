@@ -1,4 +1,4 @@
-﻿const { chromium } = require('@playwright/test');
+const { chromium } = require('@playwright/test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -70,7 +70,10 @@ const insideViewport = async (page, selector) => {
       images.on('pageerror', e => errors.push(e.message));
       const modified = JSON.parse(JSON.stringify(data));
       const game = modified.find(g => g.id === 'valorant');
-      game.levels = game.levels.map((level, i) => [{ ...level.find(q => !q.pending), layout: 'image', question: '다음 그림과 같은 모양의 이미지를 골라주세요.', image: imagePath + 'question.svg', imageAlt: '비교할 그림', options: ['보라 우주인', '초록 우주인', '분홍 우주인', '노랑 우주인'], optionImages: [1, 2, 3, 4].map(n => imagePath + `option-${n}.svg`), answer: 1, explanation: '두 번째 그림을 골랐으면 정답입니다.', explanationImage: imagePath + 'explanation.svg' }]);
+      game.levels = game.levels.map(level => {
+        const base = level.find(q => !q.pending);
+        return [0, 1].map(n => ({ ...base, id: `${base.id}-fixture-${n}`, layout: 'image', question: '다음 그림과 같은 모양의 이미지를 골라주세요.', image: imagePath + 'question.svg', imageAlt: '비교할 그림', options: ['보라 우주인', '초록 우주인', '분홍 우주인', '노랑 우주인'], optionImages: [1, 2, 3, 4].map(number => imagePath + `option-${number}.svg`), answer: 1, explanation: '두 번째 그림을 골랐으면 정답입니다.', explanationImage: imagePath + 'explanation.svg' }));
+      });
       await images.route('**/quiz-data.js', route => route.fulfill({ contentType: 'text/javascript', body: `window.QUIZ_DATA=${JSON.stringify(modified)};` }));
       await images.route('**/questions/**', route => {
         const name = new URL(route.request().url()).pathname.split('/').at(-1);
@@ -89,11 +92,11 @@ const insideViewport = async (page, selector) => {
       await insideViewport(images, '#submit-answer'); await noOverflow(images);
       await images.screenshot({ path: path.join(out, `${width}-image-quiz.png`), fullPage: false, scale: 'css' });
       await images.click('.question-image'); assert.equal(await images.locator('#image-dialog').isVisible(), true); await images.click('[data-action="close-image"]');
-      for (let i = 0; i < 5; i++) { await readyImages(images); await images.click('[data-option="1"]'); await images.click('#submit-answer'); }
-      assert.match(await images.locator('.score-correct strong').textContent(), /^5/);
+      for (let i = 0; i < 10; i++) { await readyImages(images); await images.click('[data-option="1"]'); await images.click('#submit-answer'); }
+      assert.match(await images.locator('.score-correct strong').textContent(), /^10/);
       await images.locator('details').first().locator('summary').click();
-      assert.equal(await images.locator('.review-image').count(), 5);
-      assert.equal(await images.locator('.explanation-image').count(), 5);
+      assert.equal(await images.locator('.review-image').count(), 10);
+      assert.equal(await images.locator('.explanation-image').count(), 10);
       await images.screenshot({ path: path.join(out, `${width}-result.png`), fullPage: false, scale: 'css' });
       if (width === 1480) {
         // Rotate the same session to portrait, preserving the questions and selection.
@@ -113,7 +116,9 @@ const insideViewport = async (page, selector) => {
     // Runtime image failures block submission and retry restores the same round.
     const broken = await browser.newPage({ viewport: { width: 1184, height: 740 }, hasTouch: true, isMobile: true });
     const badData = JSON.parse(JSON.stringify(data));
-    badData.find(g => g.id === 'valorant').levels[0] = [{ ...badData.find(g => g.id === 'valorant').levels[0][0], image: imagePath + 'question.svg' }];
+    const badGame = badData.find(g => g.id === 'valorant');
+    const badQuestion = badGame.levels[0][0];
+    badGame.levels[0] = [0, 1].map(n => ({ ...badQuestion, id: `${badQuestion.id}-broken-${n}`, image: imagePath + 'question.svg' }));
     await broken.route('**/quiz-data.js', route => route.fulfill({ contentType: 'text/javascript', body: `window.QUIZ_DATA=${JSON.stringify(badData)};` }));
     let fail = true;
     await broken.route('**/questions/**', route => fail ? route.fulfill({ status: 404 }) : route.fulfill({ contentType: 'image/svg+xml', body: fixtureImage(1) }));

@@ -18,21 +18,23 @@ test('all 200 question folders have valid playable or pending data', () => {
     if (q.optionImages.some(Boolean)) assert.equal(q.optionImages.filter(Boolean).length, 4, q.id);
   }
 });
-test('each game draws one ready question per level, or an unfinished fallback when all need images', () => {
+test('each game draws two different ready questions per level', () => {
+  const expectedLevels = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5];
   for (const game of games) {
     for (let i = 0; i < 100; i++) {
       const questions = C.pickQuestions(game);
-      assert.deepEqual(questions.map(q => q.level), [1, 2, 3, 4, 5]);
+      assert.equal(questions.length, 10);
+      assert.deepEqual(questions.map(q => q.level), expectedLevels);
+      assert.equal(new Set(questions.map(q => q.id)).size, 10);
       assert.ok(questions.every(q => !q.pending || !game.levels[q.level - 1].some(candidate => !candidate.pending)));
     }
     const firstLevelPool = game.levels[0].filter(q => !q.pending);
     const candidates = firstLevelPool.length ? firstLevelPool : game.levels[0];
-    assert.equal(C.pickQuestions(game, () => 0)[0].id, candidates[0].id);
-    const last = candidates.at(-1);
-    assert.equal(C.pickQuestions(game, () => .99999)[0].id, last.id);
+    assert.deepEqual(C.pickQuestions(game, () => 0).slice(0, 2).map(q => q.id), candidates.slice(0, 2).map(q => q.id));
+    assert.deepEqual(C.pickQuestions(game, () => .99999).slice(0, 2).map(q => q.id), [candidates.at(-1).id, candidates.at(-2).id]);
   }
-  assert.equal(C.pickQuestions({ levels: [[{ pending: true, id: 'blank' }]] })[0].id, 'blank');
-  assert.throws(() => C.pickQuestions({ levels: [[]] }), /문항 없음/);
+  assert.deepEqual(C.pickQuestions({ levels: [[{ pending: true, id: 'a' }, { pending: true, id: 'b' }]] }, () => 0).map(q => q.id), ['a', 'b']);
+  assert.throws(() => C.pickQuestions({ levels: [[{ id: 'only' }]] }), /문항 부족/);
 });
 test('record mode returns all 25 questions in level order', () => {
   for (const game of games) {
@@ -44,9 +46,9 @@ test('record mode returns all 25 questions in level order', () => {
 test('grading supports zero, mixed and perfect scores', () => {
   const questions = C.pickQuestions(games[1]);
   const correct = questions.map(q => q.answer);
-  assert.equal(C.score(questions, correct), 5);
+  assert.equal(C.score(questions, correct), 10);
   assert.equal(C.score(questions, correct.map(a => (a + 1) % 4)), 0);
-  assert.equal(C.score(questions, correct.map((a, i) => i < 3 ? a : (a + 1) % 4)), 3);
+  assert.equal(C.score(questions, correct.map((a, i) => i < 6 ? a : (a + 1) % 4)), 6);
 });
 test('names are masked including short and Unicode names', () => {
   assert.equal(C.maskName(' 홍길동 '), '홍*동');
@@ -67,11 +69,12 @@ test('records survive a reload and saving one result twice does not duplicate it
   assert.equal(C.readRecords(storage)[0].name, '홍*동');
   assert.equal(C.rankRecords(C.readRecords(storage))[0].id, 'two');
 });
-test('quick and 25-question record results validate separately', () => {
+test('10-question quick, legacy 5-question, and 25-question records validate separately', () => {
   assert.equal(C.validRecord(record('legacy')), true);
+  assert.equal(C.validRecord({ ...record('quick', 8), mode: 'quick', total: 10 }), true);
   assert.equal(C.validRecord({ ...record('record', 21), mode: 'record', total: 25 }), true);
-  assert.equal(C.validRecord({ ...record('bad', 6), mode: 'quick', total: 5 }), false);
-  assert.equal(C.validRecord({ ...record('bad-total', 5), mode: 'record', total: 5 }), false);
+  assert.equal(C.validRecord({ ...record('bad', 11), mode: 'quick', total: 10 }), false);
+  assert.equal(C.validRecord({ ...record('bad-total', 5), mode: 'quick', total: 6 }), false);
 });
 test('tied scores share a competition rank', () => {
   const rows = C.rankRecords([record('a', 3), record('b', 5), record('c', 5), record('d', 1)]);
