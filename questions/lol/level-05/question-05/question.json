@@ -1,0 +1,25 @@
+{
+  "id": "lol-5-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 야스오의 '바람 장막'에 막히는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "세나 - 꿰뚫는 어둠(Q)",
+    "벨코즈 - 공허 균열(W)",
+    "릴리아 - 감미로운 자장가(R)",
+    "피오라 - 응수(W)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "세나 Q와 벨코즈·쓰레쉬의 기본 공격은 바람 장막을 통과하지만, 피오라의 응수(W)는 투사체 판정이라 바람 장막에 막힌다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 야스오의 '바람 장막'에 막히는 것은?"
+}

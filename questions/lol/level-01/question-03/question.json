@@ -1,0 +1,25 @@
+{
+  "id": "lol-1-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "'데마시아의 힘'이라는 별명을 가진 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "가렌",
+    "다리우스",
+    "자르반 4세",
+    "신 짜오"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 가렌입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'데마시아의 힘'이라는 별명을 가진 챔피언은?"
+}

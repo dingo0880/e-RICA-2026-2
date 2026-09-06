@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "오버워치의 호위 전장 '도라도(Dorado)'가 위치한 국가는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "스페인",
+    "브라질",
+    "멕시코",
+    "포르투갈"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 멕시코입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "오버워치의 호위 전장 '도라도(Dorado)'가 위치한 국가는?"
+}

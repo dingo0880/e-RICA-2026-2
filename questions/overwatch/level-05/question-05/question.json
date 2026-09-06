@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-5-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 네 영웅 중 공식 설정상 나이가 가장 어린 영웅은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "시그마",
+    "라인하르트",
+    "아나",
+    "토르비욘"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "시그마 64세 / 라인하르트 63세 / 아나 62세 / 토르비욘 59세",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 네 영웅 중 공식 설정상 나이가 가장 어린 영웅은?"
+}

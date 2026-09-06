@@ -1,0 +1,25 @@
+{
+  "id": "valorant-2-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "일반적인 발로란트 경기에서 공격과 수비 진영이 서로 바뀌는 시점은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "6라운드 종료 후",
+    "10라운드 종료 후",
+    "12라운드 종료 후",
+    "13라운드 종료 후"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 12라운드 종료 후입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "일반적인 발로란트 경기에서 공격과 수비 진영이 서로 바뀌는 시점은?"
+}

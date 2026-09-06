@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-5-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "오버워치 개발 과정에서 가장 처음 만들어진 영웅은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "윈스턴",
+    "리퍼",
+    "트레이서",
+    "라인하르트"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 트레이서입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "오버워치 개발 과정에서 가장 처음 만들어진 영웅은?"
+}

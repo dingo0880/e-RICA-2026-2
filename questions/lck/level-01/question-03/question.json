@@ -1,0 +1,25 @@
+{
+  "id": "lck-1-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "'Ruler' 박재혁 선수의 포지션은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "탑",
+    "정글",
+    "미드",
+    "바텀"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 바텀입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'Ruler' 박재혁 선수의 포지션은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "valorant-2-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "궁극기 이름이 '독사의 구덩이'인 요원은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "오멘",
+    "브림스톤",
+    "바이퍼",
+    "아스트라"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 바이퍼입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "궁극기 이름이 '독사의 구덩이'인 요원은?"
+}

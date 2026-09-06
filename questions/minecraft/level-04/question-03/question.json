@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "마법 부여대(인챈트 테이블)에서 30레벨 최고급 인챈트를 띄우기 위해 주변에 필요한 '최소 책장 수'는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "10개",
+    "12개",
+    "15개",
+    "20개"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 15개입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "마법 부여대(인챈트 테이블)에서 30레벨 최고급 인챈트를 띄우기 위해 주변에 필요한 '최소 책장 수'는?"
+}

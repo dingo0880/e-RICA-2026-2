@@ -1,0 +1,25 @@
+{
+  "id": "lck-3-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "LoL e스포츠 팬들 사이에서 유명한 숫자 '1557'은 어느 경기에서 유래한 밈일까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "2018 월즈 KT vs IG",
+    "2019 MSI SKT vs IG",
+    "2020 월즈 DWG vs SN",
+    "2022 월즈 T1 vs DRX"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 2019 MSI SKT vs IG입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "LoL e스포츠 팬들 사이에서 유명한 숫자 '1557'은 어느 경기에서 유래한 밈일까?"
+}

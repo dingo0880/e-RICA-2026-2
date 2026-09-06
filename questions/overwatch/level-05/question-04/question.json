@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-5-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "블랙워치의 '응징의 날(Retribution)' 작전에서 가브리엘 레예스 일행이 추적했던 탈론의 고위 간부는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "막시밀리앙",
+    "안토니오 바르탈로티",
+    "테카르타 몬다타",
+    "아우구스토 비알리"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 안토니오 바르탈로티입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "블랙워치의 '응징의 날(Retribution)' 작전에서 가브리엘 레예스 일행이 추적했던 탈론의 고위 간부는?"
+}

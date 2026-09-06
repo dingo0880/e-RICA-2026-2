@@ -1,0 +1,25 @@
+{
+  "id": "pubg-3-1",
+  "status": "pending",
+  "layout": "text",
+  "question": "에란겔 본섬 동남쪽에 위치하며 거대한 원자로 냉각탑이 특징인 이 지역의 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "밀타(Mylta)",
+    "밀타 파워(Mylta Power)",
+    "프리모르스크(Primorsk)",
+    "쉘터(Shelter)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 밀타 파워입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "[이미지 문제] 에란겔 본섬 동남쪽에 위치하며 거대한 원자로 냉각탑이 특징인 이 지역의 이름은?"
+}

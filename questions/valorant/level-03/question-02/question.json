@@ -1,0 +1,25 @@
+{
+  "id": "valorant-3-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "악몽을 이용해 적을 추적하는 척후대 요원 페이드(Fade)의 출신 국가는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "그리스",
+    "튀르키예",
+    "이집트",
+    "루마니아"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 튀르키예입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "악몽을 이용해 적을 추적하는 척후대 요원 페이드(Fade)의 출신 국가는?"
+}

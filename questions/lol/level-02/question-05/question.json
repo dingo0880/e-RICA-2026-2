@@ -1,0 +1,25 @@
+{
+  "id": "lol-2-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 별 수호자 스킨이 존재하지 않는 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "럭스",
+    "징크스",
+    "소라카",
+    "애쉬"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 애쉬입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 별 수호자 스킨이 존재하지 않는 챔피언은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "lck-4-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "LCK 역사상 최초로 정규 시즌을 18승 0패 전승으로 마친 팀은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "T1",
+    "Gen.G",
+    "DAMWON Gaming",
+    "Griffin"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "2022 LCK 스프링에서 18승 0패를 기록했다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "LCK 역사상 최초로 정규 시즌을 18승 0패 전승으로 마친 팀은?"
+}

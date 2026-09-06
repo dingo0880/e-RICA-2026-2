@@ -1,0 +1,25 @@
+{
+  "id": "valorant-3-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 소총 중 거리에 따른 피해량 감소 없이, 방어구를 포함해 체력 150인 적을 머리 한 발로 처치할 수 있는 무기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "팬텀",
+    "밴달",
+    "불독",
+    "스펙터"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 밴달입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 소총 중 거리에 따른 피해량 감소 없이, 방어구를 포함해 체력 150인 적을 머리 한 발로 처치할 수 있는 무기는?"
+}

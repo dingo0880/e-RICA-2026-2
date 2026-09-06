@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-3-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "용암에 빠져도 체력이 닳지 않게 해주는 필수 포션 '화염 저항의 물약'의 핵심 재료는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "마그마 크림",
+    "블레이즈 가루",
+    "가스트의 눈물",
+    "반짝이는 수박"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 마그마 크림입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "용암에 빠져도 체력이 닳지 않게 해주는 필수 포션 '화염 저항의 물약'의 핵심 재료는?"
+}

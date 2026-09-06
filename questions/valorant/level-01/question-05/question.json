@@ -1,0 +1,25 @@
+{
+  "id": "valorant-1-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 무기 중 저격소총으로 분류되는 무기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "밴달",
+    "팬텀",
+    "오퍼레이터",
+    "오딘"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 오퍼레이터입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 무기 중 저격소총으로 분류되는 무기는?"
+}

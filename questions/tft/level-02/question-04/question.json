@@ -1,0 +1,25 @@
+{
+  "id": "tft-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "하단 대기석(벤치)에 보관할 수 있는 챔피언 기물의 최대 슬롯 수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "7칸",
+    "8칸",
+    "9칸",
+    "10칸"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 9칸입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "하단 대기석(벤치)에 보관할 수 있는 챔피언 기물의 최대 슬롯 수는?"
+}

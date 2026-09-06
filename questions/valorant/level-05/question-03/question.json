@@ -1,0 +1,25 @@
+{
+  "id": "valorant-5-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "'요동치는 베이스'라는 이름의 궁극기를 사용하는 요원은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "게코",
+    "테호",
+    "믹스",
+    "하버"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 믹스입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'요동치는 베이스'라는 이름의 궁극기를 사용하는 요원은?"
+}

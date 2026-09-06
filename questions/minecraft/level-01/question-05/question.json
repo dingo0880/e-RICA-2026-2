@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-1-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다가와서 자폭하는 '크리퍼'가 무서워하며 보기만 해도 도망치는 동물은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "고양이 (오셀롯)",
+    "늑대",
+    "판다",
+    "닭"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 고양이입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다가와서 자폭하는 '크리퍼'가 무서워하며 보기만 해도 도망치는 동물은?"
+}

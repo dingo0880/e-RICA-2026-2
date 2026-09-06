@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-1-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "야생의 늑대(개)를 길들여 반려동물로 만들기 위해 먹여야 하는 아이템은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "생고기",
+    "뼈 (뼈다귀)",
+    "사과",
+    "밀 씨앗"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 뼈입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "야생의 늑대(개)를 길들여 반려동물로 만들기 위해 먹여야 하는 아이템은?"
+}

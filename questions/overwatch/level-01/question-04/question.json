@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-1-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "사망한 아군 한 명을 다시 전투에 복귀시키는 '부활' 능력을 가진 영웅은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "아나",
+    "메르시",
+    "모이라",
+    "젠야타"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 메르시입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "사망한 아군 한 명을 다시 전투에 복귀시키는 '부활' 능력을 가진 영웅은?"
+}

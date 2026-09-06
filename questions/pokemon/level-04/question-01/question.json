@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-4-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "특성 '스킬링크'의 효과로 올바른 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "연속 기술의 위력이 2배가 된다",
+    "연속 기술이 반드시 급소에 맞는다",
+    "여러 번 공격하는 기술이 가능한 최대 횟수만큼 명중한다",
+    "연속 기술을 사용하면 스피드가 1랭크 오른다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 여러 번 공격하는 기술이 가능한 최대 횟수만큼 명중한다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "특성 '스킬링크'의 효과로 올바른 것은?"
+}

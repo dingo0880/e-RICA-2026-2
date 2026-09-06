@@ -1,0 +1,25 @@
+{
+  "id": "pubg-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "체력 100%이며 내구도가 온전한 2레벨 헬멧을 착용한 적을 헤드샷 단 한 발로 확정 기절/처치할 수 없는 총기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Kar98k",
+    "M24",
+    "AWM",
+    "드라구노프"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "드라구노프는 거리가 멀어지면 피해량이 감소해 헤드샷 한 발로 확정 기절/처치할 수 없다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "체력 100%이며 내구도가 온전한 2레벨 헬멧을 착용한 적을 헤드샷 단 한 발로 확정 기절/처치할 수 없는 총기는?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "tft-1-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "롤토체스(TFT)의 대표적인 게임 장르 분류는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "AOS",
+    "RPG",
+    "오토배틀러",
+    "RTS"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 오토배틀러입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "롤토체스(TFT)의 대표적인 게임 장르 분류는?"
+}

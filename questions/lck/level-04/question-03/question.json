@@ -1,0 +1,25 @@
+{
+  "id": "lck-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 2024 월드 챔피언십 T1 우승 기념 스킨이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "T1 나르",
+    "T1 바이",
+    "T1 요네",
+    "T1 오리아나"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 T1 오리아나입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 2024 월드 챔피언십 T1 우승 기념 스킨이 아닌 것은?"
+}

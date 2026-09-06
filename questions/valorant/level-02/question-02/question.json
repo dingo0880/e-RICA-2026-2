@@ -1,0 +1,25 @@
+{
+  "id": "valorant-2-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "쓰러진 아군을 다시 살려낼 수 있는 궁극기를 가진 요원은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "스카이",
+    "세이지",
+    "킬조이",
+    "바이퍼"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 세이지입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "쓰러진 아군을 다시 살려낼 수 있는 궁극기를 가진 요원은?"
+}

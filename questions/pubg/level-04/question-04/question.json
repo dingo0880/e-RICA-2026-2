@@ -1,0 +1,25 @@
+{
+  "id": "pubg-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "에란겔 동쪽에 있는 지하 방공호 Shelter의 지상 출입구는 총 몇 곳일까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "2곳",
+    "3곳",
+    "4곳",
+    "5곳"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 4곳입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "에란겔 동쪽에 있는 지하 방공호 Shelter의 지상 출입구는 총 몇 곳일까?"
+}

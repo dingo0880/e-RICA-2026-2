@@ -1,0 +1,25 @@
+{
+  "id": "valorant-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 네 요원의 출시 순서를 오래된 순서부터 올바르게 나열한 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "체임버 → 네온 → 페이드 → 하버",
+    "네온 → 체임버 → 하버 → 페이드",
+    "체임버 → 페이드 → 네온 → 하버",
+    "페이드 → 네온 → 체임버 → 하버"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 체임버 → 네온 → 페이드 → 하버입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 네 요원의 출시 순서를 오래된 순서부터 올바르게 나열한 것은?"
+}

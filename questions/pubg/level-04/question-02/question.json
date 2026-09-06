@@ -1,0 +1,25 @@
+{
+  "id": "pubg-4-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "일반 수류탄의 안전핀을 뽑은 뒤 손에 쥐고 있을 때 폭발하기까지 걸리는 시간은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "3초",
+    "4초",
+    "5초",
+    "7초"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 5초입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "일반 수류탄의 안전핀을 뽑은 뒤 손에 쥐고 있을 때 폭발하기까지 걸리는 시간은?"
+}

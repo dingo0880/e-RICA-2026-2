@@ -1,0 +1,25 @@
+{
+  "id": "pubg-1-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "배틀그라운드의 기본 게임 장르 분류는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "AOS",
+    "RTS",
+    "배틀로얄",
+    "방치형 RPG"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 배틀로얄입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "배틀그라운드의 기본 게임 장르 분류는?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-1-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "오버워치의 기본 5대5 역할 고정 PvP에서 한 팀을 구성하는 플레이어 수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "4명",
+    "5명",
+    "6명",
+    "8명"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 5명입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "오버워치의 기본 5대5 역할 고정 PvP에서 한 팀을 구성하는 플레이어 수는?"
+}

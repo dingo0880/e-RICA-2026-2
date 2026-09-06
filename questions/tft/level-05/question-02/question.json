@@ -1,0 +1,25 @@
+{
+  "id": "tft-5-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "각 세트의 대표적인 고유 시스템 명칭이 잘못 짝지어진 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "세트 4 - 선택받은 자",
+    "세트 7 - 용",
+    "세트 8 - 차원문",
+    "세트 10 - 헤드라이너"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "차원문은 세트 9 '룬테라 리포지드'의 대표 시스템이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "각 세트의 대표적인 고유 시스템 명칭이 잘못 짝지어진 것은?"
+}

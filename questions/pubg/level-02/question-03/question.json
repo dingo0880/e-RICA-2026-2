@@ -1,0 +1,25 @@
+{
+  "id": "pubg-2-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 탄약 중 1발당 인벤토리 공간을 가장 많이 차지하는 탄약은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "9mm",
+    "5.56mm",
+    "7.62mm",
+    "12게이지 산탄"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 12게이지 산탄입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 탄약 중 1발당 인벤토리 공간을 가장 많이 차지하는 탄약은?"
+}

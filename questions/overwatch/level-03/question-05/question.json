@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-3-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 전장 중 오버워치 2에서 새롭게 등장한 '밀기(Push)' 전장은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "왕의 길",
+    "도라도",
+    "뉴 퀸 스트리트",
+    "일리오스"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 뉴 퀸 스트리트입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 전장 중 오버워치 2에서 새롭게 등장한 '밀기(Push)' 전장은?"
+}

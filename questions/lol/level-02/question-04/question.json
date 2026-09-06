@@ -1,0 +1,25 @@
+{
+  "id": "lol-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "아펠리오스가 사용하는 루나리 무기의 종류는 총 몇 가지일까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "3가지",
+    "4가지",
+    "5가지",
+    "6가지"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 5가지입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "아펠리오스가 사용하는 루나리 무기의 종류는 총 몇 가지일까?"
+}

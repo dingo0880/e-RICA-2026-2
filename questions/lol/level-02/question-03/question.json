@@ -1,0 +1,25 @@
+{
+  "id": "lol-2-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "세계관에서 요네와 야스오의 관계는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "스승과 제자",
+    "형제",
+    "애인",
+    "아버지와 아들"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 형제입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "세계관에서 요네와 야스오의 관계는?"
+}

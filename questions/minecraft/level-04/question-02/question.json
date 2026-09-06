@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-4-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "일반 피스톤이나 끈끈이 피스톤 1개가 전방으로 밀어낼 수 있는 '블록의 최대 한계 개수'는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "10개",
+    "12개",
+    "15개",
+    "16개"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 12개 (13개부터는 밀리지 않음)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "일반 피스톤이나 끈끈이 피스톤 1개가 전방으로 밀어낼 수 있는 '블록의 최대 한계 개수'는?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "valorant-1-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "발로란트에서 공격팀의 대표적인 목표는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "깃발을 상대 진영까지 운반한다",
+    "스파이크를 설치해 폭발시킨다",
+    "상대 본진 건물을 파괴한다",
+    "특정 몬스터를 처치한다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 스파이크를 설치해 폭발시킨다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "발로란트에서 공격팀의 대표적인 목표는?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "valorant-5-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 요원과 궁극기 이름의 연결 중 잘못된 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "레이즈 - 대미 장식",
+    "사이퍼 - 신경 절도",
+    "소바 - 사냥꾼의 분노",
+    "오멘 - 차원 표류"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "차원 표류는 요루의 궁극기이며, 오멘의 궁극기는 '그림자 습격'이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 요원과 궁극기 이름의 연결 중 잘못된 것은?"
+}

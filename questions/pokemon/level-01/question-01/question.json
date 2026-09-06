@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-1-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "피카츄의 타입은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "불꽃",
+    "노말",
+    "전기",
+    "페어리"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 전기입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "피카츄의 타입은?"
+}

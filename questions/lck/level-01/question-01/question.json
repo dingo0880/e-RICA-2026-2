@@ -1,0 +1,25 @@
+{
+  "id": "lck-1-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "'Faker' 이상혁 선수의 포지션은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "탑",
+    "정글",
+    "미드",
+    "서포터"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 미드입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'Faker' 이상혁 선수의 포지션은?"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "e-rica-quiz-arcade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E-RICA 가두모집 픽셀 퀴즈",
+  "scripts": {
+    "prebuild": "node scripts/sync-from-txt.cjs",
+    "build": "node scripts/build-site.cjs",
+    "prestart": "node scripts/sync-from-txt.cjs && node scripts/build-data.cjs",
+    "start": "node server.cjs",
+    "build:data": "node scripts/build-data.cjs",
+    "sync:txt": "node scripts/sync-from-txt.cjs",
+    "test": "node --test tests/quiz.test.cjs tests/images.test.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "test:tablet": "node tests/tablet.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

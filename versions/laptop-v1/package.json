@@ -1,0 +1,15 @@
+{
+  "name": "e-rica-quiz-arcade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E-RICA 가두모집 픽셀 퀴즈",
+  "scripts": {
+    "start": "node server.cjs",
+    "build:data": "node scripts/build-data.cjs",
+    "test": "node --test tests/quiz.test.cjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

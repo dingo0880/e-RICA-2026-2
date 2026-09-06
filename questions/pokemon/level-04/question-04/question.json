@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-4-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 전설의 포켓몬으로 분류되는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "다크라이",
+    "지라치",
+    "아르세우스",
+    "크리세리아"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "다크라이·지라치·아르세우스는 환상의 포켓몬이며, 오거폰은 전설의 포켓몬이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 전설의 포켓몬으로 분류되는 것은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pubg-2-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "Kar98k에 장착하여 한 발씩 탄환을 넣을 때 재장전 시간을 크게 줄여주는 부착물은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "칙패드",
+    "탄띠 (Bullet Loops)",
+    "대용량 퀵 드로우 탄창",
+    "보정기"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 탄띠입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "Kar98k에 장착하여 한 발씩 탄환을 넣을 때 재장전 시간을 크게 줄여주는 부착물은?"
+}

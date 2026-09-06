@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-1-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "밤을 건너뛰어 낮으로 만들고, 사망 시 부활 지점(리스폰)을 지정해 주는 가구는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "작업대",
+    "침대",
+    "모루",
+    "화로"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 침대입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "밤을 건너뛰어 낮으로 만들고, 사망 시 부활 지점(리스폰)을 지정해 주는 가구는?"
+}

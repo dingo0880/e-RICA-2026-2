@@ -1,0 +1,25 @@
+{
+  "id": "tft-5-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "2019년 롤토체스 최초 출시 당시 공개된 초창기 꼬마 전설이 라인업에 포함되지 않았던 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "수호대장",
+    "뿔보",
+    "유령이",
+    "짹짹이"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 수호대장입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "2019년 롤토체스 최초 출시 당시 공개된 초창기 꼬마 전설이 라인업에 포함되지 않았던 것은?"
+}

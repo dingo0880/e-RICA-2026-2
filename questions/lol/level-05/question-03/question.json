@@ -1,0 +1,25 @@
+{
+  "id": "lol-5-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 아이템 중 기본 능력치에 스킬 가속이 없는 아이템은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "칠흑의 양날 도끼",
+    "심연의 가면",
+    "실체화 장비",
+    "발걸음 분쇄기"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 발걸음 분쇄기입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 아이템 중 기본 능력치에 스킬 가속이 없는 아이템은?"
+}

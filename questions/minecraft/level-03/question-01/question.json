@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-3-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "대부분의 유용한 물약(신속, 힘, 화염 저항 등)의 기초 베이스가 되는 '어색한 물약'을 양조할 때 물병에 넣어야 하는 필수 재료는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "네더 와트",
+    "발효된 거미 눈",
+    "마그마 크림",
+    "설탕"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 네더 와트입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "대부분의 유용한 물약(신속, 힘, 화염 저항 등)의 기초 베이스가 되는 '어색한 물약'을 양조할 때 물병에 넣어야 하는 필수 재료는?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pubg-3-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 총기 중 다른 셋과 달리 일반적인 보급상자 전용 총기가 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "AWM",
+    "Mk14",
+    "Groza",
+    "M24"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 M24입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 총기 중 다른 셋과 달리 일반적인 보급상자 전용 총기가 아닌 것은?"
+}

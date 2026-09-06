@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-3-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 풀 타입이 아닌 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "대로트",
+    "눈설왕",
+    "꼬지모",
+    "모크나이퍼"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "꼬지모는 나무처럼 생겼지만 바위 타입이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 풀 타입이 아닌 포켓몬은?"
+}

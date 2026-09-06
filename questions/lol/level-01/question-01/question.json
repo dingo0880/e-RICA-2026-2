@@ -1,0 +1,25 @@
+{
+  "id": "lol-1-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "소환사의 협곡에서 상대 팀의 무엇을 파괴하면 게임에서 승리할까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "억제기",
+    "포탑",
+    "넥서스",
+    "드래곤"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 넥서스입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "소환사의 협곡에서 상대 팀의 무엇을 파괴하면 게임에서 승리할까?"
+}

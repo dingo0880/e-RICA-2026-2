@@ -1,0 +1,25 @@
+{
+  "id": "tft-5-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "롤토체스의 핵심 시스템인 '증강체(Augments)'가 최초로 도입된 세트는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "세트 4 - 운명",
+    "세트 5 - 심판",
+    "세트 6 - 기계와 장치",
+    "세트 7 - 용의 땅"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 세트 6 - 기계와 장치입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "롤토체스의 핵심 시스템인 '증강체(Augments)'가 최초로 도입된 세트는?"
+}

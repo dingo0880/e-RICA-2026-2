@@ -1,0 +1,25 @@
+{
+  "id": "lck-3-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "Faker가 기록하고 있는 LCK 우승 횟수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "7회",
+    "8회",
+    "9회",
+    "10회"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 10회입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "Faker가 기록하고 있는 LCK 우승 횟수는?"
+}

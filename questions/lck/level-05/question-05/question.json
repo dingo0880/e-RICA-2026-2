@@ -1,0 +1,25 @@
+{
+  "id": "lck-5-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 2020 월드 챔피언십 우승 당시 DAMWON Gaming의 주전 5인 로스터가 올바른 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Nuguri / Canyon / ShowMaker / Ghost / BeryL",
+    "Khan / Canyon / ShowMaker / Ghost / BeryL",
+    "Nuguri / Canyon / ShowMaker / deokdam / BeryL",
+    "Nuguri / Canyon / ShowMaker / Ghost / Kellin"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 Nuguri / Canyon / ShowMaker / Ghost / BeryL입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 2020 월드 챔피언십 우승 당시 DAMWON Gaming의 주전 5인 로스터가 올바른 것은?"
+}

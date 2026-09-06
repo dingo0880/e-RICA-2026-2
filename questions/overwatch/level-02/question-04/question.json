@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "'밀기(Push)' 모드에서 양 팀이 중앙에서 확보하기 위해 싸우는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "움직이는 화물 차량",
+    "거대한 깃발",
+    "바리케이드를 밀어주는 로봇",
+    "점령 가능한 비행선"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 바리케이드를 밀어주는 로봇입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'밀기(Push)' 모드에서 양 팀이 중앙에서 확보하기 위해 싸우는 것은?"
+}

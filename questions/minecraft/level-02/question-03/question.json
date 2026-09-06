@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-2-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 '중립 몹'으로 분류하기 않는 몹은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "늑대",
+    "벌",
+    "좀비말",
+    "엔더맨"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 좀비말입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 '중립 몹'으로 분류하기 않는 몹은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "tft-4-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "이자와 연승·연패 보너스를 제외하고, '5라운드 이후' 일반적인 라운드에서 기본적으로 지급되는 골드는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "3골드",
+    "4골드",
+    "5골드",
+    "6골드"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 5골드입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "이자와 연승·연패 보너스를 제외하고, '5라운드 이후' 일반적인 라운드에서 기본적으로 지급되는 골드는?"
+}

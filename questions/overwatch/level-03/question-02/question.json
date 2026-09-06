@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-3-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "둠피스트가 오버워치 2에서 공격 영웅에서 돌격 영웅으로 개편될 당시 삭제된 기술은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "로켓 펀치",
+    "라이징 어퍼컷",
+    "지진 강타",
+    "파멸의 일격"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 라이징 어퍼컷입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "둠피스트가 오버워치 2에서 공격 영웅에서 돌격 영웅으로 개편될 당시 삭제된 기술은?"
+}

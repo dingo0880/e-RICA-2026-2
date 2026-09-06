@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-4-2",
+  "status": "pending",
+  "layout": "text",
+  "question": "사진 속 탈론 소속 옴닉 인물의 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "테카르타 몬다타",
+    "막시밀리앙(Maximilien)",
+    "라마트라",
+    "젠야타"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 막시밀리앙입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "[이미지 문제 - 막시밀리앙 이미지] 사진 속 탈론 소속 옴닉 인물의 이름은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-3-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 벌레 타입이 아닌 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "핫삼",
+    "헤라크로스",
+    "드래피온",
+    "불카모스"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "스콜피는 독/벌레지만 드래피온은 독/악 타입이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 벌레 타입이 아닌 포켓몬은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pubg-1-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "'PUBG'라는 약칭이 처음 사용될 당시의 올바른 풀네임은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "PlayerUnknown's Battlegrounds",
+    "PlayerUnion's Battlegrounds",
+    "PlayerUnlimited Battlegrounds",
+    "PlayerUltimate Battlegrounds"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 PlayerUnknown's Battlegrounds입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'PUBG'라는 약칭이 처음 사용될 당시의 올바른 풀네임은?"
+}

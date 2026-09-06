@@ -1,0 +1,25 @@
+{
+  "id": "pubg-2-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "PUBG의 공식 기본 게임 모드에서 별도의 파티 유형으로 존재하지 않는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "솔로",
+    "듀오",
+    "트리오",
+    "스쿼드"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 트리오입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "PUBG의 공식 기본 게임 모드에서 별도의 파티 유형으로 존재하지 않는 것은?"
+}

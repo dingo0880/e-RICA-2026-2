@@ -1,0 +1,25 @@
+{
+  "id": "lol-3-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 레넥톤의 스킬이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 1번 이미지입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 레넥톤의 스킬이 아닌 것은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-1-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 1세대에 등장한 전설의 포켓몬이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "프리져",
+    "썬더",
+    "뮤츠",
+    "뮤"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "뮤는 전설의 포켓몬이 아니라 환상의 포켓몬으로 분류된다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 1세대에 등장한 전설의 포켓몬이 아닌 것은?"
+}

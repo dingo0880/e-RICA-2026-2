@@ -1,0 +1,25 @@
+{
+  "id": "valorant-4-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "궁극기 이름이 '신경 절도'인 요원은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "킬조이",
+    "사이퍼",
+    "데드록",
+    "체임버"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 사이퍼입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "궁극기 이름이 '신경 절도'인 요원은?"
+}

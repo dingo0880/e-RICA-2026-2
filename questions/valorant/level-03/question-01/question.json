@@ -1,0 +1,25 @@
+{
+  "id": "valorant-3-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "게코의 '지원봇'이 수행할 수 있는 특별한 행동은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "아군의 무기를 구매해 준다",
+    "스파이크를 설치하거나 해체할 수 있다",
+    "쓰러진 아군을 부활시킨다",
+    "적의 총기를 빼앗는다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 스파이크를 설치하거나 해체할 수 있다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "게코의 '지원봇'이 수행할 수 있는 특별한 행동은?"
+}

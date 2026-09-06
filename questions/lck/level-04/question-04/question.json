@@ -1,0 +1,25 @@
+{
+  "id": "lck-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "역사상 처음 열린 2025 LCK CUP의 초대 우승팀은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "T1",
+    "Gen.G",
+    "Hanwha Life Esports",
+    "Dplus KIA"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 Hanwha Life Esports입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "역사상 처음 열린 2025 LCK CUP의 초대 우승팀은?"
+}

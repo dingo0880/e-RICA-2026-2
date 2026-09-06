@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-1-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "오버워치 영웅의 기본 역할군 3가지는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "공격 / 수비 / 치유",
+    "돌격 / 공격 / 지원",
+    "전사 / 마법사 / 암살자",
+    "탱커 / 원거리 / 근거리"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 돌격 / 공격 / 지원입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "오버워치 영웅의 기본 역할군 3가지는?"
+}

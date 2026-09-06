@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-2-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "네더 포탈(지옥문)을 만들 때, 네 귀퉁이(모서리) 4칸을 비워두고 완성하기 위해 필요한 '최소 흑요석(옵시디언) 개수'는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "8개",
+    "10개",
+    "12개",
+    "14개"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 10개 (가로 2+2, 세로 3+3)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "네더 포탈(지옥문)을 만들 때, 네 귀퉁이(모서리) 4칸을 비워두고 완성하기 위해 필요한 '최소 흑요석(옵시디언) 개수'는?"
+}

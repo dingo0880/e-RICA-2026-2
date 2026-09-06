@@ -1,0 +1,25 @@
+{
+  "id": "valorant-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 요원들의 출시 순서를 오래된 순서부터 올바르게 나열한 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "킬조이 → 스카이 → 요루 → 아스트라",
+    "스카이 → 킬조이 → 아스트라 → 요루",
+    "킬조이 → 요루 → 스카이 → 아스트라",
+    "요루 → 스카이 → 킬조이 → 아스트라"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 킬조이 → 스카이 → 요루 → 아스트라입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 요원들의 출시 순서를 오래된 순서부터 올바르게 나열한 것은?"
+}

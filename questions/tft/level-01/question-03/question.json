@@ -1,0 +1,25 @@
+{
+  "id": "tft-1-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "게임 약칭인 'TFT'의 올바른 정식 풀네임은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Tactical Fight Team",
+    "Teamfight Tactics",
+    "Team Fight Tournament",
+    "Total Fight Tactics"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 Teamfight Tactics입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "게임 약칭인 'TFT'의 올바른 정식 풀네임은?"
+}

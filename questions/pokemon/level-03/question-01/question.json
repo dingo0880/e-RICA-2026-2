@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-3-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 물 타입이 아닌 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "갸라도스",
+    "파르셀",
+    "수레기",
+    "루기아"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "루기아는 에스퍼/비행 타입이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 물 타입이 아닌 포켓몬은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "lck-5-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "2022 월드 챔피언십에서 DRX가 8강 → 4강 → 결승에서 차례대로 꺾으며 우승한 팀의 순서는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "EDward Gaming → Gen.G → T1",
+    "Gen.G → EDward Gaming → T1",
+    "EDward Gaming → T1 → Gen.G",
+    "Royal Never Give Up → Gen.G → T1"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 EDward Gaming → Gen.G → T1입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "2022 월드 챔피언십에서 DRX가 8강 → 4강 → 결승에서 차례대로 꺾으며 우승한 팀의 순서는?"
+}

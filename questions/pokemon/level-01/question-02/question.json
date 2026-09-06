@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-1-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 물 타입 기술로 공격했을 때 '효과가 굉장한' 타입은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "불꽃",
+    "풀",
+    "드래곤",
+    "물"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 불꽃입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 물 타입 기술로 공격했을 때 '효과가 굉장한' 타입은?"
+}

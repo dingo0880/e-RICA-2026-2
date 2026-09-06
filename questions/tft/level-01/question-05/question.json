@@ -1,0 +1,25 @@
+{
+  "id": "tft-1-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "라운드 종료 시 최대 이자(+5골드)를 받기 위해 보유해야 하는 최소 골드는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "30골드",
+    "40골드",
+    "50골드",
+    "60골드"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 50골드입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "라운드 종료 시 최대 이자(+5골드)를 받기 위해 보유해야 하는 최소 골드는?"
+}

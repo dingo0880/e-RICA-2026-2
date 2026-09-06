@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "Pokémon Champions 기준, 다음 기술 중 브리두라스가 배울 수 없는 기술은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "악의파동",
+    "솔라빔",
+    "칼춤",
+    "냉동빔"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 냉동빔입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "Pokémon Champions 기준, 다음 기술 중 브리두라스가 배울 수 없는 기술은?"
+}

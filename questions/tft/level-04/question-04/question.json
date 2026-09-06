@@ -1,0 +1,25 @@
+{
+  "id": "tft-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "상대방이 핵심 4코스트 챔피언의 3성을 완성하는 것을 공유 기물 풀 기준으로 원천 차단하려면, 내가 최소 몇 마리를 보유하고 있어야 할까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "1마리",
+    "2마리",
+    "3마리",
+    "4마리"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 2마리입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "상대방이 핵심 4코스트 챔피언의 3성을 완성하는 것을 공유 기물 풀 기준으로 원천 차단하려면, 내가 최소 몇 마리를 보유하고 있어야 할까?"
+}

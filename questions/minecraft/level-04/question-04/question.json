@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "깊은 어둠의 보스 몬스터 '워든(Warden)'이 등장할 수 있는 위험 단계에 도달하려면, 스컬크 비명체에 의한 경고가 몇 단계까지 누적되어야 할까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "2단계",
+    "3단계",
+    "4단계",
+    "5단계"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 4단계입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "깊은 어둠의 보스 몬스터 '워든(Warden)'이 등장할 수 있는 위험 단계에 도달하려면, 스컬크 비명체에 의한 경고가 몇 단계까지 누적되어야 할까?"
+}

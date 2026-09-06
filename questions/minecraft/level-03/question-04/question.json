@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-3-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "F3 좌표창 없이 방위를 찾을 때, 플레이어 시선과 무관하게 심으면 꽃 머리가 항상 동쪽(East)을 바라보는 식물은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "튤립",
+    "수레국화",
+    "해바라기",
+    "장미덤불"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 해바라기입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "F3 좌표창 없이 방위를 찾을 때, 플레이어 시선과 무관하게 심으면 꽃 머리가 항상 동쪽(East)을 바라보는 식물은?"
+}

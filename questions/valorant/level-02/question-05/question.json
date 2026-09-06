@@ -1,0 +1,25 @@
+{
+  "id": "valorant-2-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 요원 중 역할군이 다른 셋과 다른 한 명은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "세이지",
+    "킬조이",
+    "체임버",
+    "브리치"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 브리치입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 요원 중 역할군이 다른 셋과 다른 한 명은?"
+}

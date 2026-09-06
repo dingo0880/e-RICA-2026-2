@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-5-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "엔더 진주를 던져 순간이동할 때마다 플레이어가 기본적으로 입는 피해량은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "체력 2 (하트 1칸)",
+    "체력 3 (하트 1.5칸)",
+    "체력 5 (하트 2.5칸)",
+    "체력 8 (하트 4칸)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 체력 5 (하트 2.5칸)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "엔더 진주를 던져 순간이동할 때마다 플레이어가 기본적으로 입는 피해량은?"
+}

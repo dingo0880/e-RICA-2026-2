@@ -1,0 +1,25 @@
+{
+  "id": "valorant-4-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 방어구 중 피해를 받은 뒤 일정 시간이 지나면 남아 있는 용량을 사용해 보호막을 다시 회복할 수 있는 장비는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "경형 보호막",
+    "중형 보호막",
+    "재생 보호막",
+    "전술 방탄복"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 보호막 회복입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 방어구 중 피해를 받은 뒤 일정 시간이 지나면 남아 있는 용량을 사용해 보호막을 다시 회복할 수 있는 장비는?"
+}

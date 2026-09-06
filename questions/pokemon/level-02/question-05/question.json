@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-2-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "포켓몬스터 1세대의 주요 무대가 되는 지방은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "관동지방",
+    "성도지방",
+    "호연지방",
+    "신오지방"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 관동지방입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "포켓몬스터 1세대의 주요 무대가 되는 지방은?"
+}

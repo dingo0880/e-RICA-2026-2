@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-5-4",
+  "status": "pending",
+  "layout": "text",
+  "question": "다음 이미지 속 포켓몬의 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "벰크",
+    "자포코일",
+    "테오키스",
+    "킬라플로르"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 벰크입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "[이미지 문제 - 벰크 이미지 삽입] 다음 이미지 속 포켓몬의 이름은?"
+}

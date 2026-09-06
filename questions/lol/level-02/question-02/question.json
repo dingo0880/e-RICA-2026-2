@@ -1,0 +1,25 @@
+{
+  "id": "lol-2-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "궁극기 '폭풍을 부르는 자'를 사용하는 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "케넨",
+    "볼리베어",
+    "오른",
+    "애니비아"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 볼리베어입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "궁극기 '폭풍을 부르는 자'를 사용하는 챔피언은?"
+}

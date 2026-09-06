@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-5-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "엔더 드래곤을 반복해서 처치하면 엔드 중앙 섬 주변에 하나씩 생성되는 '엔드 게이트웨이'의 최대 개수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "12개",
+    "16개",
+    "20개",
+    "24개"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "엔더 드래곤 처치에 따라 게이트웨이가 생성되며 최대 20개까지 생성된다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "엔더 드래곤을 반복해서 처치하면 엔드 중앙 섬 주변에 하나씩 생성되는 '엔드 게이트웨이'의 최대 개수는?"
+}

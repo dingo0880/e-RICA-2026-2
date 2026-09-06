@@ -1,0 +1,25 @@
+{
+  "id": "tft-4-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "리그 오브 레전드의 게임 모드로 롤토체스가 처음 출시된 연도는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "2018년",
+    "2019년",
+    "2020년",
+    "2021년"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 2019년입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "리그 오브 레전드의 게임 모드로 롤토체스가 처음 출시된 연도는?"
+}

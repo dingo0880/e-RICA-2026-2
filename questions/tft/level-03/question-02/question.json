@@ -1,0 +1,25 @@
+{
+  "id": "tft-3-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "대기석이나 상점의 기물을 즉시 판매할 때 사용하는 기본 키보드 단축키는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "D 키",
+    "F 키",
+    "E 키",
+    "R 키"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 E 키입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "대기석이나 상점의 기물을 즉시 판매할 때 사용하는 기본 키보드 단축키는?"
+}

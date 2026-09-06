@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-3-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 비행 타입이 아닌 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "파비코리",
+    "루차불",
+    "모크나이퍼",
+    "파이어로"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "일반 모크나이퍼는 풀/고스트 타입이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 비행 타입이 아닌 포켓몬은?"
+}

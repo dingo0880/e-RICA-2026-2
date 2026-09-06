@@ -1,0 +1,25 @@
+{
+  "id": "tft-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 챔피언 중 롤토체스 역사상 가장 많은 정규 세트에 등장한 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "오른",
+    "아칼리",
+    "럭스",
+    "징크스"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 징크스입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 챔피언 중 롤토체스 역사상 가장 많은 정규 세트에 등장한 챔피언은?"
+}

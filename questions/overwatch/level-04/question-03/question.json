@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-4-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 영웅 중 블랙워치의 '응징의 날(Retribution)' 작전에 참가하지 않은 영웅은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "캐서디",
+    "겐지",
+    "모이라",
+    "한조"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "당시 작전에는 가브리엘 레예스, 캐서디, 겐지, 모이라가 참가했다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 영웅 중 블랙워치의 '응징의 날(Retribution)' 작전에 참가하지 않은 영웅은?"
+}

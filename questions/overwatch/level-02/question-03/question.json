@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-2-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "루시우가 기본적으로 전환하며 사용하는 두 가지 음악 효과는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "공격력 증가 / 방어력 증가",
+    "치유 / 이동 속도 증가",
+    "공격 속도 증가 / 궁극기 충전",
+    "치유 / 탄약 자동 충전"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 치유 / 이동 속도 증가입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "루시우가 기본적으로 전환하며 사용하는 두 가지 음악 효과는?"
+}

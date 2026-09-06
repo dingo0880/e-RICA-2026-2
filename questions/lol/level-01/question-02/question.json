@@ -1,0 +1,25 @@
+{
+  "id": "lol-1-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "기본 공격에 사용하는 총에 4발만 장전되는 것으로 유명한 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "루시안",
+    "그레이브즈",
+    "진",
+    "미스 포츈"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 진입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "기본 공격에 사용하는 총에 4발만 장전되는 것으로 유명한 챔피언은?"
+}

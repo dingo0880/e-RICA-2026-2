@@ -1,0 +1,25 @@
+{
+  "id": "pubg-1-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "배틀그라운드에 최초로 등장한 근본 기본 전장(맵)의 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "미라마",
+    "에란겔",
+    "사녹",
+    "비켄디"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 에란겔입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "배틀그라운드에 최초로 등장한 근본 기본 전장(맵)의 이름은?"
+}

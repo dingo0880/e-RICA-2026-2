@@ -1,0 +1,25 @@
+{
+  "id": "lck-5-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 선수 중 프로 커리어에서 중국 LPL 팀 소속으로 활동한 적이 없는 선수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Deft",
+    "Viper",
+    "Scout",
+    "ShowMaker"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 ShowMaker입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 선수 중 프로 커리어에서 중국 LPL 팀 소속으로 활동한 적이 없는 선수는?"
+}

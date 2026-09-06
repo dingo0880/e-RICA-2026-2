@@ -1,0 +1,25 @@
+{
+  "id": "tft-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 롤토체스 역사상 현재까지 단 한 번의 정규 세트에만 등장한 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "자헨",
+    "클레드",
+    "레나타",
+    "유나라"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 자헨입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 롤토체스 역사상 현재까지 단 한 번의 정규 세트에만 등장한 챔피언은?"
+}

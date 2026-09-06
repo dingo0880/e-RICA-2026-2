@@ -1,0 +1,25 @@
+{
+  "id": "valorant-3-5",
+  "status": "pending",
+  "layout": "text",
+  "question": "다음 스킬 아이콘은 어느 요원의 궁극기일까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "제트",
+    "레이즈",
+    "네온",
+    "피닉스"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 레이즈입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "[이미지 문제 - 레이즈의 '대미 장식' 스킬 아이콘 삽입] 다음 스킬 아이콘은 어느 요원의 궁극기일까?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-1-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 포켓몬스터 1세대의 스타팅 포켓몬이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "이상해씨",
+    "파이리",
+    "꼬부기",
+    "치코리타"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 치코리타입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 포켓몬스터 1세대의 스타팅 포켓몬이 아닌 것은?"
+}

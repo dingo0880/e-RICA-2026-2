@@ -1,0 +1,25 @@
+{
+  "id": "pubg-5-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 4륜 육상 차량 중 기본 차량 내구도(HP)가 가장 낮은 차량은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "다시아(Dacia)",
+    "쿠페 RB(Coupe RB)",
+    "포니 쿠페(Pony Coupe)",
+    "필라 시큐리티 카(Pillar Security Car)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 필라 시큐리티 카입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 4륜 육상 차량 중 기본 차량 내구도(HP)가 가장 낮은 차량은?"
+}

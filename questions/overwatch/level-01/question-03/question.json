@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-1-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "거대한 로봇 슈트를 타고 전투하는 한국인 영웅은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "메이",
+    "키리코",
+    "D.Va",
+    "주노"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 D.Va입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "거대한 로봇 슈트를 타고 전투하는 한국인 영웅은?"
+}

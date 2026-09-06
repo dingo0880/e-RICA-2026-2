@@ -1,0 +1,25 @@
+{
+  "id": "tft-2-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 롤토체스의 기본 '조합 재료(하위 아이템)'가 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "루비 수정",
+    "곡궁",
+    "음전자 망토",
+    "여신의 눈물"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 루비 수정입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 롤토체스의 기본 '조합 재료(하위 아이템)'가 아닌 것은?"
+}

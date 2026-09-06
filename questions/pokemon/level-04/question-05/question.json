@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 포켓몬을 스피드 종족값이 높은 순서대로 올바르게 나열한 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "마폭시 > 한카리아스 > 메가킬라플로르 > 메가리자몽 X·Y",
+    "한카리아스 > 마폭시 > 메가킬라플로르 > 메가리자몽 X·Y",
+    "마폭시 > 메가리자몽 X·Y > 한카리아스 > 메가킬라플로르",
+    "메가킬라플로르 > 마폭시 > 한카리아스 > 메가리자몽 X·Y"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "스피드 종족값: 마폭시 104 / 한카리아스 102 / 메가킬라플로르 101 / 메가리자몽 X·Y 100",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 포켓몬을 스피드 종족값이 높은 순서대로 올바르게 나열한 것은?"
+}

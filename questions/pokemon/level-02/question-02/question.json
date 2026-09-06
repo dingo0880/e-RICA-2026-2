@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-2-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "실전배틀에서 자주 사용되는 특성 '위협'의 기본 효과는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "상대의 방어를 1랭크 낮춘다",
+    "상대의 공격을 1랭크 낮춘다",
+    "자신의 공격을 1랭크 올린다",
+    "상대의 스피드를 1랭크 낮춘다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 상대의 공격을 1랭크 낮춘다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "실전배틀에서 자주 사용되는 특성 '위협'의 기본 효과는?"
+}

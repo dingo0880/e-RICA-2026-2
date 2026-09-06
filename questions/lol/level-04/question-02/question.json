@@ -1,0 +1,25 @@
+{
+  "id": "lol-4-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 K/DA 스킨은 있지만 별 수호자 스킨은 없는 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "아리",
+    "아칼리",
+    "카이사",
+    "이블린"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 이블린입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 K/DA 스킨은 있지만 별 수호자 스킨은 없는 챔피언은?"
+}

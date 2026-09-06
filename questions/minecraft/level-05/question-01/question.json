@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "일반 좀비, 스켈레톤, 크리퍼의 '머리(장식 블록)'를 서바이벌에서 획득하기 위해 이용해야 하는 특수한 방법은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "날카로움 V 다이아 검으로 치명타 처치",
+    "약탈 III 도끼로 처치",
+    "번개를 맞은 '충전된 크리퍼'의 폭발에 몬스터를 휘말리게 해 처치",
+    "스컬크 감지체 위에서 몬스터를 처치"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 충전된 크리퍼의 폭발로 처치입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "일반 좀비, 스켈레톤, 크리퍼의 '머리(장식 블록)'를 서바이벌에서 획득하기 위해 이용해야 하는 특수한 방법은?"
+}

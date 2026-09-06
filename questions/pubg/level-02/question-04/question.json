@@ -1,0 +1,25 @@
+{
+  "id": "pubg-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 주무기 역할군 분류가 혼자 다른 총기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "UMP45",
+    "SCAR-L",
+    "M416",
+    "Mk47 뮤턴트"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 UMP45 (혼자 SMG, 나머지는 AR)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 주무기 역할군 분류가 혼자 다른 총기는?"
+}

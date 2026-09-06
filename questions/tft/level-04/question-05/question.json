@@ -1,0 +1,25 @@
+{
+  "id": "tft-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "거인의 결의 최대 중첩 효과가 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "공격력 50% 증가",
+    "주문력 50% 증가",
+    "군중 제어 면역 효과",
+    "받는 피해 10% 감소 효과"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "거인의 결의 최대 중첩 효과에 받는 피해 10% 감소 효과는 없다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "거인의 결의 최대 중첩 효과가 아닌 것은?"
+}

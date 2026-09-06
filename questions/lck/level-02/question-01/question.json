@@ -1,0 +1,25 @@
+{
+  "id": "lck-2-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "2026 시즌 T1의 바텀 라이너는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Gumayusi",
+    "Ruler",
+    "Peyz",
+    "Viper"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 Peyz입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "2026 시즌 T1의 바텀 라이너는?"
+}

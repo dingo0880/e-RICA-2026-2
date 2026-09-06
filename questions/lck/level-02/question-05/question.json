@@ -1,0 +1,25 @@
+{
+  "id": "lck-2-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "T1이 2025 월드 챔피언십까지 우승하면서 기록한 통산 월드 챔피언십 우승 횟수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "4회",
+    "5회",
+    "6회",
+    "7회"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 6회입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "T1이 2025 월드 챔피언십까지 우승하면서 기록한 통산 월드 챔피언십 우승 횟수는?"
+}

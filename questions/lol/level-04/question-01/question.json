@@ -1,0 +1,25 @@
+{
+  "id": "lol-4-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "애쉬의 패시브 스킬의 효과는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "치명타효과가 터지면 둔화효과가 적용된다",
+    "둔화효과가 적용되고 치명타확률에 비례하여 추가데미지를 넣는다",
+    "치명타확률에 비례하여 둔화효과가 강화된다",
+    "둔화된 적에게 입히는 치명타 데미지가 증가한다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 둔화효과가 적용되고 치명타확률에 비례하여 추가데미지를 넣는다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "애쉬의 패시브 스킬의 효과는?"
+}

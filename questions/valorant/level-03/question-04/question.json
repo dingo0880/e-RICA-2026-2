@@ -1,0 +1,25 @@
+{
+  "id": "valorant-3-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 사망한 이후에도 연막 스킬을 사용할 수 있는 요원은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "오멘",
+    "브림스톤",
+    "클로브",
+    "아스트라"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 클로브입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 사망한 이후에도 연막 스킬을 사용할 수 있는 요원은?"
+}

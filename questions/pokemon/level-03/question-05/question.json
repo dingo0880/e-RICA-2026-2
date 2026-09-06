@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-3-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 물고기나 수생 생물처럼 생겼지만 물 타입이 아닌 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "메깅",
+    "랜턴",
+    "시라칸",
+    "메더"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "메더는 땅/전기 타입이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 물고기나 수생 생물처럼 생겼지만 물 타입이 아닌 포켓몬은?"
+}

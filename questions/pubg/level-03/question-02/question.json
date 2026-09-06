@@ -1,0 +1,25 @@
+{
+  "id": "pubg-3-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 투척 무기 중 인벤토리 공간을 가장 많이 차지하는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "연막탄",
+    "화염병",
+    "수류탄",
+    "섬광탄"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 수류탄입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 투척 무기 중 인벤토리 공간을 가장 많이 차지하는 것은?"
+}

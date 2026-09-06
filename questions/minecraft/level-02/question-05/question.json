@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-2-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "마녀의 독, 위더 효과, 동굴 거미 중독 등 상태이상을 마시는 즉시 제거해 주는 아이템은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "꿀이 든 병",
+    "우유 양동이",
+    "버섯 스튜",
+    "황금 사과"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 우유 양동이입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "마녀의 독, 위더 효과, 동굴 거미 중독 등 상태이상을 마시는 즉시 제거해 주는 아이템은?"
+}

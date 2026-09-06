@@ -1,0 +1,25 @@
+{
+  "id": "pubg-4-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 아이템 중 가방 인벤토리 차지 용량(무게)이 가장 무거운 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "연막탄",
+    "블루존 수류탄",
+    "연료통",
+    "의료용 키트"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 블루존 수류탄입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 아이템 중 가방 인벤토리 차지 용량(무게)이 가장 무거운 것은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pubg-5-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "에란겔 본섬 남쪽, 두 개의 거대한 다리로 연결되어 있으며 군사기지가 위치한 섬의 명칭은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "자키(Zharki) 섬",
+    "프리모르스크(Primorsk) 섬",
+    "소스노브카(Sosnovka) 섬",
+    "카메슈키(Kameshki) 섬"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 소스노브카(Sosnovka) 섬입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "에란겔 본섬 남쪽, 두 개의 거대한 다리로 연결되어 있으며 군사기지가 위치한 섬의 명칭은?"
+}

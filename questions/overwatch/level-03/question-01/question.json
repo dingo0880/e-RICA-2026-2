@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-3-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "'플래시포인트(Flashpoint)' 모드에서 승리하기 위해 한 팀이 먼저 점령해야 하는 거점 수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 3개입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'플래시포인트(Flashpoint)' 모드에서 승리하기 위해 한 팀이 먼저 점령해야 하는 거점 수는?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "lol-5-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 세계관상 악마 챔피언이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "피들스틱",
+    "탐 켄치",
+    "이블린",
+    "킨드레드"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 킨드레드입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 세계관상 악마 챔피언이 아닌 것은?"
+}

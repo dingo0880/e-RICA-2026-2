@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-5-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "포켓몬스터 소드·실드에서 처음 등장한 포켓몬 중, 공식 대회에서 흔히 '초전설'이라 부르는 제한 특별 포켓몬은 총 몇 종일까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "3종",
+    "4종",
+    "5종",
+    "6종"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "자시안, 자마젠타, 무한다이노, 버드렉스가 해당한다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "포켓몬스터 소드·실드에서 처음 등장한 포켓몬 중, 공식 대회에서 흔히 '초전설'이라 부르는 제한 특별 포켓몬은 총 몇 종일까?"
+}

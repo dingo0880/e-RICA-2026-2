@@ -1,0 +1,25 @@
+{
+  "id": "pubg-1-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "수송기에서 투하되는 일반 보급상자의 위치를 공중에서 알리는 연기의 색상은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "파란색",
+    "빨간색",
+    "노란색",
+    "초록색"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 빨간색입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "수송기에서 투하되는 일반 보급상자의 위치를 공중에서 알리는 연기의 색상은?"
+}

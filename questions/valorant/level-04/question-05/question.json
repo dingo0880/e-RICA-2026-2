@@ -1,0 +1,25 @@
+{
+  "id": "valorant-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 저격소총 중 2발을 장전하며 두 발을 빠르게 연속으로 사격할 수 있는 더블 배럴 방식이 특징인 무기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "마샬",
+    "아웃로",
+    "오퍼레이터",
+    "가디언"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 아웃로입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 저격소총 중 2발을 장전하며 두 발을 빠르게 연속으로 사격할 수 있는 더블 배럴 방식이 특징인 무기는?"
+}

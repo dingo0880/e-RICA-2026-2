@@ -1,0 +1,25 @@
+{
+  "id": "lck-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "Gen.G가 2026 LCK CUP 결승에서 꺾고 우승한 상대팀은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "T1",
+    "Hanwha Life Esports",
+    "BNK FEARX",
+    "Dplus KIA"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 BNK FEARX입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "Gen.G가 2026 LCK CUP 결승에서 꺾고 우승한 상대팀은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pubg-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "부스트 게이지가 어느 구간에 도달하면 체력 회복뿐 아니라 달리기 속도 증가 효과가 처음 활성화될까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "1단계 (20%)",
+    "2단계 (60%)",
+    "3단계 (90%)",
+    "4단계 (100%)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 3단계 (90%)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "부스트 게이지가 어느 구간에 도달하면 체력 회복뿐 아니라 달리기 속도 증가 효과가 처음 활성화될까?"
+}

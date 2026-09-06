@@ -1,0 +1,25 @@
+{
+  "id": "lol-2-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 신 짜오의 궁극기 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "삼조격",
+    "풍전참뢰",
+    "무쌍돌격",
+    "현월수호"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 현월수호입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 신 짜오의 궁극기 이름은?"
+}

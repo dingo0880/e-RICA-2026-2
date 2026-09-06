@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-5-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "2016년 오버워치 1 최초 출시 당시 존재했던 전장의 총 개수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "8개",
+    "10개",
+    "12개",
+    "15개"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 12개입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "2016년 오버워치 1 최초 출시 당시 존재했던 전장의 총 개수는?"
+}

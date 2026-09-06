@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-3-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "기본 5대5 역할 고정 경기에서 한 팀의 역할별 인원 구성이 올바른 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "돌격 1 / 공격 2 / 지원 2",
+    "돌격 2 / 공격 2 / 지원 1",
+    "돌격 1 / 공격 3 / 지원 1",
+    "돌격 2 / 공격 1 / 지원 2"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 돌격 1 / 공격 2 / 지원 2입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "기본 5대5 역할 고정 경기에서 한 팀의 역할별 인원 구성이 올바른 것은?"
+}

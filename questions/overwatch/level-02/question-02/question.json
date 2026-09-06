@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-2-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "라마트라가 전투 중 사용하는 두 가지 형태의 올바른 조합은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "인간 형태 / 옴닉 형태",
+    "옴닉 형태 / 네메시스 형태",
+    "돌격 형태 / 포격 형태",
+    "기계 형태 / 인간 형태"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 옴닉 형태 / 네메시스 형태입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "라마트라가 전투 중 사용하는 두 가지 형태의 올바른 조합은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 포켓몬 중 2026년 기준 메가진화가 존재하지 않는 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "해피너스",
+    "헬가",
+    "후딘",
+    "한카리아스"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 해피너스입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 포켓몬 중 2026년 기준 메가진화가 존재하지 않는 포켓몬은?"
+}

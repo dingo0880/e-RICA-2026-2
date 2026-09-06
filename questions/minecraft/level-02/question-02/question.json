@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-2-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "초록색으로 산화된 구리 블록이 더 이상 녹슬지 않도록 현재 상태의 색상 그대로 고정(밀랍칠)하기 위해 사용하는 아이템은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "벌집 조각 (밀랍)",
+    "슬라임볼",
+    "수련잎",
+    "뼛가루"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 벌집 조각입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "초록색으로 산화된 구리 블록이 더 이상 녹슬지 않도록 현재 상태의 색상 그대로 고정(밀랍칠)하기 위해 사용하는 아이템은?"
+}

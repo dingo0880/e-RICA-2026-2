@@ -1,0 +1,25 @@
+{
+  "id": "tft-3-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "전장에서 내가 챔피언을 배치할 수 있는 내 진영의 총 육각 타일 개수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "21칸",
+    "24칸",
+    "28칸",
+    "32칸"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 28칸 (4×7)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "전장에서 내가 챔피언을 배치할 수 있는 내 진영의 총 육각 타일 개수는?"
+}

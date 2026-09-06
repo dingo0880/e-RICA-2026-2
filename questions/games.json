@@ -1,0 +1,66 @@
+[
+  {
+    "id": "lol",
+    "name": "리그 오브 레전드",
+    "english": "LEAGUE OF LEGENDS",
+    "color": "#be9854",
+    "genre": "MOBA",
+    "source": "# 리그 오브 레전드 부스 문제지.txt"
+  },
+  {
+    "id": "valorant",
+    "name": "발로란트",
+    "english": "VALORANT",
+    "color": "#f16f79",
+    "genre": "TACTICAL FPS",
+    "source": "# 발로란트 부스 문제지.txt"
+  },
+  {
+    "id": "overwatch",
+    "name": "오버워치",
+    "english": "OVERWATCH",
+    "color": "#e2a344",
+    "genre": "TEAM FPS",
+    "source": "# 오버워치 부스 문제지.txt"
+  },
+  {
+    "id": "pubg",
+    "name": "배틀그라운드",
+    "english": "PUBG",
+    "color": "#c69c4b",
+    "genre": "BATTLE ROYALE",
+    "source": "# 배틀그라운드 부스 최종 문제지.txt"
+  },
+  {
+    "id": "tft",
+    "name": "전략적 팀 전투",
+    "english": "TEAMFIGHT TACTICS",
+    "color": "#809ae6",
+    "genre": "AUTO BATTLER",
+    "source": "# 롤토체스 부스 최종 문제지.txt"
+  },
+  {
+    "id": "minecraft",
+    "name": "마인크래프트",
+    "english": "MINECRAFT",
+    "color": "#76a76c",
+    "genre": "SANDBOX",
+    "source": "# 마크 부스 문제지.txt"
+  },
+  {
+    "id": "pokemon",
+    "name": "포켓몬스터",
+    "english": "POKÉMON",
+    "color": "#d4aa3b",
+    "genre": "RPG",
+    "source": "# 포켓몬 부스 문제지.txt"
+  },
+  {
+    "id": "lck",
+    "name": "LCK",
+    "english": "LCK",
+    "color": "#9080ba",
+    "genre": "ESPORTS",
+    "source": "# LCK 부스 문제지.txt"
+  }
+]

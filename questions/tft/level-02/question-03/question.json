@@ -1,0 +1,25 @@
+{
+  "id": "tft-2-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "롤토체스에서 일반적으로 도달할 수 있는 기본 최대 레벨은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "8레벨",
+    "9레벨",
+    "10레벨",
+    "11레벨"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 10레벨입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "롤토체스에서 일반적으로 도달할 수 있는 기본 최대 레벨은?"
+}

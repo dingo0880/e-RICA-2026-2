@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-2-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "오버워치 세계관에서 겐지와 한조의 관계는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "아버지와 아들",
+    "형제",
+    "스승과 제자",
+    "과거 탈론 동료"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 형제입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "오버워치 세계관에서 겐지와 한조의 관계는?"
+}

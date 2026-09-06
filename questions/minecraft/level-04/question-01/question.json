@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-4-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "지옥 고속도로를 연결할 때, 네더에서 수평 1블록 이동하는 것은 오버월드 기준 몇 블록 이동과 같을까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "4블록",
+    "8블록",
+    "10블록",
+    "16블록"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 8블록 (1:8 축척)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "지옥 고속도로를 연결할 때, 네더에서 수평 1블록 이동하는 것은 오버월드 기준 몇 블록 이동과 같을까?"
+}

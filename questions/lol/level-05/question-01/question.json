@@ -1,0 +1,25 @@
+{
+  "id": "lol-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 레나타 글라스크의 스킬이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "악수",
+    "긴급 구제",
+    "충성 고객 우대",
+    "강제 계약"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 강제 계약입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 레나타 글라스크의 스킬이 아닌 것은?"
+}

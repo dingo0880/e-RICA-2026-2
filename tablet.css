@@ -1,0 +1,125 @@
+/* Shared media support. All asset URLs stay relative for GitHub Pages projects. */
+.image-shell{position:relative;display:block;min-width:0;padding:0;background:#f0edf4;border:1px solid #ded6e7;border-radius:5px;overflow:hidden;color:#93809f}
+.image-shell img{display:block;width:100%;height:100%;object-fit:contain}
+.media-fallback{display:none;font-size:13px;line-height:1.6;padding:16px;text-align:center}
+.media-error img{visibility:hidden}.media-error .media-fallback{display:grid;place-items:center;position:absolute;inset:0}
+.image-expand{position:absolute;right:8px;bottom:8px;background:#fcfaf5ef;border:1px solid #e0d7e9;padding:6px 9px;border-radius:3px;font-family:var(--pixel);font-size:12px;color:#867096}
+.question-content.with-image{display:grid;grid-template-columns:1fr minmax(160px,34%);align-items:center;gap:24px;margin:22px 0}
+.question-content.with-image .question-title{margin:0}
+.question-image{width:100%;height:200px;cursor:zoom-in}
+.quiz-page.quiz-image-choices{max-width:1440px}
+.image-answers{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.5vw,22px);width:100%;margin-inline:auto}
+.image-answer{display:flex;flex-direction:column;position:relative;padding:7px 30px 5px!important;justify-content:flex-start;gap:4px;min-height:0;min-width:0;isolation:isolate}
+.image-answer .answer-number{position:absolute;left:8px;top:8px;z-index:2;background:#fdfbf7ed}
+.image-answer .answer-mark{position:absolute;right:9px;top:12px;z-index:2;background:#fdfbf7}
+.image-answer .answer-visual{position:relative;inset:auto;display:block;width:100%;aspect-ratio:1;border:0;background:transparent;z-index:0;flex:0 0 auto}
+.image-answer .answer-visual img{object-fit:cover;object-position:center}
+.image-answer .empty-answer-visual{border:1px dashed #ddd4e5;background:linear-gradient(45deg,#f8f5fa 25%,transparent 25%,transparent 75%,#f8f5fa 75%),linear-gradient(45deg,#f8f5fa 25%,transparent 25%,transparent 75%,#f8f5fa 75%);background-position:0 0,8px 8px;background-size:16px 16px}
+.image-answer .answer-label{position:static;width:100%;padding:5px 2px 0;background:#fcfaf6ed;min-height:27px;text-align:center;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.image-answer.selected{outline:2px solid #a48abb;outline-offset:-2px;border-width:1px}
+.image-answer.selected .answer-label{background:#ece2f5f5;color:#72558c}
+.image-answer.selected .answer-number{background:#a187ba}
+.media-status{background:#f3e8ec;border:1px solid #e9d5de;color:#a2697e;padding:12px 16px;border-radius:4px;margin-top:14px;font-size:13px;line-height:1.7}
+.media-status[hidden]{display:none}.media-status .text-button{margin-left:12px;color:#855c90;text-decoration:underline}
+.review-image{width:120px;aspect-ratio:1;margin-bottom:8px}
+.review-image .image-expand{font-size:9px;padding:4px;bottom:4px;right:4px}
+.review-answer>div{min-width:0}.explanation-image{max-width:520px;height:250px;margin-top:14px}
+#image-dialog{width:min(1000px,94vw);max-width:94vw;max-height:94dvh;padding:18px;overflow:auto;touch-action:auto}
+.image-dialog-bar{display:flex;align-items:center;justify-content:space-between;gap:15px;font-family:var(--pixel);font-size:18px;margin-bottom:14px}
+.image-dialog-bar .button{min-height:48px;min-width:86px;font-size:16px}
+#enlarged-image{display:block;max-width:100%;max-height:70dvh;object-fit:contain;margin:auto;touch-action:pinch-zoom}
+#image-dialog>p{text-align:center;font-size:12px;margin-top:12px}
+@media(max-width:760px){.image-answers{grid-template-columns:repeat(2,minmax(0,1fr));max-width:520px}.question-content.with-image{grid-template-columns:1fr;gap:16px;margin:20px 0}.question-image{height:210px}.image-answer .answer-label{font-size:12px}.question-content.with-image .question-title{font-size:23px}.image-answers .image-answer{min-height:0}}
+
+/* Touch input: tablet controls remain comfortable even with a browser toolbar. */
+@media(pointer:coarse){
+  .game-card:hover{transform:none;box-shadow:3px 4px 0 #e9e6de}
+  .icon-button{width:48px;height:48px;font-size:25px}.header-tools{gap:8px}
+  .nav-button{min-height:48px;font-size:15px;padding:11px 24px}
+  .button{min-height:56px;font-size:19px}.text-button{min-height:44px;font-size:14px}
+  input,select{min-height:52px;font-size:16px}input::placeholder{font-size:14px}
+  .answer-option{min-height:68px;font-size:16px}.image-answer{min-height:0}
+  .fullscreen-button{display:block}.booth-status{font-size:14px}
+  .records-tabs button{min-height:48px;font-size:15px}
+  .record-filters select,.record-filters input{min-height:48px;height:48px;font-size:14px}.record-filters input::placeholder{font-size:13px}
+  .records-table th{font-size:13px}.records-table td{font-size:14px}.records-table td.record-date{font-size:12px}
+  .review summary{min-height:64px}.review-summary strong,.review-body>p{font-size:15px}
+  .review-state{font-size:13px}.review-answer{font-size:15px}.review-answer>span{font-size:13px}
+  #registration-form input{font-size:18px;min-height:56px}.privacy-note{font-size:12px}.privacy-note span{font-size:11px}
+}
+
+/* Galaxy Tab landscape. CSS pixels, not the physical 2960 x 1848 panel pixels. */
+@media(pointer:coarse) and (min-width:900px) and (orientation:landscape){
+  .site-header{height:76px;max-width:1240px;margin-inline:auto;width:calc(100% - 64px);padding:0}
+  .brand{font-size:24px}.brand-sub{font-size:10px}.brand-icon{width:40px;height:40px}
+  .site-footer{min-height:44px;width:calc(100% - 64px);padding:12px 0;margin-inline:auto;font-size:11px;max-width:1240px}
+  .site-footer>span:nth-child(2),.footer-year{font-size:10px}.footer-year{display:block}
+  main{min-height:calc(100dvh - 120px)}
+  .home-page,.games-page,.records-page{width:calc(100% - 72px);max-width:1160px;margin-inline:auto}
+  .home-page{padding:16px 0 20px}
+  .hero{min-height:0;height:auto;gap:20px}
+  .hero-copy{padding:12px 0 12px 12px}.hero-badge{font-size:11px;padding:7px 10px}
+  .hero h1{margin-top:14px}.hero-erica{font-size:clamp(64px,6.4vw,90px)}.hero-korean{font-size:clamp(52px,5.2vw,74px);margin-top:5px}
+  .hero-description{font-size:15px;line-height:1.75;margin-top:13px}.hero-description span{display:inline}
+  .start-button{width:320px;height:56px;font-size:23px;margin-top:18px}.press-start{font-size:13px;margin-top:13px}.press-english{font-size:10px;display:inline}
+  .hero-art{height:clamp(320px,calc(100dvh - 430px),440px);align-self:center}.hero-art img{width:auto;height:100%;max-width:100%;transform:none}.art-label{top:7px;right:20px;font-size:11px}.art-caption{bottom:2px;font-size:10px}
+  .how-to{margin-top:14px}.section-kicker{margin-bottom:11px}.section-kicker span:first-child{font-size:13px}.section-kicker span:last-child{font-size:12px}
+  .step-card{padding:16px 18px;gap:15px;flex-direction:row}.step-card h3{font-size:15px;margin-bottom:6px}.step-card p{font-size:12px}.step-icon{width:40px;height:40px}
+  .home-bottom{margin-top:16px;flex-wrap:nowrap;gap:22px}.game-lineup{width:auto}.game-lineup>.eyebrow{font-size:10px;max-width:105px}.game-lineup>div{gap:15px}.mini-game .game-symbol{width:26px;height:26px}
+  .record-teaser{min-width:280px;padding:12px 16px;width:auto}.record-teaser>span:nth-child(2){font-size:16px}.record-teaser span span{font-size:12px;display:block;margin:5px 0 0}
+  .games-page{position:relative;padding:16px 0 20px}
+  .games-page>.back-button{margin-bottom:8px}
+  .games-page>.flow-steps{position:absolute;top:22px;left:50%;transform:translateX(-50%);margin:0;white-space:nowrap;gap:12px}
+  .flow-steps span{font-size:13px}.flow-steps b{width:28px;height:28px;font-size:12px}.flow-steps i{width:42px}
+  .games-page .page-heading{margin-bottom:18px}.games-page .page-heading h1{font-size:30px;margin:8px 0}.games-page .page-heading p{font-size:14px}
+  .player-tag{max-width:320px;font-size:16px;padding:12px}.player-tag small{font-size:12px}
+  .games-grid{--tile-side:clamp(130px,calc((100dvh - 340px)/2),250px);grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;width:calc(var(--tile-side)*4 + 48px);max-width:100%;margin-inline:auto}
+  .game-card{padding:13px 15px}.game-card-top{font-size:11px}.game-status{font-size:10px}
+  .game-logo .game-symbol{width:clamp(44px,7dvh,72px);height:clamp(44px,7dvh,72px)}.game-logo{gap:5px;padding:5px 0}
+  .wordmark{font-size:15px}.wordmark-lol{font-size:11px}.wordmark-tft{font-size:11px}.wordmark-pubg{font-size:22px}.wordmark-minecraft{font-size:16px}.wordmark-lck{font-size:22px}
+  .game-card-bottom{justify-content:center;padding-top:10px}.game-card-bottom strong{font-size:14px}.game-card-bottom>span{display:none}.pending-game .game-status{font-size:12px}
+  .games-note{font-size:12px;margin-top:16px}.games-note>span:last-child{font-size:11px}
+  .register-page{max-width:900px;margin-inline:auto;padding:16px 0 28px;width:calc(100% - 72px)}
+  .register-page>.back-button{margin-bottom:4px}.register-page>.flow-steps{margin:0 auto 18px}
+  .register-page .page-heading h1{font-size:33px;margin:10px 0}.register-page .page-heading{margin-bottom:20px}.register-page .page-heading p{font-size:15px}
+  .registration-card{width:740px;grid-template-columns:240px 1fr;margin-top:18px}#registration-form{padding:24px 32px}
+  #registration-form input{margin-bottom:18px}#registration-form label{font-size:16px}#registration-form .button{margin-top:18px}
+  .player-card-art>span{font-size:18px}.player-card-art small{font-size:13px}
+  .under-note{margin-top:18px;font-size:11px}.under-note span{font-size:12px}
+  .quiz-page{position:relative;width:calc(100% - 72px);max-width:1160px;margin-inline:auto;padding:16px 0 20px}
+  .quiz-page.quiz-image-choices{width:calc(100% - 48px);max-width:1440px}
+  .quiz-page>.back-button{position:absolute;top:16px;left:0;margin:0}
+  .quiz-top{margin:0 0 10px 150px;min-height:44px}.quiz-game b{font-size:22px}.quiz-player{font-size:14px}.timer{font-size:15px}
+  .level-track{max-width:640px;margin:0 auto 14px}.level-node{gap:6px}.level-node>span{width:30px;height:30px;font-size:16px}.level-node small{font-size:12px}.level-track:before{top:15px}
+  .question-panel{padding:16px 22px}.question-meta{font-size:13px}.difficulty{font-size:12px;padding:6px 9px}
+  .question-content{margin:14px 0}.question-title{font-size:26px;line-height:1.5;margin:0;max-width:100%;letter-spacing:0}
+  .question-content.with-image{grid-template-columns:1fr minmax(170px,28%);gap:26px;margin:14px 0}
+  .question-image{height:clamp(100px,16dvh,155px)}
+  .answers:not(.image-answers){grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .answer-option{min-height:66px;font-size:16px;padding:14px 16px;gap:14px}
+  .answer-option.selected{padding:13px 15px}.answer-number{width:30px;height:30px;font-size:14px}.answer-mark{width:22px;height:22px}.answer-option.selected .answer-mark:after{font-size:15px;line-height:20px}
+  .quiz-image-choices .question-panel{padding-inline:clamp(20px,2.2vw,34px)}
+  .image-answers{width:100%;max-width:none;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.5vw,22px)}
+  .image-answer{min-height:0}.image-answer .answer-label{font-size:15px;min-height:31px}.image-answer .answer-visual{inset:auto}
+  .quiz-image-choices .question-bottom{margin-top:12px}
+  .question-bottom{margin-top:16px;padding-top:14px;gap:18px}.question-bottom p{font-size:13px}.question-bottom .button{min-width:192px;font-size:19px;min-height:52px}
+  .quiz-page>.under-note{margin-top:12px;font-size:10px}.quiz-page>.under-note span{font-size:11px}
+  .result-page{max-width:1040px;width:calc(100% - 72px);margin-inline:auto;padding:26px 0 36px}.result-banner h1{font-size:34px}.result-banner>p:not(.save-status){font-size:16px}
+  .score-boxes{max-width:660px}.score-boxes>div>span:first-child{font-size:15px}.score-boxes strong{font-size:48px}.save-status{font-size:14px}
+  .review-heading h2{font-size:21px}.review-heading>span{font-size:13px}.review-summary small{font-size:12px}.review-summary strong{font-size:16px}.review-body>p{font-size:15px}
+  .records-page .page-heading p{font-size:15px}.record-stats span{font-size:14px}.records-footnote{font-size:12px}
+}
+@media(pointer:coarse) and (min-width:600px) and (orientation:portrait){
+  .site-header{margin-inline:24px}.booth-status{display:none}.brand{font-size:21px}.nav-button{padding:10px 20px}
+  .home-page,.games-page,.records-page,.quiz-page,.result-page,.register-page{margin-inline:auto;width:calc(100% - 48px)}
+  .games-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:640px;margin-inline:auto}
+  .game-logo .game-symbol{width:76px;height:76px}.game-card-bottom strong{font-size:16px}
+  .games-page .page-heading{display:block}.player-tag{margin-top:18px;max-width:100%;display:inline-flex}
+  .image-answers{grid-template-columns:repeat(2,minmax(0,1fr));max-width:620px}.image-answer .answer-label{font-size:16px}
+  .question-content.with-image{grid-template-columns:1fr;gap:18px}.question-image{height:240px}.question-title{font-size:28px}
+  .question-bottom p{font-size:13px}.question-bottom .button{font-size:18px}.quiz-player{font-size:13px}
+}
+@media(pointer:coarse) and (max-width:599px){
+  .site-header{gap:6px}.nav-button{padding:10px 11px;font-size:12px}.icon-button{width:40px;height:44px;font-size:22px}.header-tools{gap:3px}.fullscreen-button{display:none}
+  .answer-option{font-size:14px}.image-answer{min-height:0}.question-bottom .button{min-height:52px;font-size:17px}
+}

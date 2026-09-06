@@ -1,0 +1,25 @@
+{
+  "id": "valorant-5-2",
+  "status": "pending",
+  "layout": "text",
+  "question": "다음 스킬 아이콘은 어느 요원의 스킬일까?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "오멘",
+    "클로브",
+    "아스트라",
+    "브림스톤"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 클로브입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "[이미지 문제 - 클로브의 '계략' 스킬 아이콘 삽입] 다음 스킬 아이콘은 어느 요원의 스킬일까?"
+}

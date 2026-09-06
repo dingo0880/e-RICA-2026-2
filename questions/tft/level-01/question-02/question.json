@@ -1,0 +1,25 @@
+{
+  "id": "tft-1-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "모든 플레이어가 기본으로 사용할 수 있는 '기본 꼬마 전설이'는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "배불뚝이",
+    "강도깨비",
+    "깃털기사",
+    "두더지광부"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 강도깨비입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "모든 플레이어가 기본으로 사용할 수 있는 '기본 꼬마 전설이'는?"
+}

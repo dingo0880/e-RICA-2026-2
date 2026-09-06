@@ -1,0 +1,25 @@
+{
+  "id": "valorant-5-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "발로란트 맵 중 궁극기 구슬이 총 4개 배치되어 있는 맵은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "헤이븐",
+    "바인드",
+    "프랙처",
+    "어센트"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "프랙처는 H자형 구조, 맵을 가로지르는 집라인과 함께 총 4개의 궁극기 구슬이 배치되어 있는 것이 특징이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "발로란트 맵 중 궁극기 구슬이 총 4개 배치되어 있는 맵은?"
+}

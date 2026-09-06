@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "네더(지옥)에 무리 지어 살며 평소엔 플레이어를 무시하지만, 한 마리를 공격하면 주변 동료들도 함께 분노해 달려드는 대표적인 중립 몬스터는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "가스트",
+    "블레이즈",
+    "좀비화 피글린",
+    "마그마 큐브"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 좀비화 피글린입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "네더(지옥)에 무리 지어 살며 평소엔 플레이어를 무시하지만, 한 마리를 공격하면 주변 동료들도 함께 분노해 달려드는 대표적인 중립 몬스터는?"
+}

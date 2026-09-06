@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-1-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "순간이동을 하는 '엔더맨'이 몸에 닿기만 해도 데미지를 입고 질색하는 자연 요소는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "물",
+    "모래",
+    "자갈",
+    "눈"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 물입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "순간이동을 하는 '엔더맨'이 몸에 닿기만 해도 데미지를 입고 질색하는 자연 요소는?"
+}

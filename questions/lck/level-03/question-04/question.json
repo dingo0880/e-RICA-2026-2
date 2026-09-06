@@ -1,0 +1,25 @@
+{
+  "id": "lck-3-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "2025 LCK 최종 우승팀은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "T1",
+    "Gen.G",
+    "Hanwha Life Esports",
+    "kt Rolster"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 Gen.G입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "2025 LCK 최종 우승팀은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-5-2",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 흔히 '준전설 포켓몬'으로 분류하지 않는 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "히드런",
+    "랜드로스",
+    "레지기가스",
+    "코스모그"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 코스모그입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 흔히 '준전설 포켓몬'으로 분류하지 않는 포켓몬은?"
+}

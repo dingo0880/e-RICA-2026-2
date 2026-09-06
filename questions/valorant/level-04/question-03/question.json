@@ -1,0 +1,25 @@
+{
+  "id": "valorant-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 요원과 출신 국가의 연결 중 잘못된 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "페이드 - 튀르키예",
+    "하버 - 인도",
+    "클로브 - 스코틀랜드",
+    "테호 - 멕시코"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "테호는 콜롬비아 출신이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 요원과 출신 국가의 연결 중 잘못된 것은?"
+}

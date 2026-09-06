@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-4-1",
+  "status": "ready",
+  "layout": "image",
+  "question": "오버워치 단편 애니메이션 '심장(Alive)'에서 샴발리의 지도자 테카르타 몬다타를 암살한 인물은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "리퍼",
+    "솜브라",
+    "위도우메이커",
+    "둠피스트"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 위도우메이커입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "오버워치 단편 애니메이션 '심장(Alive)'에서 샴발리의 지도자 테카르타 몬다타를 암살한 인물은?"
+}

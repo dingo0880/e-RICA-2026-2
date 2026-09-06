@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-5-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "모루에서 장비를 반복 수리하거나 마법책을 합치다 보면 '너무 비쌉니다!(Too Expensive!)'라는 문구가 나타난다. 이 제한이 적용되는 요구 경험치 레벨의 기준은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "30레벨 이상",
+    "35레벨 이상",
+    "40레벨 이상",
+    "50레벨 이상"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 40레벨 이상 (일반 생존에서는 39레벨까지 작업 가능)입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "모루에서 장비를 반복 수리하거나 마법책을 합치다 보면 '너무 비쌉니다!(Too Expensive!)'라는 문구가 나타난다. 이 제한이 적용되는 요구 경험치 레벨의 기준은?"
+}

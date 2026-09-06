@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-2-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "아나의 주무기인 '생체 소총'의 특징으로 올바른 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "적과 아군 모두에게 피해를 준다",
+    "아군은 치유하고 적에게는 피해를 준다",
+    "아군에게 방어막만 부여한다",
+    "적을 맞히면 즉시 잠들게 한다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 아군은 치유하고 적에게는 피해를 준다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "아나의 주무기인 '생체 소총'의 특징으로 올바른 것은?"
+}

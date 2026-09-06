@@ -1,0 +1,25 @@
+{
+  "id": "lck-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 Faker가 월드 챔피언십에 출전했지만 우승하지 못한 연도는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "2013년",
+    "2015년",
+    "2017년",
+    "2023년"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "2017 월드 챔피언십에서는 결승까지 진출했지만 Samsung Galaxy에 패배했다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 Faker가 월드 챔피언십에 출전했지만 우승하지 못한 연도는?"
+}

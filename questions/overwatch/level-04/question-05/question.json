@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 키리코의 '정화의 방울'의 기본 효과가 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "아군의 생명력을 회복한다",
+    "아군에게 걸린 해로운 효과를 정화한다",
+    "아군을 짧은 시간 동안 무적 상태로 만든다",
+    "아군의 이동 속도를 증가시킨다"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 아군의 이동 속도를 증가시킨다입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 키리코의 '정화의 방울'의 기본 효과가 아닌 것은?"
+}

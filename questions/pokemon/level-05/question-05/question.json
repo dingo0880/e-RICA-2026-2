@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-5-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 메가진화했을 때 원래 포켓몬의 타입 조합이 그대로 유지되는 포켓몬은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "전룡 → 메가전룡",
+    "쁘사이저 → 메가쁘사이저",
+    "이어롭 → 메가이어롭",
+    "이상해꽃 → 메가이상해꽃"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "이상해꽃은 풀/독 → 풀/독으로 유지된다. 메가전룡은 전기/드래곤, 메가쁘사이저는 벌레/비행, 메가이어롭은 노말/격투로 타입이 변한다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 메가진화했을 때 원래 포켓몬의 타입 조합이 그대로 유지되는 포켓몬은?"
+}

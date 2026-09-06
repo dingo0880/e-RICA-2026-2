@@ -1,0 +1,25 @@
+{
+  "id": "lol-4-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 중 프로젝트(PROJECT) 스킨이 존재하지 않는 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "야스오",
+    "바이",
+    "아칼리",
+    "요네"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 요네입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 프로젝트(PROJECT) 스킨이 존재하지 않는 챔피언은?"
+}

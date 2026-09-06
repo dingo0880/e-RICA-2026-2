@@ -1,0 +1,25 @@
+{
+  "id": "lck-5-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 선수 중 2019 LCK 서머 Griffin의 공식 선수 로스터에 등록되지 않았던 선수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Sword",
+    "Doran",
+    "Kanavi",
+    "Kabbie"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 Kanavi입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 선수 중 2019 LCK 서머 Griffin의 공식 선수 로스터에 등록되지 않았던 선수는?"
+}

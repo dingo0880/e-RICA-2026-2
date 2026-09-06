@@ -1,0 +1,25 @@
+{
+  "id": "tft-3-3",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 오른의 대장간 등에서 획득할 수 있는 '유물(Artifact)' 아이템이 아닌 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "무한한 삼위일체",
+    "리치베인",
+    "황금 징수의 총",
+    "정령의 형상"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 정령의 형상입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 오른의 대장간 등에서 획득할 수 있는 '유물(Artifact)' 아이템이 아닌 것은?"
+}

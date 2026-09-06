@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-5-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "버섯 섬에 서식하는 붉은색 '무슈룸(버섯소)'이 이것에 맞으면 갈색 무슈룸으로 변한다. 이 현상을 일으키는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "번개(벼락)",
+    "가스트의 화염구",
+    "마녀의 독 물약",
+    "드래곤의 숨결"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 번개입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "버섯 섬에 서식하는 붉은색 '무슈룸(버섯소)'이 이것에 맞으면 갈색 무슈룸으로 변한다. 이 현상을 일으키는 것은?"
+}

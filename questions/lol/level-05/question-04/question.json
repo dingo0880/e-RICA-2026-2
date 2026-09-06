@@ -1,0 +1,25 @@
+{
+  "id": "lol-5-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 애니메이션 《아케인》 시즌 1·2에 등장하지 않은 리그 오브 레전드 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "르블랑",
+    "신지드",
+    "에코",
+    "블리츠크랭크"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 블리츠크랭크입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 애니메이션 《아케인》 시즌 1·2에 등장하지 않은 리그 오브 레전드 챔피언은?"
+}

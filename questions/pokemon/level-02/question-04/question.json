@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "'메가진화' 시스템이 본가 포켓몬 시리즈에서 처음 등장한 세대는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "4세대",
+    "5세대",
+    "6세대",
+    "7세대"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 6세대입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'메가진화' 시스템이 본가 포켓몬 시리즈에서 처음 등장한 세대는?"
+}

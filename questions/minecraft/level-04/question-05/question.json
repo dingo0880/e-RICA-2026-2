@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-4-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "우민들의 마을 습격(레이드) 시 등장하며, 처치 시 목숨을 1회 살려주는 '불사의 토템'을 확정으로 드롭하는 마법사 몹은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "약탈자(Pillager)",
+    "변명자(Vindicator)",
+    "소환사(Evoker)",
+    "파괴수(Ravager)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 소환사입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "우민들의 마을 습격(레이드) 시 등장하며, 처치 시 목숨을 1회 살려주는 '불사의 토템'을 확정으로 드롭하는 마법사 몹은?"
+}

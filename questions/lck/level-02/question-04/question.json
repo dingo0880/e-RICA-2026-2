@@ -1,0 +1,25 @@
+{
+  "id": "lck-2-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 팀 중 'Ruler' 박재혁 선수가 프로 커리어에서 소속된 적이 없는 팀은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Samsung Galaxy",
+    "Gen.G",
+    "JD Gaming",
+    "Hanwha Life Esports"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 Hanwha Life Esports입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 팀 중 'Ruler' 박재혁 선수가 프로 커리어에서 소속된 적이 없는 팀은?"
+}

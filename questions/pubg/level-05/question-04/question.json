@@ -1,0 +1,25 @@
+{
+  "id": "pubg-5-4",
+  "status": "pending",
+  "layout": "text",
+  "question": "사녹 남쪽 캠프의 명칭은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Camp Charlie",
+    "Camp Alpha",
+    "Camp Bravo",
+    "Camp Beta"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 Camp Charlie입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "[이미지 문제] 사녹 남쪽 캠프의 명칭은?"
+}

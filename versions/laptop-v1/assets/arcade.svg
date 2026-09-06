@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" shape-rendering="crispEdges">
+<defs><pattern id="floor" width="44" height="24" patternUnits="userSpaceOnUse"><path d="M0 0h22v12H0zm22 12h22v12H22" fill="#e5e0ef"/></pattern></defs>
+<!-- A tiny, original pixel arcade. -->
+<path d="M98 68h336v22h34v244h-30v34H107v-30H75V98h23z" fill="#ebe5f5"/>
+<path d="M118 86h296v18h28v205h-24v25H117v-25H97V110h21z" fill="#f0ecf8"/>
+<path d="M31 337h483v17h24v40H12v-36h19z" fill="#f0ede9"/>
+<path d="M31 337h483v17h24v40H12v-36h19z" fill="url(#floor)"/>
+<path d="M165 384h224v13H165z" fill="#c9bfdc"/>
+<!-- clouds -->
+<path d="M58 141h17v-13h38v13h18v22H58zM386 99h15V85h33v14h20v20h-68z" fill="#fffdf8"/>
+<path d="M65 164h64v6H65zM394 120h54v5h-54z" fill="#ded6eb"/>
+<!-- floating window -->
+<path d="M398 194h94v7h7v65h-7v7h-94v-7h-7v-65h7z" fill="#786294"/>
+<path d="M400 198h88v64h-88z" fill="#fdfaf1"/>
+<path d="M400 198h88v15h-88z" fill="#d4c6ed"/>
+<path d="M405 203h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4z" fill="#8c76b5"/>
+<path d="M418 226h8v-6h10v6h8v10h-7v7h-11v-7h-8z" fill="#ef91a1"/>
+<path d="M453 226h25v5h-25zm0 11h16v4h-16z" fill="#c5b8d9"/>
+<!-- cabinet shadow side -->
+<path d="M193 59h142l45 29v130l-15 52v111l-32 17H193z" fill="#796097"/>
+<path d="M333 67l38 26v121l-20 52v110l-18 10z" fill="#a28ac0"/>
+<path d="M349 283h11v64h-11z" fill="#806499"/>
+<!-- cabinet face -->
+<path d="M180 60h151v9h10v143l-17 36 20 30v106H177V279l21-33-18-34z" fill="#5b496e"/>
+<path d="M189 69h142v53H189z" fill="#c4b0e5"/>
+<path d="M198 78h123v33H198z" fill="#f7d783"/>
+<path d="M203 83h113v23H203z" fill="#ffe6a0"/>
+<g fill="#695276"><path d="M211 88h14v4h-10v3h9v3h-9v3h10v4h-14zM229 94h9v4h-9zM242 88h13v4h-9v3h9v4h-5l6 6h-6l-4-5v5h-4zm17 0h4v17h-4zm8 0h14v4h-10v9h10v4h-14zm18 0h14v17h-4v-6h-6v6h-4zm4 4v4h6v-4z"/></g>
+<!-- screen enclosure -->
+<path d="M189 123h142v90l-16 30H205l-16-30z" fill="#b39cd3"/>
+<path d="M201 134h118v82H201z" fill="#79628f"/>
+<path d="M208 141h104v67H208z" fill="#334e51"/>
+<path d="M214 147h91v54h-91z" fill="#3e615e"/>
+<path d="M218 151h6v6h-6zm73 0h6v6h-6zm-68 36h5v5h-5zm67-9h5v5h-5z" fill="#88ad8a"/>
+<!-- pixel space invader on screen -->
+<path d="M241 155h6v6h24v-6h6v6h-6v6h12v6h6v18h-6v-6h-6v6h-12v-6h-12v6h-12v-6h-6v6h-6v-18h6v-6h12v-6h-6z" fill="#d7efaa"/>
+<path d="M241 171h6v6h-6zm30 0h6v6h-6z" fill="#334e51"/>
+<path d="M214 197h91v4h-91z" fill="#2e4a4e"/>
+<!-- control panel -->
+<path d="M205 222h109v18H205z" fill="#cbb7e8"/>
+<path d="M204 246h111l18 27H188z" fill="#dbcaf1"/>
+<path d="M199 252h118l10 15H194z" fill="#e7d9f8"/>
+<path d="M214 247h5v13h-5z" fill="#645171"/>
+<path d="M209 236h15v13h-15z" fill="#e78398"/>
+<path d="M209 236h11v4h-11z" fill="#f2b0bc"/>
+<path d="M258 252h12v7h-12z" fill="#8ebd9c"/>
+<path d="M279 248h12v7h-12z" fill="#e6b55d"/>
+<path d="M298 253h12v7h-12z" fill="#ec9bad"/>
+<!-- base -->
+<path d="M187 281h147v94H187z" fill="#b29ad2"/>
+<path d="M197 291h127v73H197z" fill="#c4afe1"/>
+<path d="M249 299h30v35h-30z" fill="#8a70a6"/>
+<path d="M256 306h16v4h-16z" fill="#4f405f"/>
+<path d="M256 319h16v8h-16z" fill="#b8a3d0"/>
+<path d="M207 349h37v4h-37zm0 7h37v4h-37z" fill="#a38abf"/>
+<path d="M187 375h147v8H187z" fill="#8d74aa"/>
+<!-- foreground plant -->
+<path d="M103 329h41v10h-4v39h-33v-39h-4z" fill="#c99977"/>
+<path d="M109 342h25v29h-25z" fill="#deb496"/>
+<path d="M121 290h7v40h-7z" fill="#679178"/>
+<path d="M103 294h18v9h7v18h-13v-9h-12z" fill="#8fb297"/>
+<path d="M128 283h21v18h-9v9h-13z" fill="#79a587"/>
+<path d="M114 273h14v21h-14z" fill="#a0c3a1"/>
+<!-- floating coin -->
+<path d="M110 210h25v6h7v33h-7v6h-25v-6h-7v-33h7z" fill="#c99a4f"/>
+<path d="M110 214h20v6h7v24h-7v6h-20v-6h-4v-24h4z" fill="#f3d48a"/>
+<path d="M119 221h6v22h-6z" fill="#d3a54f"/>
+<!-- floor gamepad -->
+<path d="M391 333h59v8h10v31h-8v8h-15v-9h-31v9h-15v-8h-8v-31h8z" fill="#79698e"/>
+<path d="M393 339h55v7h6v24h-13v-9h-39v9h-13v-24h4z" fill="#d9cee8"/>
+<path d="M402 345h6v6h6v6h-6v6h-6v-6h-6v-6h6z" fill="#827294"/>
+<path d="M435 347h7v7h-7z" fill="#e69aab"/><path d="M444 356h7v7h-7z" fill="#a2b89d"/>
+<!-- sparkle and pixel confetti -->
+<path d="M359 36h6v11h11v6h-11v11h-6V53h-11v-6h11zM63 244h5v8h8v5h-8v8h-5v-8h-8v-5h8z" fill="#ac92ca"/>
+<path d="M455 147h5v8h8v5h-8v8h-5v-8h-8v-5h8zM151 42h5v6h6v5h-6v6h-5v-6h-6v-5h6z" fill="#dfb65f"/>
+<path d="M80 207h6v6h-6zm352 94h7v7h-7zm-281-98h5v5h-5zm243-51h5v5h-5z" fill="#bba7d4"/>
+</svg>

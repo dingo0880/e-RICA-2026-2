@@ -1,0 +1,25 @@
+{
+  "id": "lol-1-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 키가 작은 챔피언들 가운데 요들이 아닌 챔피언은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "티모",
+    "룰루",
+    "피즈",
+    "니코"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 니코입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 키가 작은 챔피언들 가운데 요들이 아닌 챔피언은?"
+}

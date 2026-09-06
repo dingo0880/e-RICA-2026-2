@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-3-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "좀비로 변해버린 주민을 다시 정상적인 마을 주민으로 치료하기 위해 필요한 2가지 아이템 조합은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "나약함의 투척용 물약 + 황금 사과",
+    "치유의 물약 + 일반 사과",
+    "힘의 물약 + 에메랄드",
+    "재생의 물약 + 황금 당근"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 나약함의 투척용 물약 + 황금 사과입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "좀비로 변해버린 주민을 다시 정상적인 마을 주민으로 치료하기 위해 필요한 2가지 아이템 조합은?"
+}

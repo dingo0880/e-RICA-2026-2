@@ -1,0 +1,246 @@
+# LCK 부스 문제지
+
+## [난이도 1: 입문]
+
+* **1번:** 'Faker' 이상혁 선수의 포지션은?
+
+  ① 탑
+  ② 정글
+  **③ 미드**
+  ④ 서포터
+
+  *정답: ③ 미드*
+
+* **2번:** 'Chovy' 정지훈 선수의 현재 소속팀은?
+
+  ① T1
+  **② Gen.G**
+  ③ Hanwha Life Esports
+  ④ Dplus KIA
+
+  *정답: ② Gen.G*
+
+* **3번:** 'Ruler' 박재혁 선수의 포지션은?
+
+  ① 탑
+  ② 정글
+  ③ 미드
+  **④ 바텀**
+
+  *정답: ④ 바텀*
+
+* **4번:** 2026 LCK CUP 우승팀은?
+
+  ① T1
+  **② Gen.G**
+  ③ Hanwha Life Esports
+  ④ Dplus KIA
+
+  *정답: ② Gen.G*
+
+* **5번:** T1의 'Keria' 류민석 선수의 포지션은?
+
+  ① 탑
+  ② 정글
+  ③ 바텀
+  **④ 서포터**
+
+  *정답: ④ 서포터*
+
+---
+
+## [난이도 2: 초급]
+
+* **1번:** 2026 시즌 T1의 바텀 라이너는?
+
+  ① Gumayusi
+  ② Ruler
+  **③ Peyz**
+  ④ Viper
+
+  *정답: ③ Peyz*
+
+* **2번:** 다음 중 2026 시즌 Hanwha Life Esports 소속 선수가 아닌 선수는?
+
+  ① Zeus
+  ② Kanavi
+  ③ Zeka
+  **④ Oner**
+
+  *정답: ④ Oner*
+
+* **3번:** 다음 중 **2023 월드 챔피언십 T1 우승 기념 스킨이 아닌 것**은?
+
+  ① T1 제이스
+  ② T1 리 신
+  ③ T1 오리아나
+  **④ T1 파이크**
+
+  *정답: ④ T1 파이크*
+
+* **4번:** 다음 팀 중 'Ruler' 박재혁 선수가 프로 커리어에서 소속된 적이 없는 팀은?
+
+  ① Samsung Galaxy
+  ② Gen.G
+  ③ JD Gaming
+  **④ Hanwha Life Esports**
+
+  *정답: ④ Hanwha Life Esports*
+
+* **5번:** T1이 2025 월드 챔피언십까지 우승하면서 기록한 통산 월드 챔피언십 우승 횟수는?
+
+  ① 4회
+  ② 5회
+  **③ 6회**
+  ④ 7회
+
+  *정답: ③ 6회*
+
+---
+
+## [난이도 3: 중급]
+
+* **1번:** Faker가 기록하고 있는 LCK 우승 횟수는?
+
+  ① 7회
+  ② 8회
+  ③ 9회
+  **④ 10회**
+
+  *정답: ④ 10회*
+
+* **2번:** LoL e스포츠 팬들 사이에서 유명한 숫자 **'1557'**은 어느 경기에서 유래한 밈일까?
+
+  ① 2018 월즈 KT vs IG
+  **② 2019 MSI SKT vs IG**
+  ③ 2020 월즈 DWG vs SN
+  ④ 2022 월즈 T1 vs DRX
+
+  *정답: ② 2019 MSI SKT vs IG*
+
+* **3번:** 다음 중 **2022 월드 챔피언십 DRX 우승 기념 스킨이 아닌 것**은?
+
+  ① DRX 아트록스
+  ② DRX 킨드레드
+  ③ DRX 아칼리
+  **④ DRX 바루스**
+
+  *정답: ④ DRX 바루스*
+
+* **4번:** 2025 LCK 최종 우승팀은?
+
+  ① T1
+  **② Gen.G**
+  ③ Hanwha Life Esports
+  ④ kt Rolster
+
+  *정답: ② Gen.G*
+
+* **5번:** 다음 중 **2025 월드 챔피언십 T1 우승 기념 스킨이 아닌 것**은?
+
+  ① T1 암베사
+  ② T1 신 짜오
+  ③ T1 갈리오
+  **④ T1 요네**
+
+  *정답: ④ T1 요네*
+
+---
+
+## [난이도 4: 상급]
+
+* **1번:** 커뮤니티에서 쵸비의 과거 월드 챔피언십 성적을 나타내는 숫자 밈 **'88848'**이 의미하는 것은?
+
+  **① 8강 → 8강 → 8강 → 4강 → 8강**
+  ② 8강 → 8강 → 4강 → 8강 → 8강
+  ③ 8강 → 4강 → 8강 → 4강 → 8강
+  ④ 4강 → 8강 → 8강 → 8강 → 4강
+
+  *정답: ① 8강 → 8강 → 8강 → 4강 → 8강*
+
+* **2번:** LCK 역사상 최초로 정규 시즌을 **18승 0패 전승**으로 마친 팀은?
+
+  **① T1**
+  ② Gen.G
+  ③ DAMWON Gaming
+  ④ Griffin
+
+  *정답: ① T1*
+  *2022 LCK 스프링에서 18승 0패를 기록했다.*
+
+* **3번:** 다음 중 **2024 월드 챔피언십 T1 우승 기념 스킨이 아닌 것**은?
+
+  ① T1 나르
+  ② T1 바이
+  ③ T1 요네
+  **④ T1 오리아나**
+
+  *정답: ④ T1 오리아나*
+
+* **4번:** 역사상 처음 열린 **2025 LCK CUP의 초대 우승팀**은?
+
+  ① T1
+  ② Gen.G
+  **③ Hanwha Life Esports**
+  ④ Dplus KIA
+
+  *정답: ③ Hanwha Life Esports*
+
+* **5번:** Gen.G가 2026 LCK CUP 결승에서 꺾고 우승한 상대팀은?
+
+  ① T1
+  ② Hanwha Life Esports
+  **③ BNK FEARX**
+  ④ Dplus KIA
+
+  *정답: ③ BNK FEARX*
+
+---
+
+## [난이도 5: 극악] 찐 LCK 고인물 & 한국 롤판 서사
+
+* **1번:** 다음 중 **Faker가 월드 챔피언십에 출전했지만 우승하지 못한 연도**는?
+
+  ① 2013년
+  ② 2015년
+  **③ 2017년**
+  ④ 2023년
+
+  *정답: ③ 2017년*
+  *2017 월드 챔피언십에서는 결승까지 진출했지만 Samsung Galaxy에 패배했다.*
+
+* **2번:** 2022 월드 챔피언십에서 DRX가 **8강 → 4강 → 결승**에서 차례대로 꺾으며 우승한 팀의 순서는?
+
+  **① EDward Gaming → Gen.G → T1**
+  ② Gen.G → EDward Gaming → T1
+  ③ EDward Gaming → T1 → Gen.G
+  ④ Royal Never Give Up → Gen.G → T1
+
+  *정답: ① EDward Gaming → Gen.G → T1*
+
+* **3번:** 다음 선수 중 프로 커리어에서 **중국 LPL 팀 소속으로 활동한 적이 없는 선수**는?
+
+  ① Deft
+  ② Viper
+  ③ Scout
+  **④ ShowMaker**
+
+  *정답: ④ ShowMaker*
+
+* **4번:** 다음 선수 중 **2019 LCK 서머 Griffin의 공식 선수 로스터에 등록되지 않았던 선수**는?
+
+  ① Sword
+  ② Doran
+  **③ Kanavi**
+  ④ Kabbie
+
+  *정답: ③ Kanavi*
+
+* **5번:** 다음 중 **2020 월드 챔피언십 우승 당시 DAMWON Gaming의 주전 5인 로스터**가 올바른 것은?
+
+  **① Nuguri / Canyon / ShowMaker / Ghost / BeryL**
+  ② Khan / Canyon / ShowMaker / Ghost / BeryL
+  ③ Nuguri / Canyon / ShowMaker / deokdam / BeryL
+  ④ Nuguri / Canyon / ShowMaker / Ghost / Kellin
+
+  *정답: ① Nuguri / Canyon / ShowMaker / Ghost / BeryL*

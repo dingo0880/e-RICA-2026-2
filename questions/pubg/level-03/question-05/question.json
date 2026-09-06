@@ -1,0 +1,25 @@
+{
+  "id": "pubg-3-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 총기 중 장착 가능한 총기 부착물 슬롯의 종류 수가 혼자 다른 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "K2",
+    "AKM",
+    "UMP45",
+    "S12K"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 UMP45입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 총기 중 장착 가능한 총기 부착물 슬롯의 종류 수가 혼자 다른 것은?"
+}

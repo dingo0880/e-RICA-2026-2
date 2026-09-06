@@ -1,0 +1,25 @@
+{
+  "id": "lck-1-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "'Chovy' 정지훈 선수의 현재 소속팀은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "T1",
+    "Gen.G",
+    "Hanwha Life Esports",
+    "Dplus KIA"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 Gen.G입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'Chovy' 정지훈 선수의 현재 소속팀은?"
+}

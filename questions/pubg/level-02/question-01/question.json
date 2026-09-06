@@ -1,0 +1,25 @@
+{
+  "id": "pubg-2-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "다음 지정사수소총(DMR) 중 혼자 7.62mm 탄약을 사용하는 총기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Mini14",
+    "Mk12",
+    "SLR",
+    "VSS"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 SLR입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 지정사수소총(DMR) 중 혼자 7.62mm 탄약을 사용하는 총기는?"
+}

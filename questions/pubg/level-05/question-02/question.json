@@ -1,0 +1,25 @@
+{
+  "id": "pubg-5-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "2026년 업데이트 이후 일반 월드 스폰 목록에서 제거된 총기는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "Mini14",
+    "모신나강(Mosin Nagant)",
+    "S12K",
+    "Vector"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 모신나강입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "2026년 업데이트 이후 일반 월드 스폰 목록에서 제거된 총기는?"
+}

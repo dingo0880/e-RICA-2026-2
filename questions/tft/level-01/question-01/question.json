@@ -1,0 +1,25 @@
+{
+  "id": "tft-1-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "롤토체스 한 판에 참여하는 총 플레이어 수는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "4명",
+    "6명",
+    "8명",
+    "10명"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 8명입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "롤토체스 한 판에 참여하는 총 플레이어 수는?"
+}

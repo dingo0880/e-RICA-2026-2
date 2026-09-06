@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-1-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "트레이서의 궁극기 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "전술 조준경",
+    "용검",
+    "펄스 폭탄",
+    "황야의 무법자"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 펄스 폭탄입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "트레이서의 궁극기 이름은?"
+}

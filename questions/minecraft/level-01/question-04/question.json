@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-1-4",
+  "status": "ready",
+  "layout": "image",
+  "question": "다이아몬드 원석을 파괴했을 때 정상적으로 다이아를 얻을 수 있는 '최소 등급 곡괭이'는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "나무 곡괭이",
+    "돌 곡괭이",
+    "철 곡괭이",
+    "금 곡괭이"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 철 곡괭이입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다이아몬드 원석을 파괴했을 때 정상적으로 다이아를 얻을 수 있는 '최소 등급 곡괭이'는?"
+}

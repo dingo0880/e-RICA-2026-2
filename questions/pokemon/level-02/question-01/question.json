@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-2-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "한카리아스의 타입 조합은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "드래곤 / 바위",
+    "드래곤 / 땅",
+    "드래곤 / 악",
+    "땅 / 악"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 드래곤 / 땅입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "한카리아스의 타입 조합은?"
+}

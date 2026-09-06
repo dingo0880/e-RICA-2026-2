@@ -1,0 +1,25 @@
+{
+  "id": "lol-4-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "아펠리오스에게 다섯 가지 루나리 무기를 전달하고 그를 인도하는 쌍둥이 여동생의 이름은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "세나",
+    "미히라",
+    "알룬",
+    "다이애나"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 3,
+  "explanation": "정답은 알룬입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "아펠리오스에게 다섯 가지 루나리 무기를 전달하고 그를 인도하는 쌍둥이 여동생의 이름은?"
+}

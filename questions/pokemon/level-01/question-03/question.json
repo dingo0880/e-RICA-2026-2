@@ -1,0 +1,25 @@
+{
+  "id": "pokemon-1-3",
+  "status": "ready",
+  "layout": "text",
+  "question": "팬텀의 타입 조합은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "악 / 고스트",
+    "고스트 / 독",
+    "고스트 / 에스퍼",
+    "독 / 악"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 고스트 / 독입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "팬텀의 타입 조합은?"
+}

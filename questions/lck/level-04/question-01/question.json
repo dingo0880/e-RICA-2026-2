@@ -1,0 +1,25 @@
+{
+  "id": "lck-4-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "커뮤니티에서 쵸비의 과거 월드 챔피언십 성적을 나타내는 숫자 밈 '88848'이 의미하는 것은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "8강 → 8강 → 8강 → 4강 → 8강",
+    "8강 → 8강 → 4강 → 8강 → 8강",
+    "8강 → 4강 → 8강 → 4강 → 8강",
+    "4강 → 8강 → 8강 → 8강 → 4강"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 8강 → 8강 → 8강 → 4강 → 8강입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "커뮤니티에서 쵸비의 과거 월드 챔피언십 성적을 나타내는 숫자 밈 '88848'이 의미하는 것은?"
+}

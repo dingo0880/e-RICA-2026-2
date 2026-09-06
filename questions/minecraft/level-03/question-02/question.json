@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-3-2",
+  "status": "ready",
+  "layout": "text",
+  "question": "검이나 도끼에 붙일 수 있는 인챈트 '강타(Smite)'와 일반적인 방법으로 동시에 붙일 수 없는 인챈트는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "날카로움(Sharpness)",
+    "내구성(Unbreaking)",
+    "약탈(Looting)",
+    "수선(Mending)"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "강타는 날카로움 및 살충과 서로 배타적인 인챈트이다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "검이나 도끼에 붙일 수 있는 인챈트 '강타(Smite)'와 일반적인 방법으로 동시에 붙일 수 없는 인챈트는?"
+}

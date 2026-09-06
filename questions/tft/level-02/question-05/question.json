@@ -1,0 +1,25 @@
+{
+  "id": "tft-2-5",
+  "status": "ready",
+  "layout": "image",
+  "question": "다음 중 '음전자 망토'가 조합 재료로 들어가지 않는 완성 아이템은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "피바라기",
+    "이온 충격기",
+    "가고일 돌갑옷",
+    "크라운가드"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 크라운가드입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "다음 중 '음전자 망토'가 조합 재료로 들어가지 않는 완성 아이템은?"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pubg-3-4",
+  "status": "ready",
+  "layout": "text",
+  "question": "총구 부착물인 '제동기(Muzzle Brake)'가 다른 총구류와 특히 차별화되는 핵심 효과는?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "사격 시 화면 흔들림(카메라 흔들림) 제어",
+    "격발음 완전 제거",
+    "탄속 증가",
+    "총구 화염 완전 제거"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 1,
+  "explanation": "정답은 사격 시 화면 흔들림 제어입니다.",
+  "explanationImage": "",
+  "requiresImage": true,
+  "sourceQuestion": "총구 부착물인 '제동기(Muzzle Brake)'가 다른 총구류와 특히 차별화되는 핵심 효과는?"
+}

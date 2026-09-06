@@ -1,0 +1,25 @@
+{
+  "id": "lck-1-5",
+  "status": "ready",
+  "layout": "text",
+  "question": "T1의 'Keria' 류민석 선수의 포지션은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "탑",
+    "정글",
+    "바텀",
+    "서포터"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 4,
+  "explanation": "정답은 서포터입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "T1의 'Keria' 류민석 선수의 포지션은?"
+}

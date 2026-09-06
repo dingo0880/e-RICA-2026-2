@@ -1,0 +1,25 @@
+{
+  "id": "overwatch-5-1",
+  "status": "ready",
+  "layout": "text",
+  "question": "'밀기(Push)' 모드에서 양 팀의 바리케이드를 밀어주는 중앙 로봇의 공식 명칭은?",
+  "image": "",
+  "imageAlt": "",
+  "options": [
+    "OR-15",
+    "TS-1",
+    "E54",
+    "OR-14"
+  ],
+  "optionImages": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "answer": 2,
+  "explanation": "정답은 TS-1입니다.",
+  "explanationImage": "",
+  "requiresImage": false,
+  "sourceQuestion": "'밀기(Push)' 모드에서 양 팀의 바리케이드를 밀어주는 중앙 로봇의 공식 명칭은?"
+}
