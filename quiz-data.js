@@ -5019,10 +5019,10 @@ window.QUIZ_DATA = [
           "layout": "text",
           "question": "LoL e스포츠 팬들 사이에서 유명한 숫자 '1557'은 어느 경기에서 유래한 밈일까?",
           "options": [
-            "2018 월즈 KT vs IG",
+            "2019 MSI SKT vs G2",
             "2019 MSI SKT vs IG",
-            "2020 월즈 DWG vs SN",
-            "2022 월즈 T1 vs DRX"
+            "2022 월즈 T1 vs DRX",
+            "2023 월즈 T1 vs JDG"
           ],
           "answer": 1,
           "explanation": "정답은 2019 MSI SKT vs IG입니다.",
@@ -5123,15 +5123,15 @@ window.QUIZ_DATA = [
           "id": "lck-4-1",
           "level": 4,
           "layout": "text",
-          "question": "커뮤니티에서 쵸비의 과거 월드 챔피언십 성적을 나타내는 숫자 밈 '88848'이 의미하는 것은?",
+          "question": "쵸비의 2019년부터 2023년까지 월드 챔피언십 최종 성적을 순서대로 숫자로 표현한 것은?",
           "options": [
-            "8강 → 8강 → 8강 → 4강 → 8강",
-            "8강 → 8강 → 4강 → 8강 → 8강",
-            "8강 → 4강 → 8강 → 4강 → 8강",
-            "4강 → 8강 → 8강 → 8강 → 4강"
+            "88848",
+            "88488",
+            "84888",
+            "48888"
           ],
           "answer": 0,
-          "explanation": "정답은 8강 → 8강 → 8강 → 4강 → 8강입니다.",
+          "explanation": "정답은 88848입니다.",
           "image": "",
           "imageAlt": "문제 이미지",
           "optionImages": [
