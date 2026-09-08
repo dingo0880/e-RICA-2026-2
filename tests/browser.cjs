@@ -98,6 +98,28 @@ fs.mkdirSync(out, { recursive: true });
     await page.click('.nav-button[data-action="home"]');
     await page.screenshot({ path: path.join(out, '08-home-mobile.png'), fullPage: true });
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    // Record mode counts down from three minutes and auto-submits unanswered questions at zero.
+    const timedContext = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+    await timedContext.addInitScript(() => { window.__QUIZ_RECORD_LIMIT_SECONDS__ = 2; });
+    const timed = await timedContext.newPage();
+    await timed.goto('http://127.0.0.1:4173');
+    await timed.click('[data-action="start"][data-mode="record"]');
+    await timed.fill('#player-name', '시간초과');
+    await timed.fill('#player-department', '타이머학과');
+    await timed.click('#registration-form button');
+    await timed.click('[data-game="lck"]');
+    assert.equal(await timed.locator('#timer').getAttribute('data-countdown'), 'true');
+    assert.match(await timed.locator('#timer').textContent(), /^00:0[12]$/);
+    await timed.click('[data-option="0"]');
+    await timed.locator('.result-page').waitFor({ timeout: 5000 });
+    assert.match(await timed.locator('.timeout-notice').textContent(), /3분.*오답/);
+    assert.match(await timed.locator('.score-correct strong').textContent(), /^0/);
+    assert.equal(await timed.locator('.reviews details').count(), 25);
+    assert.equal(await timed.locator('.review-answer .red-text').filter({ hasText: '미응답' }).count(), 25);
+    const timedRecord = await timed.evaluate(() => JSON.parse(localStorage.getItem('erica.quiz.records.v1'))[0]);
+    assert.equal(timedRecord.timedOut, true);
+    assert.equal(timedRecord.elapsed, 2);
+    await timedContext.close();
     // Record mode uses all 25 questions and has its own leaderboard tab.
     await page.click('.nav-button[data-action="home"]');
     await page.click('[data-action="start"][data-mode="record"]');

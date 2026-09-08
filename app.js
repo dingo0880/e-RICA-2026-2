@@ -4,12 +4,17 @@
   const C = window.QuizCore;
   const app = document.querySelector('#app');
   const levelNames = ['입문', '초급', '중급', '상급', '극악'];
-  const state = { screen: 'home', mode: 'quick', recordMode: 'quick', participant: null, game: null, questions: [], answers: [], selected: null, index: 0, started: 0, record: null, saved: false, backedUp: false, filter: 'all', order: 'rank', search: '', sound: true };
+  const state = { screen: 'home', mode: 'quick', recordMode: 'quick', participant: null, game: null, questions: [], answers: [], selected: null, index: 0, started: 0, record: null, saved: false, backedUp: false, timedOut: false, filter: 'all', order: 'rank', search: '', sound: true };
   let audioContext, toastTimeout;
   state.mediaReady = true;
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const pad = n => String(n).padStart(2, '0');
   const timeLabel = seconds => `${pad(Math.floor(seconds / 60))}:${pad(Math.floor(seconds % 60))}`;
+  const configuredRecordLimit = Number(window.__QUIZ_RECORD_LIMIT_SECONDS__);
+  const RECORD_LIMIT_SECONDS = Number.isFinite(configuredRecordLimit) && configuredRecordLimit > 0 ? configuredRecordLimit : 180;
+  const elapsedSeconds = () => Math.max(0, (Date.now() - state.started) / 1000);
+  const remainingRecordSeconds = () => Math.max(0, Math.ceil(RECORD_LIMIT_SECONDS - elapsedSeconds()));
+  const timerSeconds = () => state.mode === 'record' ? remainingRecordSeconds() : elapsedSeconds();
   const gameById = id => games.find(g => g.id === id);
   const modeLabel = mode => mode === 'record' ? '기록 모드' : '일반 모드';
   const questionTotal = () => state.questions.length;
@@ -100,7 +105,7 @@
         <div class="hero-copy"><span class="eyebrow hero-badge"><span class="tiny-square"></span> NEW PLAYER WANTED!</span>
           <h1><span class="hero-erica">E-RICA<span class="title-spark">✦</span></span><span class="hero-korean">가두모집<span class="title-exclamation">!</span></span></h1>
           <p class="hero-description">게임 좀 한다는 당신, <span>퀴즈도 자신 있나요?</span><br>취향에 맞는 게임을 고르고 실력을 보여주세요.</p>
-          <div class="mode-start-buttons"><button class="button primary start-button" data-action="start" data-mode="quick">${pixel('controller')} 일반 모드 <small>10문제</small> ${pixel('arrow')}</button><button class="button secondary record-mode-button" data-action="start" data-mode="record">${pixel('trophy')} 기록 모드 <small>25문제</small></button></div>
+          <div class="mode-start-buttons"><button class="button primary start-button" data-action="start" data-mode="quick">${pixel('controller')} 일반 모드 <small>10문제</small> ${pixel('arrow')}</button><button class="button secondary record-mode-button" data-action="start" data-mode="record">${pixel('trophy')} 기록 모드 <small>25문제 · 3분</small></button></div>
           <p class="press-start"><span class="blinking-square"></span> 화면을 눌러주세요 <span class="press-english">PRESS START</span></p>
         </div>
         <div class="hero-art" aria-hidden="true"><span class="art-label">1 PLAYER · INFINITE FUN</span><img src="assets/arcade.svg" alt="" draggable="false"><span class="art-caption"><span class="green-dot"></span> READY WHEN YOU ARE.</span></div>
@@ -114,11 +119,11 @@
   const back = (action = 'home', label = '메인으로') => `<button class="text-button back-button" data-action="${action}">← ${label}</button>`;
   const stepBar = current => `<div class="flow-steps" aria-label="진행 단계">${['플레이어 등록', '게임 선택', '퀴즈 도전'].map((s, i) => `<span class="${i === current ? 'current' : i < current ? 'done' : ''}"><b>${i < current ? '✓' : pad(i + 1)}</b>${s}</span>`).join('<i></i>')}</div>`;
   function registerScreen() {
-    return `<section class="register-page">${back()}${stepBar(0)}<div class="page-heading centered"><span class="eyebrow">${state.mode === 'record' ? 'RECORD CHALLENGE · 25 QUESTIONS' : 'QUICK PLAY · 10 QUESTIONS'}</span><h1>플레이어를 등록해주세요<span class="accent">.</span></h1><p>${modeLabel(state.mode)}에 참가할 이름과 학과를 입력해주세요.</p></div><div class="registration-card"><div class="player-card-art">${pixel('invader')}<span>PLAYER 01</span><small>${state.mode === 'record' ? '25문제 기록에 도전!' : '오늘의 주인공은 바로 당신!'}</small><div class="pixel-sparkles">+ &nbsp; · &nbsp; +</div></div><form id="registration-form"><label for="player-name">이름 <span>필수</span></label><input id="player-name" name="playerName" placeholder="예: 홍길동" required maxlength="20" autocomplete="off" value="${esc(state.participant?.name || '')}"><label for="player-department">학과 <span>필수</span></label><input id="player-department" name="department" placeholder="예: 컴퓨터공학과" required maxlength="40" autocomplete="off" value="${esc(state.participant?.department || '')}"><p class="privacy-note">${pixel('heart')} 기록에는 이름이 <b>홍*동</b>처럼 가려져요.<br><span>이 기기의 브라우저에 이름(가림)과 학과, 점수를 저장해요.</span></p><button class="button primary" type="submit">게임 선택하기 ${pixel('arrow')}</button></form></div><p class="under-note">${state.mode === 'record' ? 'ALL 25 QUESTIONS. ONE RECORD.' : 'NO PRESSURE. JUST PLAY.'} <span>${state.mode === 'record' ? '한 게임의 모든 문제를 풀어요.' : '잘 몰라도 괜찮아요, 즐기면 그만!'}</span></p></section>`;
+    return `<section class="register-page">${back()}${stepBar(0)}<div class="page-heading centered"><span class="eyebrow">${state.mode === 'record' ? 'RECORD CHALLENGE · 25 QUESTIONS · 03:00' : 'QUICK PLAY · 10 QUESTIONS'}</span><h1>플레이어를 등록해주세요<span class="accent">.</span></h1><p>${modeLabel(state.mode)}에 참가할 이름과 학과를 입력해주세요.</p></div><div class="registration-card"><div class="player-card-art">${pixel('invader')}<span>PLAYER 01</span><small>${state.mode === 'record' ? '25문제를 3분 안에!' : '오늘의 주인공은 바로 당신!'}</small><div class="pixel-sparkles">+ &nbsp; · &nbsp; +</div></div><form id="registration-form"><label for="player-name">이름 <span>필수</span></label><input id="player-name" name="playerName" placeholder="예: 홍길동" required maxlength="20" autocomplete="off" value="${esc(state.participant?.name || '')}"><label for="player-department">학과 <span>필수</span></label><input id="player-department" name="department" placeholder="예: 컴퓨터공학과" required maxlength="40" autocomplete="off" value="${esc(state.participant?.department || '')}"><p class="privacy-note">${pixel('heart')} 기록에는 이름이 <b>홍*동</b>처럼 가려져요.<br><span>이 기기의 브라우저에 이름(가림)과 학과, 점수를 저장해요.</span></p><button class="button primary" type="submit">게임 선택하기 ${pixel('arrow')}</button></form></div><p class="under-note">${state.mode === 'record' ? 'ALL 25 QUESTIONS. ONE RECORD.' : 'NO PRESSURE. JUST PLAY.'} <span>${state.mode === 'record' ? '3분 안에 한 게임의 모든 문제를 풀어요.' : '잘 몰라도 괜찮아요, 즐기면 그만!'}</span></p></section>`;
   }
   function gamesScreen() {
-    const description = state.mode === 'record' ? '한 게임의 25문제 전체를 풀고 기록 모드 순위에 도전해요.' : '난이도별 두 문제씩 무작위로, 총 10문제가 출제돼요.';
-    return `<section class="games-page">${back('register', '플레이어 수정')}${stepBar(1)}<div class="page-heading"><div><span class="eyebrow">${state.mode === 'record' ? 'RECORD MODE · ALL 25' : 'QUICK MODE · RANDOM 10'}</span><h1>당신의 주종목은 무엇인가요<span class="accent">?</span></h1><p>${description}</p></div><span class="player-tag">${pixel('user')} ${esc(state.participant.name)} <small>${esc(state.participant.department)}</small></span></div><div class="games-grid">${games.map((g, i) => `<button class="game-card game-${g.id}" data-action="choose-game" data-game="${g.id}" style="--game-color:${g.color}" aria-label="${g.name} ${modeLabel(state.mode)} 시작"><div class="game-card-top"><span>0${i + 1}</span><span class="game-status">${state.mode === 'record' ? '25 Q ↗' : '10 Q ↗'}</span></div><div class="game-logo">${logo(g)}<strong class="wordmark wordmark-${g.id}">${esc(g.english)}</strong></div><div class="game-card-bottom"><strong>${g.name}</strong><span>${g.genre}</span></div></button>`).join('')}</div><div class="games-note"><span>${pixel('bolt')} 입문 → 초급 → 중급 → 상급 → 극악</span><span>${modeLabel(state.mode)} · ${state.mode === 'record' ? '전체 25문제' : '랜덤 10문제'}</span></div></section>`;
+    const description = state.mode === 'record' ? '3분 안에 한 게임의 25문제 전체를 풀고 기록 모드 순위에 도전해요.' : '난이도별 두 문제씩 무작위로, 총 10문제가 출제돼요.';
+    return `<section class="games-page">${back('register', '플레이어 수정')}${stepBar(1)}<div class="page-heading"><div><span class="eyebrow">${state.mode === 'record' ? 'RECORD MODE · ALL 25 · 03:00' : 'QUICK MODE · RANDOM 10'}</span><h1>당신의 주종목은 무엇인가요<span class="accent">?</span></h1><p>${description}</p></div><span class="player-tag">${pixel('user')} ${esc(state.participant.name)} <small>${esc(state.participant.department)}</small></span></div><div class="games-grid">${games.map((g, i) => `<button class="game-card game-${g.id}" data-action="choose-game" data-game="${g.id}" style="--game-color:${g.color}" aria-label="${g.name} ${modeLabel(state.mode)} 시작"><div class="game-card-top"><span>0${i + 1}</span><span class="game-status">${state.mode === 'record' ? '25 Q · 03:00' : '10 Q ↗'}</span></div><div class="game-logo">${logo(g)}<strong class="wordmark wordmark-${g.id}">${esc(g.english)}</strong></div><div class="game-card-bottom"><strong>${g.name}</strong><span>${g.genre}</span></div></button>`).join('')}</div><div class="games-note"><span>${pixel('bolt')} 입문 → 초급 → 중급 → 상급 → 극악</span><span>${modeLabel(state.mode)} · ${state.mode === 'record' ? '전체 25문제 · 3분' : '랜덤 10문제'}</span></div></section>`;
   }
   function quizScreen() {
     const q = state.questions[state.index];
@@ -128,28 +133,41 @@
     const finalQuestion = state.index === total - 1;
     return `<section class="quiz-page ${imageChoices ? 'quiz-image-choices' : ''} ${q.image ? 'quiz-has-image' : ''}">
       ${back('home', '퀴즈 나가기')}
-      <div class="quiz-top"><span class="quiz-game" style="color:${state.game.color}">${logo(state.game)}<b>${state.game.name}</b><small>${modeLabel(state.mode)}</small></span><span class="quiz-player">${esc(state.participant.name)} 님의 도전 <span class="timer" id="timer">${timeLabel((Date.now() - state.started) / 1000)}</span></span></div>
+      <div class="quiz-top"><span class="quiz-game" style="color:${state.game.color}">${logo(state.game)}<b>${state.game.name}</b><small>${modeLabel(state.mode)}</small></span><span class="quiz-player">${esc(state.participant.name)} 님의 도전 <span class="timer ${state.mode === 'record' && remainingRecordSeconds() <= 30 ? 'timer-warning' : ''}" id="timer" data-countdown="${state.mode === 'record'}" aria-label="${state.mode === 'record' ? '남은 시간' : '소요 시간'}">${timeLabel(timerSeconds())}</span></span></div>
       <div class="level-track">${levelNames.map((name, i) => `<div class="level-node ${i + 1 === currentLevel ? 'current' : i + 1 < currentLevel ? 'complete' : ''}"><span>${i + 1 < currentLevel ? '✓' : i + 1}</span><small>${name}</small></div>`).join('')}</div>
       <div class="question-panel"><div class="question-meta"><span class="difficulty difficulty-${q.level}">LEVEL ${q.level} · ${levelNames[q.level - 1]}</span><span>QUESTION <b>${pad(state.index + 1)}</b> / ${pad(total)}</span></div>
         <div class="question-content ${q.image ? 'with-image' : ''}"><h1 class="question-title">${q.question ? esc(q.question) : '&nbsp;'}</h1>${mediaMarkup(q.image, q.imageAlt || '문제 이미지', 'question-image', true)}</div>
         <div class="answers ${imageChoices ? 'image-answers' : ''}" role="group" aria-label="정답 선택">${q.options.map((option, i) => `<button class="answer-option ${imageChoices ? 'image-answer' : ''}" data-action="answer" data-option="${i}" aria-label="${i + 1}번${option ? ` ${esc(option)}` : ''}" aria-pressed="false"><span class="answer-number">${pad(i + 1)}</span>${imageChoices ? (q.optionImages?.[i] ? mediaMarkup(q.optionImages[i], `${i + 1}번 이미지 보기`, 'answer-visual') : '<span class="answer-visual empty-answer-visual" aria-hidden="true"></span>') : ''}<span class="answer-label">${option ? esc(option) : '&nbsp;'}</span><span class="answer-mark" aria-hidden="true"></span></button>`).join('')}</div>
         <div class="media-status" id="media-status" role="status" hidden></div>
         <div class="question-bottom"><p id="answer-hint" aria-live="polite">가장 자신 있는 답을 하나 골라주세요.</p><button class="button primary" id="submit-answer" data-action="submit-answer" disabled>${finalQuestion ? '결과 확인하기' : '다음 문제'} ${pixel('arrow')}</button></div>
-      </div><p class="under-note">TAKE YOUR TIME. <span>시간제한은 없어요. 천천히 생각해보세요.</span></p></section>`;
+      </div><p class="under-note">${state.mode === 'record' ? 'LIMIT 03:00.' : 'TAKE YOUR TIME.'} <span>${state.mode === 'record' ? '기록 모드는 전체 제한시간 3분이에요.' : '시간제한은 없어요. 천천히 생각해보세요.'}</span></p></section>`;
   }
   function finish() {
-    state.record = { id: window.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`, name: C.maskName(state.participant.name), department: state.participant.department, gameId: state.game.id, mode: state.mode, total: questionTotal(), correct: C.score(state.questions, state.answers), elapsed: Math.floor((Date.now() - state.started) / 1000), date: new Date().toISOString() };
+    const elapsed = Math.floor(elapsedSeconds());
+    state.record = { id: window.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`, name: C.maskName(state.participant.name), department: state.participant.department, gameId: state.game.id, mode: state.mode, total: questionTotal(), correct: C.score(state.questions, state.answers), elapsed: state.mode === 'record' ? Math.min(RECORD_LIMIT_SECONDS, elapsed) : elapsed, timedOut: state.timedOut, date: new Date().toISOString() };
     saveResult(); beep('finish'); navigate('result');
+  }
+  function expireRecordMode() {
+    if (state.screen !== 'quiz' || state.mode !== 'record' || state.timedOut || elapsedSeconds() < RECORD_LIMIT_SECONDS) return false;
+    state.timedOut = true; state.selected = null;
+    while (state.answers.length < questionTotal()) state.answers.push(null);
+    state.recordMode = state.mode;
+    document.querySelectorAll('dialog[open]').forEach(dialog => dialog.close());
+    finish();
+    return true;
   }
   function saveResult() { try { C.saveRecord(localStorage, state.record); state.saved = true; } catch { state.saved = false; } }
   function resultScreen() {
     const r = state.record;
     const ratio = r.correct / r.total;
     const title = ratio === 1 ? '인정합니다. 당신은 찐 고인물!' : ratio >= .8 ? '고수의 향기가 나요!' : ratio >= .6 ? '오, 제법 하는데요?' : ratio >= .4 ? '게임 센스가 보이는데요?' : ratio > 0 ? '첫 도전, 아주 좋아요!' : '도전하는 당신이 진짜 게이머!';
-    return `<section class="result-page"><div class="result-banner"><span class="eyebrow">${state.mode === 'record' ? 'RECORD COMPLETE!' : 'QUEST COMPLETE!'}</span><div class="result-trophy">${pixel('trophy')}<span class="spark-one">✦</span><span class="spark-two">+</span></div><h1>${title}</h1><p>${esc(state.participant.name)} 님, <strong>${state.game.name} ${modeLabel(state.mode)}</strong>를 모두 풀었어요.</p><div class="score-boxes"><div class="score-correct"><span>맞힌 문제</span><strong>${r.correct}<small>개</small></strong><span> ${pixel('check')} CORRECT</span></div><div class="score-wrong"><span>틀린 문제</span><strong>${r.total - r.correct}<small>개</small></strong><span>× &nbsp; INCORRECT</span></div><div class="score-total"><span>나의 점수</span><strong>${Math.round(r.correct / r.total * 100)}<small>점</small></strong><span>OUT OF 100</span></div></div><p class="save-status ${state.saved ? '' : 'save-error'}" role="status">${state.saved ? `✓ ${esc(r.name)} · ${esc(r.department)} 님의 ${modeLabel(state.mode)} 기록이 저장되었어요.` : '기록을 저장하지 못했어요. 아래에서 다시 시도하거나 CSV로 보관해주세요.'}</p>${state.saved ? '' : '<div class="save-retry"><button class="button secondary" data-action="retry-save">저장 다시 시도</button><button class="text-button" data-action="export-result">이 결과 CSV 저장 ↓</button></div>'}</div><div class="review-heading"><div><span class="eyebrow">ANSWER REVIEW</span><h2>정답과 해설 확인하기</h2></div><span>총 ${r.total}문제 · ${timeLabel(r.elapsed)}</span></div><div class="reviews">${state.questions.map((q, i) => {
+    return `<section class="result-page"><div class="result-banner"><span class="eyebrow">${state.mode === 'record' ? 'RECORD COMPLETE!' : 'QUEST COMPLETE!'}</span><div class="result-trophy">${pixel('trophy')}<span class="spark-one">✦</span><span class="spark-two">+</span></div><h1>${title}</h1><p>${esc(state.participant.name)} 님, <strong>${state.game.name} ${modeLabel(state.mode)}</strong>${state.timedOut ? '의 제한시간이 종료됐어요.' : '를 모두 풀었어요.'}</p>${state.timedOut ? '<p class="timeout-notice"><b>TIME OVER</b> 3분 안에 제출하지 못한 문제는 오답 처리됐어요.</p>' : ''}<div class="score-boxes"><div class="score-correct"><span>맞힌 문제</span><strong>${r.correct}<small>개</small></strong><span> ${pixel('check')} CORRECT</span></div><div class="score-wrong"><span>틀린 문제</span><strong>${r.total - r.correct}<small>개</small></strong><span>× &nbsp; INCORRECT</span></div><div class="score-total"><span>나의 점수</span><strong>${Math.round(r.correct / r.total * 100)}<small>점</small></strong><span>OUT OF 100</span></div></div><p class="save-status ${state.saved ? '' : 'save-error'}" role="status">${state.saved ? `✓ ${esc(r.name)} · ${esc(r.department)} 님의 ${modeLabel(state.mode)} 기록이 저장되었어요.` : '기록을 저장하지 못했어요. 아래에서 다시 시도하거나 CSV로 보관해주세요.'}</p>${state.saved ? '' : '<div class="save-retry"><button class="button secondary" data-action="retry-save">저장 다시 시도</button><button class="text-button" data-action="export-result">이 결과 CSV 저장 ↓</button></div>'}</div><div class="review-heading"><div><span class="eyebrow">ANSWER REVIEW</span><h2>정답과 해설 확인하기</h2></div><span>총 ${r.total}문제 · ${timeLabel(r.elapsed)}</span></div><div class="reviews">${state.questions.map((q, i) => {
       const gradable = q.answer >= 0;
-      const correct = gradable && q.answer === state.answers[i];
-      return `<details class="review ${correct ? 'correct' : 'incorrect'}" ${correct ? '' : 'open'}><summary><span class="review-verdict">${correct ? '✓' : '×'}</span><span class="review-summary"><small>LEVEL ${q.level} · ${levelNames[q.level - 1]}</small><strong>${q.question ? esc(q.question) : '&nbsp;'}</strong></span><span class="review-state">${correct ? '정답' : gradable ? '오답' : '—'}</span><span class="review-chevron">⌄</span></summary><div class="review-body"><div class="review-answer"><span>내가 고른 답</span><div>${mediaMarkup(q.optionImages?.[state.answers[i]], `${state.answers[i] + 1}번 보기`, 'review-image', true)}<b class="${correct ? 'green-text' : 'red-text'}">${optionLabel(q, state.answers[i]) ? esc(optionLabel(q, state.answers[i])) : `${state.answers[i] + 1}번`}</b></div></div>${!correct && gradable ? `<div class="review-answer"><span>정답</span><div>${mediaMarkup(q.optionImages?.[q.answer], `정답 ${q.answer + 1}번 보기`, 'review-image', true)}<b class="green-text">${optionLabel(q, q.answer) ? esc(optionLabel(q, q.answer)) : `${q.answer + 1}번`}</b></div></div>` : ''}${q.explanation ? `<p>${esc(q.explanation)}</p>` : ''}${mediaMarkup(q.explanationImage, '해설 이미지', 'explanation-image', true)}</div></details>`;
+      const selectedAnswer = state.answers[i];
+      const answered = Number.isInteger(selectedAnswer);
+      const correct = gradable && answered && q.answer === selectedAnswer;
+      const chosenMarkup = answered ? `${mediaMarkup(q.optionImages?.[selectedAnswer], `${selectedAnswer + 1}번 보기`, 'review-image', true)}<b class="${correct ? 'green-text' : 'red-text'}">${optionLabel(q, selectedAnswer) ? esc(optionLabel(q, selectedAnswer)) : `${selectedAnswer + 1}번`}</b>` : '<b class="red-text">미응답</b>';
+      return `<details class="review ${correct ? 'correct' : 'incorrect'}" ${correct ? '' : 'open'}><summary><span class="review-verdict">${correct ? '✓' : '×'}</span><span class="review-summary"><small>LEVEL ${q.level} · ${levelNames[q.level - 1]}</small><strong>${q.question ? esc(q.question) : '&nbsp;'}</strong></span><span class="review-state">${correct ? '정답' : gradable ? '오답' : '—'}</span><span class="review-chevron">⌄</span></summary><div class="review-body"><div class="review-answer"><span>내가 고른 답</span><div>${chosenMarkup}</div></div>${!correct && gradable ? `<div class="review-answer"><span>정답</span><div>${mediaMarkup(q.optionImages?.[q.answer], `정답 ${q.answer + 1}번 보기`, 'review-image', true)}<b class="green-text">${optionLabel(q, q.answer) ? esc(optionLabel(q, q.answer)) : `${q.answer + 1}번`}</b></div></div>` : ''}${q.explanation ? `<p>${esc(q.explanation)}</p>` : ''}${mediaMarkup(q.explanationImage, '해설 이미지', 'explanation-image', true)}</div></details>`;
     }).join('')}</div><div class="result-actions"><button class="button secondary" data-action="records">${pixel('trophy')} 기록보기</button><button class="button primary" data-action="home">메인으로 돌아가기 ${pixel('arrow')}</button></div></section>`;
   }
   function recordsScreen() {
@@ -187,12 +205,13 @@
     const button = event.target.closest('[data-action]');
     if (!button || button.disabled) return;
     const action = button.dataset.action;
+    if (state.screen === 'quiz' && expireRecordMode()) return;
     if (action !== 'answer') beep();
     if (action === 'home' || action === 'records' || action === 'register') go(action);
     if (action === 'start') { state.mode = button.dataset.mode || 'quick'; go('register'); }
     if (action === 'choose-game' && state.screen === 'games') {
       const game = gameById(button.dataset.game);
-      state.game = game; state.questions = state.mode === 'record' ? C.allQuestions(game) : C.pickQuestions(game); state.answers = []; state.selected = null; state.index = 0; state.started = Date.now(); state.record = null; state.saved = false; state.backedUp = false; navigate('quiz');
+      state.game = game; state.questions = state.mode === 'record' ? C.allQuestions(game) : C.pickQuestions(game); state.answers = []; state.selected = null; state.index = 0; state.started = Date.now(); state.record = null; state.saved = false; state.backedUp = false; state.timedOut = false; navigate('quiz');
     }
     if (action === 'answer' && state.screen === 'quiz' && state.mediaReady) {
       state.selected = Number(button.dataset.option); beep();
@@ -247,6 +266,14 @@
   document.addEventListener('input', event => { if (event.target.id === 'record-search') { state.search = event.target.value; updateRecordsTable(); } });
   window.addEventListener('storage', event => { if (event.key === C.KEY && state.screen === 'records') navigate('records'); });
   window.addEventListener('beforeunload', event => { if (state.screen === 'quiz' || state.screen === 'result' && !state.saved && !state.backedUp) { event.preventDefault(); event.returnValue = ''; } });
-  setInterval(() => { const timer = document.querySelector('#timer'); if (timer) timer.textContent = timeLabel((Date.now() - state.started) / 1000); }, 1000);
+  setInterval(() => {
+    if (expireRecordMode()) return;
+    const timer = document.querySelector('#timer');
+    if (!timer) return;
+    const seconds = timerSeconds();
+    timer.textContent = timeLabel(seconds);
+    timer.classList.toggle('timer-warning', state.mode === 'record' && seconds <= 30);
+    timer.setAttribute('aria-label', state.mode === 'record' ? `남은 시간 ${timeLabel(seconds)}` : `소요 시간 ${timeLabel(seconds)}`);
+  }, 250);
   navigate('home');
 })();
