@@ -13,7 +13,7 @@ const copy = relative => {
   fs.mkdirSync(path.dirname(destination), { recursive: true });
   fs.copyFileSync(path.join(root, relative), destination);
 };
-for (const file of ['index.html', 'styles.css', 'tablet.css', 'app.js', 'quiz-core.js', 'quiz-data.js', 'ASSETS.md']) copy(file);
+for (const file of ['index.html', 'styles.css', 'tablet.css', 'reaction.css', 'reaction-core.js', 'reaction-ui.js', 'app.js', 'quiz-core.js', 'quiz-data.js', 'ASSETS.md']) copy(file);
 function copyDirectory(relative) {
   for (const item of fs.readdirSync(path.join(root, relative), { withFileTypes: true })) {
     const name = path.join(relative, item.name);

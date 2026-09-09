@@ -16,7 +16,7 @@
   const remainingRecordSeconds = () => Math.max(0, Math.ceil(RECORD_LIMIT_SECONDS - elapsedSeconds()));
   const timerSeconds = () => state.mode === 'record' ? remainingRecordSeconds() : elapsedSeconds();
   const gameById = id => games.find(g => g.id === id);
-  const modeLabel = mode => mode === 'record' ? '기록 모드' : '일반 모드';
+  const modeLabel = mode => mode === 'reaction' ? '반속테스트' : mode === 'record' ? '기록 모드' : '일반 모드';
   const questionTotal = () => state.questions.length;
   const pixel = (kind, cls = '') => {
     const paths = {
@@ -67,10 +67,11 @@
   }
   function records() { try { return C.readRecords(localStorage); } catch { return null; } }
   function navigate(screen) {
+    if (state.screen === 'reaction' && screen !== 'reaction') reaction.stopTimers();
     state.screen = screen;
     document.body.dataset.screen = screen;
     document.querySelectorAll('.nav-button').forEach(b => b.classList.toggle('active', b.dataset.action === (screen === 'records' ? 'records' : 'home')));
-    app.innerHTML = ({ home: homeScreen, register: registerScreen, games: gamesScreen, quiz: quizScreen, result: resultScreen, records: recordsScreen })[screen]();
+    app.innerHTML = ({ home: homeScreen, register: registerScreen, games: gamesScreen, quiz: quizScreen, result: resultScreen, records: recordsScreen, reaction: reaction.screen, reactionResult: reaction.resultScreen })[screen]();
     window.scrollTo({ top: 0, behavior: 'instant' });
     app.focus({ preventScroll: true });
     if (screen === 'records') updateRecordsTable();
@@ -105,7 +106,7 @@
         <div class="hero-copy"><span class="eyebrow hero-badge"><span class="tiny-square"></span> NEW PLAYER WANTED!</span>
           <h1><span class="hero-erica">E-RICA<span class="title-spark">✦</span></span><span class="hero-korean">가두모집<span class="title-exclamation">!</span></span></h1>
           <p class="hero-description">게임 좀 한다는 당신, <span>퀴즈도 자신 있나요?</span><br>취향에 맞는 게임을 고르고 실력을 보여주세요.</p>
-          <div class="mode-start-buttons"><button class="button primary start-button" data-action="start" data-mode="quick">${pixel('controller')} 일반 모드 <small>10문제</small> ${pixel('arrow')}</button><button class="button secondary record-mode-button" data-action="start" data-mode="record">${pixel('trophy')} 기록 모드 <small>25문제 · 3분</small></button></div>
+          <div class="mode-start-buttons"><button class="button secondary reaction-mode-button" data-action="start" data-mode="reaction">${pixel('bolt')} 반속테스트 <small>3회 · 반응속도</small></button><button class="button primary start-button" data-action="start" data-mode="quick">${pixel('controller')} 일반 모드 <small>10문제</small> ${pixel('arrow')}</button><button class="button secondary record-mode-button" data-action="start" data-mode="record">${pixel('trophy')} 기록 모드 <small>25문제 · 3분</small></button></div>
           <p class="press-start"><span class="blinking-square"></span> 화면을 눌러주세요 <span class="press-english">PRESS START</span></p>
         </div>
         <div class="hero-art" aria-hidden="true"><span class="art-label">1 PLAYER · INFINITE FUN</span><img src="assets/arcade.svg" alt="" draggable="false"><span class="art-caption"><span class="green-dot"></span> READY WHEN YOU ARE.</span></div>
@@ -117,9 +118,9 @@
     </div>`;
   }
   const back = (action = 'home', label = '메인으로') => `<button class="text-button back-button" data-action="${action}">← ${label}</button>`;
-  const stepBar = current => `<div class="flow-steps" aria-label="진행 단계">${['플레이어 등록', '게임 선택', '퀴즈 도전'].map((s, i) => `<span class="${i === current ? 'current' : i < current ? 'done' : ''}"><b>${i < current ? '✓' : pad(i + 1)}</b>${s}</span>`).join('<i></i>')}</div>`;
+  const stepBar = current => `<div class="flow-steps" aria-label="진행 단계">${(state.mode === 'reaction' ? ['플레이어 등록', '3회 측정', '기록 확인'] : ['플레이어 등록', '게임 선택', '퀴즈 도전']).map((s, i) => `<span class="${i === current ? 'current' : i < current ? 'done' : ''}"><b>${i < current ? '✓' : pad(i + 1)}</b>${s}</span>`).join('<i></i>')}</div>`;
   function registerScreen() {
-    return `<section class="register-page">${back()}${stepBar(0)}<div class="page-heading centered"><span class="eyebrow">${state.mode === 'record' ? 'RECORD CHALLENGE · 25 QUESTIONS · 03:00' : 'QUICK PLAY · 10 QUESTIONS'}</span><h1>플레이어를 등록해주세요<span class="accent">.</span></h1><p>${modeLabel(state.mode)}에 참가할 이름과 학과를 입력해주세요.</p></div><div class="registration-card"><div class="player-card-art">${pixel('invader')}<span>PLAYER 01</span><small>${state.mode === 'record' ? '25문제를 3분 안에!' : '오늘의 주인공은 바로 당신!'}</small><div class="pixel-sparkles">+ &nbsp; · &nbsp; +</div></div><form id="registration-form"><label for="player-name">이름 <span>필수</span></label><input id="player-name" name="playerName" placeholder="예: 홍길동" required maxlength="20" autocomplete="off" value="${esc(state.participant?.name || '')}"><label for="player-department">학과 <span>필수</span></label><input id="player-department" name="department" placeholder="예: 컴퓨터공학과" required maxlength="40" autocomplete="off" value="${esc(state.participant?.department || '')}"><p class="privacy-note">${pixel('heart')} 기록에는 이름이 <b>홍*동</b>처럼 가려져요.<br><span>이 기기의 브라우저에 이름(가림)과 학과, 점수를 저장해요.</span></p><button class="button primary" type="submit">게임 선택하기 ${pixel('arrow')}</button></form></div><p class="under-note">${state.mode === 'record' ? 'ALL 25 QUESTIONS. ONE RECORD.' : 'NO PRESSURE. JUST PLAY.'} <span>${state.mode === 'record' ? '3분 안에 한 게임의 모든 문제를 풀어요.' : '잘 몰라도 괜찮아요, 즐기면 그만!'}</span></p></section>`;
+    return `<section class="register-page">${back()}${stepBar(0)}<div class="page-heading centered"><span class="eyebrow">${state.mode === 'reaction' ? 'REACTION TEST · 3 ROUNDS' : state.mode === 'record' ? 'RECORD CHALLENGE · 25 QUESTIONS · 03:00' : 'QUICK PLAY · 10 QUESTIONS'}</span><h1>플레이어를 등록해주세요<span class="accent">.</span></h1><p>${modeLabel(state.mode)}에 참가할 이름과 학과를 입력해주세요.</p></div><div class="registration-card"><div class="player-card-art">${pixel('invader')}<span>PLAYER 01</span><small>${state.mode === 'record' ? '25문제를 3분 안에!' : '오늘의 주인공은 바로 당신!'}</small><div class="pixel-sparkles">+ &nbsp; · &nbsp; +</div></div><form id="registration-form"><label for="player-name">이름 <span>필수</span></label><input id="player-name" name="playerName" placeholder="예: 홍길동" required maxlength="20" autocomplete="off" value="${esc(state.participant?.name || '')}"><label for="player-department">학과 <span>필수</span></label><input id="player-department" name="department" placeholder="예: 컴퓨터공학과" required maxlength="40" autocomplete="off" value="${esc(state.participant?.department || '')}"><p class="privacy-note">${pixel('heart')} 기록에는 이름이 <b>홍*동</b>처럼 가려져요.<br><span>이 기기의 브라우저에 이름(가림)과 학과, ${state.mode === 'reaction' ? '반응속도' : '점수'}를 저장해요.</span></p><button class="button primary" type="submit">${state.mode === 'reaction' ? '반속테스트 시작하기' : '게임 선택하기'} ${pixel('arrow')}</button></form></div><p class="under-note">${state.mode === 'reaction' ? 'RED → GREEN → TAP!' : state.mode === 'record' ? 'ALL 25 QUESTIONS. ONE RECORD.' : 'NO PRESSURE. JUST PLAY.'} <span>${state.mode === 'reaction' ? '초록색으로 바뀌면 터치! 3회 최고·평균 기록을 저장해요.' : state.mode === 'record' ? '3분 안에 한 게임의 모든 문제를 풀어요.' : '잘 몰라도 괜찮아요, 즐기면 그만!'}</span></p></section>`;
   }
   function gamesScreen() {
     const description = state.mode === 'record' ? '3분 안에 한 게임의 25문제 전체를 풀고 기록 모드 순위에 도전해요.' : '난이도별 두 문제씩 무작위로, 총 10문제가 출제돼요.';
@@ -171,13 +172,15 @@
     }).join('')}</div><div class="result-actions"><button class="button secondary" data-action="records">${pixel('trophy')} 기록보기</button><button class="button primary" data-action="home">메인으로 돌아가기 ${pixel('arrow')}</button></div></section>`;
   }
   function recordsScreen() {
+    if (state.recordMode === 'reaction') return reaction.recordsScreen();
     const allRows = records();
     const modeRows = (allRows || []).filter(r => (r.mode || 'quick') === state.recordMode);
     const count = modeRows.length;
     const total = state.recordMode === 'record' ? 25 : 10;
-    return `<section class="records-page">${back()}<div class="page-heading"><div><span class="eyebrow">THE HALL OF FAME</span><h1>우리 부스의 명예의 전당<span class="accent">.</span></h1><p>일반 모드와 기록 모드의 순위를 따로 확인할 수 있어요.</p></div><div class="records-mascot">${pixel('trophy')}</div></div><div class="leaderboard-mode-tabs" role="tablist" aria-label="순위 모드"><button role="tab" aria-selected="${state.recordMode === 'quick'}" class="${state.recordMode === 'quick' ? 'active' : ''}" data-action="records-mode" data-mode="quick">${pixel('controller')} 일반 모드 순위 <small>랜덤 10문제</small></button><button role="tab" aria-selected="${state.recordMode === 'record'}" class="${state.recordMode === 'record' ? 'active' : ''}" data-action="records-mode" data-mode="record">${pixel('trophy')} 기록 모드 순위 <small>전체 25문제</small></button></div><div class="record-stats"><div><span>${modeLabel(state.recordMode)} 도전</span><strong>${count}<small>회</small></strong></div><div><span>만점 플레이어</span><strong>${modeRows.filter(r => r.correct === (r.total || total)).length}<small>명</small></strong></div><div><span>최고 기록</span><strong>${count ? Math.max(...modeRows.map(r => r.correct)) : '—'}<small>/ ${total}</small></strong></div><div class="stats-message">${pixel('invader')}<p>${state.recordMode === 'record' ? '25문제를 완주하고' : '가볍게 10문제로'}<br><b>순위에 도전하세요!</b></p></div></div><div class="records-toolbar"><div class="records-tabs"><button class="${state.order === 'rank' ? 'active' : ''}" data-action="sort" data-order="rank">순위순</button><button class="${state.order === 'latest' ? 'active' : ''}" data-action="sort" data-order="latest">최신순</button></div><div class="record-filters"><label class="sr-only" for="game-filter">게임 필터</label><select id="game-filter"><option value="all">모든 게임</option>${games.map(g => `<option value="${g.id}" ${state.filter === g.id ? 'selected' : ''}>${g.name}</option>`).join('')}</select><label class="sr-only" for="record-search">이름 또는 학과 검색</label><input id="record-search" placeholder="이름 · 학과 검색" maxlength="40" value="${esc(state.search)}"></div><button class="text-button csv-button" data-action="export" ${!count ? 'disabled' : ''}>현재 순위 CSV ↓</button></div><div class="table-wrap"><table class="records-table"><thead><tr><th scope="col">순위</th><th scope="col">플레이어</th><th scope="col">학과</th><th scope="col">게임</th><th scope="col">맞힌 개수</th><th scope="col">소요 시간</th><th scope="col">참여 일시</th></tr></thead><tbody id="records-body"></tbody></table><div id="records-empty"></div></div><div class="records-footnote"><span>같은 정답 수는 공동 순위로 표시해요.</span><span>${modeLabel(state.recordMode)} 기록만 표시 중 · 이 브라우저에 보관돼요.</span></div><div class="records-bottom"><span class="eyebrow">EVERY PLAYER HAS A STORY.</span><button class="button primary" data-action="start" data-mode="${state.recordMode}">${modeLabel(state.recordMode)} 도전하기 ${pixel('arrow')}</button></div></section>`;
+    return `<section class="records-page">${back()}<div class="page-heading"><div><span class="eyebrow">THE HALL OF FAME</span><h1>우리 부스의 명예의 전당<span class="accent">.</span></h1><p>반속테스트, 일반 모드, 기록 모드의 순위를 따로 확인할 수 있어요.</p></div><div class="records-mascot">${pixel('trophy')}</div></div>${leaderboardTabs()}<div class="record-stats"><div><span>${modeLabel(state.recordMode)} 도전</span><strong>${count}<small>회</small></strong></div><div><span>만점 플레이어</span><strong>${modeRows.filter(r => r.correct === (r.total || total)).length}<small>명</small></strong></div><div><span>최고 기록</span><strong>${count ? Math.max(...modeRows.map(r => r.correct)) : '—'}<small>/ ${total}</small></strong></div><div class="stats-message">${pixel('invader')}<p>${state.recordMode === 'record' ? '25문제를 완주하고' : '가볍게 10문제로'}<br><b>순위에 도전하세요!</b></p></div></div><div class="records-toolbar"><div class="records-tabs"><button class="${state.order === 'rank' ? 'active' : ''}" data-action="sort" data-order="rank">순위순</button><button class="${state.order === 'latest' ? 'active' : ''}" data-action="sort" data-order="latest">최신순</button></div><div class="record-filters"><label class="sr-only" for="game-filter">게임 필터</label><select id="game-filter"><option value="all">모든 게임</option>${games.map(g => `<option value="${g.id}" ${state.filter === g.id ? 'selected' : ''}>${g.name}</option>`).join('')}</select><label class="sr-only" for="record-search">이름 또는 학과 검색</label><input id="record-search" placeholder="이름 · 학과 검색" maxlength="40" value="${esc(state.search)}"></div><button class="text-button csv-button" data-action="export" ${!count ? 'disabled' : ''}>현재 순위 CSV ↓</button></div><div class="table-wrap"><table class="records-table"><thead><tr><th scope="col">순위</th><th scope="col">플레이어</th><th scope="col">학과</th><th scope="col">게임</th><th scope="col">맞힌 개수</th><th scope="col">소요 시간</th><th scope="col">참여 일시</th></tr></thead><tbody id="records-body"></tbody></table><div id="records-empty"></div></div><div class="records-footnote"><span>같은 정답 수는 공동 순위로 표시해요.</span><span>${modeLabel(state.recordMode)} 기록만 표시 중 · 이 브라우저에 보관돼요.</span></div><div class="records-bottom"><span class="eyebrow">EVERY PLAYER HAS A STORY.</span><button class="button primary" data-action="start" data-mode="${state.recordMode}">${modeLabel(state.recordMode)} 도전하기 ${pixel('arrow')}</button></div></section>`;
   }
   function updateRecordsTable() {
+    if (state.recordMode === 'reaction') return reaction.updateRecordsTable();
     const rows = records();
     const filtered = (rows || []).filter(r => (r.mode || 'quick') === state.recordMode && (state.filter === 'all' || r.gameId === state.filter));
     let ranked = C.rankRecords(filtered).filter(r => `${r.name} ${r.department}`.toLowerCase().includes(state.search.toLowerCase()));
@@ -192,10 +195,20 @@
     const url = URL.createObjectURL(blob), anchor = document.createElement('a');
     anchor.href = url; anchor.download = `E-RICA_퀴즈기록_${new Date().toISOString().slice(0, 10)}.csv`; anchor.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
+  function leaderboardTabs() {
+    return '<div class="leaderboard-mode-tabs" role="tablist" aria-label="순위 모드">' + [
+      ['reaction', 'bolt', '반속테스트', '3회 평균'],
+      ['quick', 'controller', '일반 모드 순위', '랜덤 10문제'],
+      ['record', 'trophy', '기록 모드 순위', '전체 25문제'],
+    ].map(([mode, icon, label, note]) => '<button role="tab" aria-selected="' + (state.recordMode === mode) + '" class="' + (state.recordMode === mode ? 'active' : '') + '" data-action="records-mode" data-mode="' + mode + '">' + pixel(icon) + ' ' + label + '<small>' + note + '</small></button>').join('') + '</div>';
+  }
+  const reaction = window.createReactionUI({ app, state, navigate, esc, pixel, back, tabs: leaderboardTabs, toast });
   let exitDestination = 'home';
   function go(screen) {
-    if (state.screen === 'quiz') { exitDestination = screen; document.querySelector('#exit-dialog').showModal(); return; }
-    if (state.screen === 'result' && !state.saved && !state.backedUp) { toast('저장이 되지 않았어요. 저장 재시도 또는 CSV 보관 후 이동해주세요.'); return; }
+    if (state.screen === 'quiz' || state.screen === 'reaction') { reaction.pause(); exitDestination = screen;
+      document.querySelector('#exit-dialog h2').textContent = state.screen === 'reaction' ? '반속테스트를 나갈까요?' : '퀴즈를 나갈까요?';
+      document.querySelector('#exit-dialog p').textContent = '진행 중인 기록은 저장되지 않아요. 처음부터 다시 도전할 수 있어요.'; document.querySelector('#exit-dialog').showModal(); return; }
+    if (['result', 'reactionResult'].includes(state.screen) && !state.saved && !state.backedUp) { toast('저장이 되지 않았어요. 저장 재시도 또는 CSV 보관 후 이동해주세요.'); return; }
     if (screen === 'home' || screen === 'register' && state.screen !== 'games') state.participant = null;
     navigate(screen);
   }
@@ -237,9 +250,10 @@
     }
     if (action === 'close-image') document.querySelector('#image-dialog').close();
     if (action === 'confirm-exit') { document.querySelector('#exit-dialog').close(); state.participant = null; state.questions = []; state.answers = []; navigate(exitDestination); }
-    if (action === 'retry-save') { saveResult(); navigate('result'); }
-    if (action === 'export-result') { downloadCSV([state.record]); state.backedUp = true; toast('결과 CSV를 내려받았어요. 다운로드 파일을 확인해주세요.'); }
-    if (action === 'export') { const rows = records(); if (rows) downloadCSV(rows.filter(r => (r.mode || 'quick') === state.recordMode)); else toast('기록을 읽지 못했어요.'); }
+    if (action === 'retry-save') { if (state.screen === 'reactionResult') { reaction.save(); navigate('reactionResult'); } else { saveResult(); navigate('result'); } }
+    if (action === 'export-result') { if (state.screen === 'reactionResult') reaction.downloadCSV([state.record]); else downloadCSV([state.record]); state.backedUp = true; toast('결과 CSV를 내려받았어요. 다운로드 파일을 확인해주세요.'); }
+    if (action === 'export' && state.recordMode === 'reaction') reaction.downloadCSV(reaction.records());
+    if (action === 'export' && state.recordMode !== 'reaction') { const rows = records(); if (rows) downloadCSV(rows.filter(r => (r.mode || 'quick') === state.recordMode)); else toast('기록을 읽지 못했어요.'); }
     if (action === 'records-mode') { state.recordMode = button.dataset.mode; state.filter = 'all'; state.search = ''; navigate('records'); }
     if (action === 'sort') { state.order = button.dataset.order; document.querySelectorAll('.records-tabs button').forEach(b => b.classList.toggle('active', b === button)); updateRecordsTable(); }
     if (action === 'sound') {
@@ -257,15 +271,15 @@
     event.preventDefault();
     const form = event.target, name = form.elements.playerName.value.trim(), department = form.elements.department.value.trim();
     if (!name || !department) { toast('이름과 학과를 모두 입력해주세요.'); (!name ? form.elements.playerName : form.elements.department).focus(); return; }
-    state.participant = { name, department }; beep(); navigate('games');
+    state.participant = { name, department }; beep(); if (state.mode === 'reaction') reaction.start(); else navigate('games');
   });
   document.addEventListener('change', event => { if (event.target.id === 'game-filter') { state.filter = event.target.value; updateRecordsTable(); } });
   document.addEventListener('error', event => {
     if (event.target.matches?.('img[data-quiz-image]')) event.target.closest('.image-shell').classList.add('media-error');
   }, true);
   document.addEventListener('input', event => { if (event.target.id === 'record-search') { state.search = event.target.value; updateRecordsTable(); } });
-  window.addEventListener('storage', event => { if (event.key === C.KEY && state.screen === 'records') navigate('records'); });
-  window.addEventListener('beforeunload', event => { if (state.screen === 'quiz' || state.screen === 'result' && !state.saved && !state.backedUp) { event.preventDefault(); event.returnValue = ''; } });
+  window.addEventListener('storage', event => { if ((event.key === C.KEY || event.key === window.ReactionCore.KEY || event.key === null) && state.screen === 'records') navigate('records'); });
+  window.addEventListener('beforeunload', event => { if (['quiz', 'reaction'].includes(state.screen) || ['result', 'reactionResult'].includes(state.screen) && !state.saved && !state.backedUp) { event.preventDefault(); event.returnValue = ''; } });
   setInterval(() => {
     if (expireRecordMode()) return;
     const timer = document.querySelector('#timer');

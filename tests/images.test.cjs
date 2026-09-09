@@ -59,7 +59,7 @@ test('a real Pages build packages question and four choice images under relative
     }
   }
   for (const folder of ['questions', 'assets', 'scripts']) copyTree(path.join(source, folder), path.join(base, folder));
-  for (const name of ['index.html', 'styles.css', 'tablet.css', 'app.js', 'quiz-core.js', 'ASSETS.md']) fs.copyFileSync(path.join(source, name), path.join(base, name));
+  for (const name of ['index.html', 'styles.css', 'tablet.css', 'reaction.css', 'reaction-core.js', 'reaction-ui.js', 'app.js', 'quiz-core.js', 'ASSETS.md']) fs.copyFileSync(path.join(source, name), path.join(base, name));
   const qFolder = path.join(base, 'questions/valorant/level-03/question-05');
   const qFile = path.join(qFolder, 'question.json');
   const q = JSON.parse(fs.readFileSync(qFile, 'utf8'));
@@ -76,6 +76,7 @@ test('a real Pages build packages question and four choice images under relative
   assert.equal(built.pending, false); assert.match(built.image, /^questions\/.*%20/);
   assert.equal(built.optionImages.filter(Boolean).length, 4);
   assert.ok(fs.existsSync(path.join(base, 'dist/.nojekyll')));
+  for (const name of ['reaction.css', 'reaction-core.js', 'reaction-ui.js']) assert.ok(fs.existsSync(path.join(base, 'dist', name)));
   assert.equal(fs.existsSync(path.join(base, 'dist/questions/valorant/level-03/question-05/question.json')), false);
   assert.equal(fs.existsSync(path.join(base, 'dist/versions')), false);
 }));

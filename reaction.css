@@ -1,0 +1,38 @@
+/* Three equal, compact choices in the requested order. */
+.hero-copy{min-width:0}
+.mode-start-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;width:100%;max-width:510px;align-items:stretch}
+.mode-start-buttons .button{width:100%;min-width:0;height:auto;min-height:70px;margin:0;padding:12px 5px;display:flex;flex-direction:column;justify-content:center;gap:6px;font-size:18px;white-space:nowrap}
+.mode-start-buttons .button .pixel-icon{display:none}
+.mode-start-buttons .button small{font-size:10px}
+.mode-start-buttons .reaction-mode-button{color:#327558;border-color:#a2c7ae;background:#e8f3e9;box-shadow:3px 4px 0 #d0e4d4}
+.mode-start-buttons .reaction-mode-button:hover{background:#d9ecdc}
+.leaderboard-mode-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.leaderboard-mode-tabs button{flex-direction:column;flex-wrap:nowrap;gap:7px;padding:12px 6px}
+.leaderboard-mode-tabs button small{flex-basis:auto;text-align:center}
+.leaderboard-mode-tabs button .pixel-icon{display:none}
+.leaderboard-mode-tabs button[data-mode="quick"].active{background:#eee8f5;color:#80639a;border-color:#bda9cf;box-shadow:3px 3px 0 #e1d7e9}
+.leaderboard-mode-tabs button[data-mode="record"].active{background:#f6efdd;color:#9b7a39;border-color:#d7c38e;box-shadow:3px 3px 0 #e9dfc4}
+.leaderboard-mode-tabs button[data-mode="reaction"].active{background:#e8f3e9;color:#327558;border-color:#a2c7ae;box-shadow:3px 3px 0 #d0e4d4}
+body[data-screen="reaction"]{overflow:hidden}
+.reaction-page{position:fixed;inset:0;z-index:30;background:#f2eee7}
+.reaction-pad{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:90px 24px 50px;background:#eee8f5;color:#53415f;font-family:var(--body);cursor:pointer;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;transition:none}
+.reaction-pad[data-phase="waiting"]{background:#bb293e;color:white}
+.reaction-pad[data-phase="ready"]{background:#16834d;color:white}
+.reaction-pad[data-phase="early"]{background:#f4d68e;color:#554020}
+.reaction-pad[data-phase="paused"]{background:#eee8f5;color:#53415f}
+.reaction-pad strong{font-family:var(--pixel);font-size:clamp(36px,6vw,76px);line-height:1.3;text-align:center;word-break:keep-all}
+.reaction-pad .reaction-instruction{font-size:clamp(16px,2vw,22px);line-height:1.8;text-align:center;word-break:keep-all;max-width:660px}
+.reaction-progress{font-family:var(--pixel);font-size:26px;letter-spacing:3px}
+.reaction-exit{position:absolute;top:max(20px,env(safe-area-inset-top));left:24px;z-index:1;background:#fff;color:#554760;border:1px solid #d9d2df;min-height:48px;padding:12px 18px;border-radius:5px;font-size:15px}
+.reaction-history{font-size:14px;line-height:1.8;text-align:center}
+.reaction-result .score-boxes{grid-template-columns:repeat(2,minmax(0,1fr));max-width:640px}
+.reaction-result .score-boxes strong{font-size:clamp(32px,6vw,60px)}
+.reaction-attempts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px auto;max-width:640px}
+.reaction-attempts div{padding:20px 8px;border:1px solid #ddd5e4;background:#faf8fc;border-radius:5px;text-align:center}
+.reaction-attempts span{display:block;margin-bottom:12px;color:#897a95;font-size:13px}
+.reaction-attempts strong{font-size:20px;white-space:nowrap}
+.reaction-records .record-stats strong{font-size:clamp(22px,3vw,38px)}
+.reaction-records .record-filters input{width:180px}
+@media(max-width:850px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.mode-start-buttons .button{font-size:15px}.leaderboard-mode-tabs button{font-size:13px}}
+@media(max-width:600px){.hero{display:flex;flex-direction:column;align-items:stretch}.hero-art{align-self:center;max-width:100%;overflow:hidden}.mode-start-buttons{max-width:none}.mode-start-buttons .button{font-size:16px}.leaderboard-mode-tabs button .pixel-icon{display:none}.leaderboard-mode-tabs button small{font-size:9px}.reaction-attempts{gap:7px}.reaction-attempts strong{font-size:16px}.reaction-records .record-stats>div{padding-inline:8px}.reaction-records .record-stats span{font-size:10px}.reaction-records .record-stats small{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.reaction-page *{animation:none}}

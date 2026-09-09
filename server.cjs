@@ -7,7 +7,7 @@ const url = `http://localhost:${port}`;
 const openBrowser = () => {
   if (process.platform === 'win32') require('node:child_process').spawn('cmd.exe', ['/c', 'start', '', url], { windowsHide: true, stdio: 'ignore' }).on('error', () => console.log(`Open ${url} in your browser.`));
 };
-const allowed = new Set(['index.html', 'styles.css', 'tablet.css', 'app.js', 'quiz-core.js', 'quiz-data.js', 'assets/arcade.svg', 'assets/DungGeunMo.woff']);
+const allowed = new Set(['index.html', 'styles.css', 'tablet.css', 'reaction.css', 'reaction-core.js', 'reaction-ui.js', 'app.js', 'quiz-core.js', 'quiz-data.js', 'assets/arcade.svg', 'assets/DungGeunMo.woff']);
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.woff': 'font/woff', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.gif': 'image/gif', '.avif': 'image/avif' };
 http.createServer((req, res) => {
   let file;
