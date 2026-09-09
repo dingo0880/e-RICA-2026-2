@@ -13,6 +13,18 @@ test('signal delay stays in the 2–10 second range', () => {
   assert.equal(R.randomDelay(() => 0.5), 6000);
   assert.equal(R.randomDelay(() => 1), 10000);
 });
+test('animal comparison uses the nearest average reference and offers three messages per animal', () => {
+  assert.equal(R.describeResult(82).animal.name, '고양이');
+  assert.equal(R.describeResult(210).animal.name, '사람');
+  assert.equal(R.describeResult(275).animal.name, '코끼리');
+  for (const animal of R.ANIMALS) {
+    const variants = [0, 0.4, 0.9].map(n => R.describeResult(animal.ms, () => n).message);
+    assert.equal(new Set(variants).size, 3);
+  }
+  assert.equal(R.describeResult(5).outside, true);
+  assert.match(R.describeResult(2000, () => 0).message, /코끼리보다 더 여유로운/);
+  assert.throws(() => R.describeResult(NaN));
+});
 test('ranking uses average, shares ties, and leaves source data unchanged', () => {
   const rows = [record('slow', [100, 400, 400]), record('tie-a', [200, 250, 300]), record('fast', [200, 200, 200]), record('tie-b', [250, 250, 250])];
   assert.deepEqual(R.rankRecords(rows).map(r => [r.id, r.rank]), [['fast', 1], ['tie-a', 2], ['tie-b', 2], ['slow', 4]]);

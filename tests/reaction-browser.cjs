@@ -67,7 +67,15 @@ async function round(page, delay) {
     assert.equal(saved[0].bestMs, Math.min(...saved[0].attempts));
     assert.equal(saved[0].averageMs, Math.round(saved[0].attempts.reduce((a, b) => a + b) / 3 * 10) / 10);
     assert.equal(await page.evaluate(() => localStorage.getItem('erica.quiz.records.v1')), null);
+    assert.equal(await page.locator('.animal-table tbody tr').count(), 12);
+    assert.equal(await page.locator('.animal-match').count(), 1);
+    assert.match(await page.locator('.animal-match').textContent(), /코끼리/);
+    assert.match(await page.locator('.animal-result h2').textContent(), /코끼리/);
     await page.screenshot({ path: path.join(out, 'result.png'), fullPage: true });
+    await page.setViewportSize({ width: 390, height: 844 });
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await page.screenshot({ path: path.join(out, 'result-mobile.png'), fullPage: true });
+    await page.setViewportSize({ width: 1280, height: 800 });
     await click(page, '.result-actions [data-action="records"]');
     assert.equal(await page.locator('[data-mode="reaction"][role="tab"]').getAttribute('aria-selected'), 'true');
     assert.equal(await page.locator('#records-body tr').count(), 1);
@@ -89,9 +97,11 @@ async function round(page, delay) {
     const broken = await brokenContext.newPage(); broken.on('pageerror', e => errors.push(e.message));
     await register(broken); for (const n of [200, 250, 300]) await round(broken, n);
     assert.equal(await broken.locator('.save-error').count(), 1);
+    const originalMessage = await broken.locator('.animal-result h2').textContent();
     await click(broken, '.result-actions [data-action="home"]'); assert.equal(await broken.locator('.reaction-result').count(), 1);
     await broken.evaluate(() => { Storage.prototype.setItem = window.originalSetItem; });
     await click(broken, '[data-action="retry-save"]'); assert.equal(await broken.locator('.save-error').count(), 0);
+    assert.equal(await broken.locator('.animal-result h2').textContent(), originalMessage);
     assert.equal(await broken.evaluate(() => JSON.parse(localStorage.getItem('erica.reaction.records.v1')).length), 1);
     await click(broken, '.result-actions [data-action="home"]'); assert.equal(await broken.locator('.hero').count(), 1);
     await brokenContext.close(); assert.deepEqual(errors, []);

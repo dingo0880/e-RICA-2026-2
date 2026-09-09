@@ -33,6 +33,27 @@ body[data-screen="reaction"]{overflow:hidden}
 .reaction-attempts strong{font-size:20px;white-space:nowrap}
 .reaction-records .record-stats strong{font-size:clamp(22px,3vw,38px)}
 .reaction-records .record-filters input{width:180px}
+.animal-result{max-width:640px;margin:26px auto 0;padding:26px 24px;background:#edf3e8;border:1px solid #cbd9bb;border-radius:8px;box-shadow:4px 4px 0 #dde6d3;text-align:center}
+.animal-result-emoji{display:block;font-family:"Segoe UI Emoji",sans-serif;font-size:58px;line-height:1.2;margin-bottom:14px}
+.animal-result .eyebrow{color:#6d8154;font-size:10px;letter-spacing:2px}
+.animal-result h2{font-family:var(--pixel);font-size:clamp(20px,2.4vw,27px);font-weight:400;line-height:1.6;color:#496137;margin:12px 0;word-break:keep-all;overflow-wrap:anywhere}
+.animal-result p{font-size:12px;color:#6a795b;line-height:1.8;margin:0;word-break:keep-all}
+.animal-comparison{max-width:640px;margin:40px auto 0;text-align:left}
+.animal-comparison h2{font-family:var(--pixel);font-size:24px;font-weight:400;color:#675477;margin-bottom:10px}
+.animal-comparison>p{font-size:12px;color:#8c7e98;line-height:1.8;margin-bottom:18px;word-break:keep-all}
+.animal-table{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;border:1px solid #ded6e6;border-radius:6px;overflow:hidden;background:#fdfbf8;font-size:13px}
+.animal-table th,.animal-table td{padding:12px 14px;border-bottom:1px solid #e8e1ec;text-align:left;vertical-align:middle;line-height:1.6}
+.animal-table thead th{font-size:12px;background:#eee8f4;color:#826b95;font-weight:500}
+.animal-table th:first-child{width:40%}
+.animal-table tbody th{font-weight:400;color:#5b5063}
+.animal-table tbody th>span{font-family:"Segoe UI Emoji",sans-serif;font-size:20px;margin-right:6px}
+.animal-table td{color:#7c6b89;font-variant-numeric:tabular-nums;white-space:nowrap}
+.animal-table tr:last-child>*{border-bottom:0}
+.animal-table .animal-match>*{background:#edf3e8;color:#496137}
+.animal-table .animal-match th{box-shadow:inset 4px 0 #90aa6c}
+.animal-table small{display:block;font-size:10px;color:#608042;margin-top:3px}
+.animal-comparison .animal-reference-note{font-size:11px;margin:14px 0 0;color:#948b9a}
+@media(max-width:480px){.animal-result{padding:22px 16px}.animal-result p{font-size:11px}.animal-result-emoji{font-size:48px}.animal-comparison h2{font-size:20px}.animal-table th,.animal-table td{padding:10px 8px}.animal-table thead th{font-size:10px}.animal-table{font-size:11px}.animal-table tbody th>span{font-size:17px;margin-right:3px}.animal-table small{font-size:9px}}
 @media(max-width:850px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.mode-start-buttons .button{font-size:15px}.leaderboard-mode-tabs button{font-size:13px}}
 @media(max-width:600px){.hero{display:flex;flex-direction:column;align-items:stretch}.hero-art{align-self:center;max-width:100%;overflow:hidden}.mode-start-buttons{max-width:none}.mode-start-buttons .button{font-size:16px}.leaderboard-mode-tabs button .pixel-icon{display:none}.leaderboard-mode-tabs button small{font-size:9px}.reaction-attempts{gap:7px}.reaction-attempts strong{font-size:16px}.reaction-records .record-stats>div{padding-inline:8px}.reaction-records .record-stats span{font-size:10px}.reaction-records .record-stats small{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.reaction-page *{animation:none}}

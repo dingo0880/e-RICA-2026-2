@@ -2,7 +2,7 @@
   'use strict';
   scope.createReactionUI = function ({ app, state, navigate, esc, pixel, back, tabs, toast }) {
     const R = scope.ReactionCore, C = scope.QuizCore;
-    const session = { attempts: [], phase: 'idle', timer: null, frame: null, started: 0 };
+    const session = { attempts: [], phase: 'idle', timer: null, frame: null, started: 0, comparison: null };
     const ms = n => `${n.toFixed(1)} ms`;
     function records() { try { return R.readRecords(localStorage); } catch { return null; } }
     function stopTimers() { clearTimeout(session.timer); cancelAnimationFrame(session.frame); session.timer = null; session.frame = null; }
@@ -13,7 +13,7 @@
       }
     }
     function start() {
-      stopTimers(); session.attempts = []; session.phase = 'idle';
+      stopTimers(); session.attempts = []; session.phase = 'idle'; session.comparison = null;
       state.record = null; state.saved = false; state.backedUp = false;
       navigate('reaction');
     }
@@ -80,9 +80,17 @@
     });
     document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
     scope.addEventListener('blur', pause);
+    function comparisonCard() {
+      const { animal, message, outside } = session.comparison;
+      return `<div class="animal-result" role="status"><span class="animal-result-emoji" aria-hidden="true">${animal.emoji}</span><span class="eyebrow">MY REACTION ANIMAL</span><h2>${esc(message)}</h2><p>3회 평균 <b>${ms(state.record.averageMs)}</b> 기준 · ${outside ? '비교표의 끝 기준' : '가장 가까운 대표값'}: ${esc(animal.name)} ${animal.ms} ms</p></div>`;
+    }
+    function comparisonTable() {
+      return `<section class="animal-comparison" aria-labelledby="animal-table-title"><h2 id="animal-table-title">내 반속, 동물과 비교하면?</h2><p>3회 평균과 가장 가까운 대표값을 표시했어요.</p><table class="animal-table"><caption class="sr-only">동물별 대표 반응속도와 대략 범위</caption><thead><tr><th scope="col">동물</th><th scope="col">대표 반응속도</th><th scope="col">대략 범위</th></tr></thead><tbody>${R.ANIMALS.map(animal => `<tr class="${animal === session.comparison.animal ? 'animal-match' : ''}"><th scope="row"><span aria-hidden="true">${animal.emoji}</span> ${esc(animal.name)}${animal === session.comparison.animal ? '<small>← 나의 비교 동물</small>' : ''}</th><td><b>${animal.ms} ms</b></td><td>${esc(animal.range)}</td></tr>`).join('')}</tbody></table><p class="animal-reference-note">재미로 보는 대략적인 참고값이에요. 종·측정 조건에 따라 달라지며, 이 테스트와 동일한 조건의 비교는 아니에요.</p></section>`;
+    }
     function resultScreen() {
       const r = state.record;
-      return `<section class="result-page reaction-result"><div class="result-banner"><span class="eyebrow">REACTION TEST COMPLETE · 3/3</span><div class="result-trophy">${pixel('bolt')}</div><h1>3번의 도전, 완료!</h1><p>${esc(state.participant.name)} 님의 반응속도 테스트 결과예요.</p><div class="score-boxes"><div class="score-correct"><span>최고 기록</span><strong>${r.bestMs.toFixed(1)}<small> ms</small></strong><span>3회 중 가장 빠른 기록</span></div><div class="score-total"><span>평균 기록</span><strong>${r.averageMs.toFixed(1)}<small> ms</small></strong><span>3회 평균 · 순위 기준</span></div></div><p class="save-status ${state.saved ? '' : 'save-error'}" role="status">${state.saved ? `✓ ${esc(r.name)} · ${esc(r.department)} 님의 반속 기록이 저장되었어요.` : '기록을 저장하지 못했어요. 다시 시도하거나 CSV로 보관해주세요.'}</p>${state.saved ? '' : '<div class="save-retry"><button class="button secondary" data-action="retry-save">저장 다시 시도</button><button class="text-button" data-action="export-result">이 결과 CSV 저장 ↓</button></div>'}</div><div class="reaction-attempts">${r.attempts.map((n, i) => `<div><span>${i + 1}/3 회차</span><strong>${ms(n)}</strong></div>`).join('')}</div><p class="under-note">낮을수록 빠른 기록이에요. <span>빨간색에서 누른 시도는 기록에 포함하지 않아요.</span></p><div class="result-actions"><button class="button secondary" data-action="records">${pixel('trophy')} 기록보기</button><button class="button primary" data-action="home">메인으로 돌아가기 ${pixel('arrow')}</button></div></section>`;
+      session.comparison ||= R.describeResult(r.averageMs);
+      return `<section class="result-page reaction-result"><div class="result-banner"><span class="eyebrow">REACTION TEST COMPLETE · 3/3</span><div class="result-trophy">${pixel('bolt')}</div><h1>3번의 도전, 완료!</h1><p>${esc(state.participant.name)} 님의 반응속도 테스트 결과예요.</p>${comparisonCard()}<div class="score-boxes"><div class="score-correct"><span>최고 기록</span><strong>${r.bestMs.toFixed(1)}<small> ms</small></strong><span>3회 중 가장 빠른 기록</span></div><div class="score-total"><span>평균 기록</span><strong>${r.averageMs.toFixed(1)}<small> ms</small></strong><span>3회 평균 · 순위 기준</span></div></div><p class="save-status ${state.saved ? '' : 'save-error'}" role="status">${state.saved ? `✓ ${esc(r.name)} · ${esc(r.department)} 님의 반속 기록이 저장되었어요.` : '기록을 저장하지 못했어요. 다시 시도하거나 CSV로 보관해주세요.'}</p>${state.saved ? '' : '<div class="save-retry"><button class="button secondary" data-action="retry-save">저장 다시 시도</button><button class="text-button" data-action="export-result">이 결과 CSV 저장 ↓</button></div>'}</div><div class="reaction-attempts">${r.attempts.map((n, i) => `<div><span>${i + 1}/3 회차</span><strong>${ms(n)}</strong></div>`).join('')}</div><p class="under-note">낮을수록 빠른 기록이에요. <span>빨간색에서 누른 시도는 기록에 포함하지 않아요.</span></p><div class="result-actions"><button class="button secondary" data-action="records">${pixel('trophy')} 기록보기</button><button class="button primary" data-action="home">메인으로 돌아가기 ${pixel('arrow')}</button></div>${comparisonTable()}</section>`;
     }
     function recordsScreen() {
       const rows = records() || [];
